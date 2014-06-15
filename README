@@ -1,0 +1,48 @@
+do:
+sudo apt-get install lib32stdc++6
+
+
+/dev/ttyUSB_utps_pcui
+:/home/il/Downloads/usr/lib32:/home/il/Downloads/lib32
+
+NDISSTATQRY
+ndisstatqry
+
+minicom /dev/ttyUSB0
+
+(
+exec 4<>/dev/ttyUSB0
+cat <&4 &
+cat | while IFS= read -r line; do
+  printf '%s\r\n' "$line"
+done >&4
+kill $!
+)
+
+NDISSTATQRY
+AT^NDISSTATQry?
+AT^NDISSTATQRY?
+
+# prepare dependencies for building
+sudo apt-get build-dep libfreetype6
+
+# get sources
+cd ~
+rm -rf libfreetype6&&  mkdir libfreetype6&&  cd libfreetype6
+
+apt-get source -d libfreetype6
+
+# unpack sources
+cd ~/libfreetype6
+rm -rf libwnck-2.30.6&&  mkdir libwnck-2.30.6
+
+
+
+sudo apt-get install lib32freetype6
+
+
+
+sudo rmmod huawei_cdc_ncm
+sudo rmmod cdc_ncm
+sudo rmmod usbnet
+
