@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+  <module name="WLANPlugin">
+    <!-- Common -->
+    <item name="IDS_PLUGIN_NAME">WLAN Settings Plugin</item>
+    <item name="IDS_SETTING_NAME">Wi-Fi Management</item>
+    <item name="IDS_APPLY">Apply(&amp;A)</item>
+    <item name="IDS_MESSAGEBOX_PROMPT">MegaFon</item>
+    <item name="IDS_PROFILE_NAME_EMPTY">Profile name cannot be empty.</item>
+    <item name="IDS_PROFILE_NAME_REPEAT">A profile with this name already exists.</item>
+    <item name="IDS_DEVICE_MANAGEMENT">Device Management</item>
+    <item name="IDS_PROFILE_MANAGEMENT">Profile Management</item>
+    <item name="IDS_WIRELESS_ADAPTER">Wireless Adapter:</item>
+    <item name="IDS_PROFILE_NAME">Profile Name:</item>
+    <item name="IDS_NETWORK_NAME">Network Name:</item>
+    <item name="IDS_LIST_PROFILE_NAME">Profile Name</item>
+    <item name="IDS_LIST_NETWORK_NAME">Network Name</item>
+    <item name="IDS_AUTHENTICATION">Authentication:</item>
+    <item name="IDS_ENCRYPTION">Encryption:</item>
+    <item name="IDS_KEY_INDEX">Key Index:</item>
+    <item name="IDS_KEY">Network Key:</item>
+    <item name="IDS_KEY_CONFIRM">Confirm Network Key:</item>
+    <item name="IDS_PROPERTY_ADVANCED">Advanced</item>
+    <item name="IDS_PROPERTY_SIMPLE">Simple</item>
+    <item name="IDS_ERROR_WRONG_AUTHENTICATION">Wrong authentication type!</item>
+    <item name="IDS_AD_HOC_NETWORK">This is a computer to computer(ad-hoc) network</item>
+    <item name="IDS_SCAN">Scan</item>
+    <item name="IDS_PROFILE_NEW">&amp;New</item>
+    <item name="IDS_PROFILE_DELETE">&amp;Delete</item>
+    <item name="IDS_PROFILE_SAVE">&amp;Save</item>
+    <item name="IDS_PROFILE_EDIT">&amp;Edit</item>
+    <item name="IDS_PROFILE_UNDO">&amp;Undo</item>
+    <item name="IDS_PROFILE_DEFAULT">Set as De&amp;fault</item>
+    <item name="IDS_PROFILE_IMPORT">Import</item>
+    <item name="IDS_PROFILE_EXPORT">Export</item>
+    <item name="IDS_SCAN_DIALOG">Scan Network</item>
+    <item name="IDS_SCAN_NAME">Name(SSID)</item>
+    <item name="IDS_SCAN_SIGNAL">Signal Quality</item>
+    <item name="IDS_OK">OK</item>
+    <item name="IDS_CANCEL">Cancel</item>
+    <item name="IDS_SERVICE_AUTH">Service Authentication</item>
+    <item name="IDS_AUTH_MODE">Mode:</item>
+    <item name="IDS_NO_AUTH">No auth</item>
+    <item name="IDS_WEB_AUTH">Web auth</item>
+    <item name="IDS_WEB_AUTH_TNM">Web auth(TMN)</item>
+    <item name="IDS_WEB_AUTH_CHINATELECOM">Web auth(ChinaTelecom)</item>
+    <item name="IDS_PPPOE_AUTH">PPPoE auth</item>
+    <item name="IDS_AUTH_USERNAME">User Name:</item>
+    <item name="IDS_AUTH_PASSWORD">Password:</item>
+    <item name="IDS_NETWORK_NOTIFY">Notify me when this network is available.</item>
+    <item name="IDS_ASKFOR_DELETE_PROFILE">Do you want to delete the profile?</item>
+    <item name="IDS_ERROR_KEY_EMPTY">The Nerwork key cannot be empty.</item>
+    <item name="IDS_ERROR_KEY_DIFFERENT">The Nerwork Key and the Confirm Network Key you entered do not match.\nPlease enter keys again!</item>
+    <item name="IDS_ERROR_KEY_WRONG_LENGTH_40">The Nerwork key must be one of the following:\n5 or 13 case-sensitive characters\n10 or 26 hexadecimal characters</item>
+    <item name="IDS_ERROR_KEY_WRONG_LENGTH_128">The Nerwork key must be one of the following :\n8~63 case-senstive characters\n64 hexadecimal characters</item>
+    <item name="IDS_ERROR_ENCRYPTION_EMPTY">"Encryption" should be WEP when "Authentication" is shared.</item>
+    <item name="IDS_ERROR_CONNECT_FAILED">Failed to connect network.</item>
+    <item name="IDS_ERROR_NETWORK_NOT_EXIST">The network does not exist.</item>
+    <item name="IDS_CONNECTING">Connecting%...</item>
+    <item name="IDS_NET_TIPS_CANCELCONNECT">Cancelling...</item>
+    <item name="IDS_NET_TIPS_DISCONNECT">Disconnecting...</item>
+    <item name="IDS_GETTING_IP_ADDRESS">Waiting for obtaining IP address...</item>
+    <item name="IDS_ERROR_SAVE_SETTING">Cannot apply this profile. Please check the profile settings.</item>
+    <item name="IDS_ASKFOR_SAVE_PROFILE">Do you want to save the changes?</item>
+    <item name="IDS_ERROR_GET_IP_ADDRESS">Failed to obtain IP address!</item>
+    <item name="IDS_WAIT_WEBAUTH">Waiting for Web auth.</item>
+    <item name="IDS_WAIT_WEBLOGOUT">Waiting for logout.</item>
+    <item name="IDS_WEBAUTH_FAILED">Failed to Web auth.</item>
+    <item name="IDS_WAIT_PPPOEAUTH">Waiting for PPPoE auth.</item>
+    <item name="IDS_STC_NETCONNECTSETTINGDLG_DEFAULT"> (Default)</item>
+    <item name="IDS_MSG_CONNECTSETTINGDLG_PROFILENAMEERR">A profile name cannot contain any of the following characters:</item>
+
+    <item name="IDS_STC_WIFI_FOUND">New wireless network is found:</item>
+    <item name="IDS_BTN_WIFI_SWITCH">Switch</item>
+    <item name="IDS_BTN_WIFI_CONNECT">Connect</item>
+    <item name="IDS_BTN_WIFI_CANCEL">Cancel</item>
+    <item name="IDS_CHKBOX_WIFI_NOTIFY">Don't prompt me again.</item>
+    <item name="IDS_DIALUPUI_PROMPT">MegaFon</item>
+    <item name="IDS_DIALUPUI_SWITCHTO_WLAN">Your computer is already connected. Do you want to disconnect?</item>
+    <item name="IDS_DIALUPUI_SWITCHTO_DIALUP">Your computer is already connected. Do you want to disconnect?</item>
+    <item name="IDS_GROUP_NOTIFY">Notify</item>
+    <item name="IDS_NOTIFY_NOPROFILE">Notify me even when the network profile does not exist.</item>
+    <item name="IDS_NOTIFY_MINSINGLEQUALITY">Minimum Signal Quality:</item>
+    <item name="IDS_NOTIFY_OPEN_WIFI_LIST">View</item>
+
+    <item name="IDS_NOTIFY_PERIODS">Period:</item>
+    <item name="IDS_NOTIFY_RANGE">%</item>
+    <item name="IDS_NOTIFY_MINUTE">minute</item>
+
+    <item name="TDC_STATIC_TIP">This network profile does not exsit. Please create first.</item>
+
+    <item name="IDS_PAGE_PROFILE">Profile</item>
+    <item name="IDS_PAGE_ADVANCE">Advanced</item>
+    <item name="IDS_NEWPROFILE">New Profile</item>
+
+    <item name="IDS_WIFI_WND_TEXT">Wi-Fi Network List</item>
+    <item name="IDS_BTN_PROPERTY">Property</item>
+    <item name="IDS_BTN_CONNECT">Connect</item>
+    <item name="IDS_BTN_DISCONNECT">Disconnect</item>
+    <item name="IDS_BTN_REFRESH">Refresh</item>
+    <item name="IDS_BTN_CLOSE">Close</item>
+    <item name="IDS_WIFI_SECURE">Secure Network</item>
+    <item name="IDS_WIFI_SELECT_NETWORK">Please select a network</item>
+    <item name="IDS_WIFI_SELECT_NETWORK_CAPTION">Warning</item>
+    <item name="IDS_WIFI_LIST_STATE_CONNECTED">Connected</item>
+    <item name="IDS_WIFI_DEVICE_DETECT">No Wi-Fi device detected</item>
+    <item name="IDS_WIFI_AVAILABLE_NETWORKLIST">Available Networklist</item>
+
+  </module>
+</utpsdoc>
+

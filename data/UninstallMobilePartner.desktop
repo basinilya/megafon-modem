@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Application;Network
+Comment=Uninstall ${HW_SOFTWARENAME}
+Comment[en]=Uninstall ${HW_SOFTWARENAME}
+Encoding=UTF-8
+Name=Uninstall ${HW_SOFTWARENAME}
+Name[en]=Uninstall ${HW_SOFTWARENAME}
+Terminal=true
+Type=Application
+Exec=${HW_INSTALLPATH}/UninstallMobilePartner
+Icon=${HW_INSTALLPATH}/uninstall.gif
+Path=${HW_INSTALLPATH}

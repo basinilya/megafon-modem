@@ -1,0 +1,284 @@
+#! /bin/bash
+
+SYS_KERN_VER=`uname -r`
+if [ -f /lib/modules/$(uname -r)/kernel/drivers/net/usb/hw_cdc_driver.ko ]
+then
+    $(which rmmod) -f hw_cdc_driver
+	$(which rm) -f /lib/modules/$(uname -r)/kernel/drivers/net/usb/hw_cdc_driver.ko
+	$(which depmod) -a
+fi
+
+if [ "$(which udevadm)" != "" ]
+then
+        udevVer=`udevadm version`
+else
+        udevVer=`udevinfo -V | awk '{print $3}'`
+fi
+
+if [ -d /lib/udev/rules.d ]
+then
+     if [ $udevVer -ge 167 ]
+     then
+	rm -f  /lib/udev/rules.d/50-Huawei-Datacard.rules
+     else
+	rm -f  /lib/udev/rules.d/10-Huawei-Datacard.rules
+     fi
+fi
+
+if [ $udevVer -ge 167 ]
+then
+     rm -f  /etc/udev/rules.d/50-Huawei-Datacard.rules
+else
+     rm -f /etc/udev/rules.d/10-Huawei-Datacard.rules
+fi
+
+if [ "$SYS_KERN_VER" \> "2.6.37" -a "$SYS_KERN_VER" \< "3.0.0" ]
+then
+	mv -f /lib/udev/rules.d/60-cdrom_id.rules.bak /lib/udev/rules.d/60-cdrom_id.rules
+fi
+
+
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Fedora 11 crash bug################
+if [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 11)" != "" ]
+then		
+	if [ -f /opt/bakup/usbserial_orig.ko ]
+	then
+		/sbin/modprobe -r option
+		/sbin/modprobe -r usbserial
+		rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko
+		mv 	/opt/bakup/usbserial_orig.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko 
+		rm -rf /opt/bakup
+		/sbin/depmod -a
+		/sbin/modprobe option
+	fi
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Fedora 11 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for RedFlag7.0 crash bug################
+if [ "$(cat /etc/issue |grep Red\ Flag)" != "" -a "$(cat /etc/issue |grep 7.0)" != "" ]
+then
+        if [ -f /opt/bakup/usbserial_orig.ko ]
+        then
+                /sbin/modprobe -r option
+                /sbin/modprobe -r usbserial
+                rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/option.ko
+                rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko
+                mv      /opt/bakup/option_orig.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/option.ko
+                mv      /opt/bakup/usbserial_orig.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko
+                rm -rf /opt/bakup
+                /sbin/depmod -a
+                /sbin/modprobe option
+        fi
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Fedora 11 crash bug################
+
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Mandirva 200901 crash bug################
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2009.1)" != "" ]
+then
+
+		if [ -f /opt/bakup/usbserial_orig.ko.gz ]
+		then
+                        TARGET_FILE=/opt/bakup/usbserial_orig.ko.gz
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+			    mv 	/opt/bakup/usbserial_orig.ko.gz /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz 
+			    rm -rf /opt/bakup
+                        fi
+		fi
+                /sbin/depmod -a
+
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Mandirva 200901 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for OpenSUSE 11.3 crash bug################
+if [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.3)" != "" ]
+then
+
+		if [ -f /opt/bakup/usbserial_orig.ko ]
+		then
+                        TARGET_FILE=/opt/bakup/usbserial_orig.ko
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko
+			    mv /opt/bakup/usbserial_orig.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko 
+			    rm -rf /opt/bakup
+                        fi
+		fi
+		/sbin/depmod -a
+
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for OpenSUSE 11.3 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Mandirva 2010.0 crash bug################
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.0)" != "" ]
+then
+		/sbin/modprobe -r option
+		/sbin/modprobe -r usbserial
+		if [ -f /opt/bakup/usbserial_orig.ko.gz ]
+		then
+			rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+			mv 	/opt/bakup/usbserial_orig.ko.gz /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz 
+			rm -rf /opt/bakup
+		fi
+		/sbin/depmod -a
+		/sbin/modprobe option
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Mandirva 2010.0 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for OpenSUSE 11.2 crash bug################
+if [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.2)" != "" ]
+then
+
+		if [ -f /opt/bakup/usbserial_orig.ko ]
+		then
+                        TARGET_FILE=/opt/bakup/usbserial_orig.ko
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko
+			    mv /opt/bakup/usbserial_orig.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko 
+			    rm -rf /opt/bakup
+                        fi
+		fi
+		/sbin/depmod -a
+
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for OpenSUSE 11.2 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Mandriva 2010.1 crash bug################
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.1)" != "" ]
+then
+
+		if [ -f /opt/bakup/usbserial_orig.ko.gz ]
+		then
+                        TARGET_FILE=/opt/bakup/usbserial_orig.ko.gz
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+			    mv /opt/bakup/usbserial_orig.ko.gz /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz 
+			    rm -rf /opt/bakup
+                        fi
+		fi
+		/sbin/depmod -a
+
+
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for OpenSUSE 2010.1 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Mandriva 2010.2 crash bug################
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.2)" != "" ]
+then
+
+		if [ -f /opt/bakup/usbserial_orig.ko.gz ]
+		then
+                        TARGET_FILE=/opt/bakup/usbserial_orig.ko.gz
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+			    mv /opt/bakup/usbserial_orig.ko.gz /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz 
+			    rm -rf /opt/bakup
+                        fi
+		fi
+		/sbin/depmod -a
+
+
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for OpenSUSE 2010.2 crash bug################
+
+
+modprobe -r option
+modprobe option
+if [ "$(pidof HWActivator)" != "" ]
+then
+	kill -9 $(pidof HWActivator)
+fi
+
+#######Begin: copy the patch module cdc-acm.ko to replace the orginal one for Fedora12 crash bug################
+if [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 12)" != "" ]
+then
+
+		if [ -f /opt/acm_bakup/cdc-acm.ko ]
+		then
+                        TARGET_FILE=/opt/acm_bakup/cdc-acm.ko
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko
+			    mv /opt/acm_bakup/cdc-acm.ko /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko 
+			    rm -rf /opt/acm_bakup
+                        fi
+		fi
+		/sbin/depmod -a
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Fedora12 crash bug################
+
+#######Begin: copy the patch module cdc-acm.ko to replace the orginal one for openSUSE11.0 crash bug################
+if [  "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.0)" != ""  ]
+then
+		if [ -f /opt/acm_bakup/cdc-acm.ko ]
+		then
+                        TARGET_FILE=/opt/acm_bakup/cdc-acm.ko
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko
+			    mv /opt/acm_bakup/cdc-acm.ko /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko 
+			    rm -rf /opt/acm_bakup
+                        fi
+		fi
+		/sbin/depmod -a
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for openSUSE11.0  crash bug################
+
+#######Begin: copy the patch module cdc-acm.ko to replace the orginal one for openSUSE11.1 crash bug################
+if [  "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.1)" != ""  ]
+then
+		if [ -f /opt/acm_bakup/cdc-acm.ko ]
+		then
+                        TARGET_FILE=/opt/acm_bakup/cdc-acm.ko
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko
+			    mv /opt/acm_bakup/cdc-acm.ko /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko 
+			    rm -rf /opt/acm_bakup
+                        fi
+		fi
+		/sbin/depmod -a
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for openSUSE11.1  crash bug################
+
+#######Begin: copy the patch module cdc-acm.ko to replace the orginal one for openSUSE11.2 crash bug################
+if [  "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.2)" != ""  ]
+then
+		if [ -f /opt/acm_bakup/cdc-acm.ko ]
+		then
+                        TARGET_FILE=/opt/acm_bakup/cdc-acm.ko
+                        TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+                        if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+                        then
+			    rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko
+			    mv /opt/acm_bakup/cdc-acm.ko /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko 
+			    rm -rf /opt/acm_bakup
+                        fi
+		fi
+		/sbin/depmod -a
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for openSUSE11.2  crash bug################
+
+#######Begin: uninstall the patch kernel module hw_usb-storage for the SD no driver attached bug.################
+if [ -f /lib/modules/$(uname -r)/kernel/drivers/usb/storage/hw_usb-storage.ko ]
+then
+	/sbin/rmmod -f hw_usb-storage
+	rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/storage/hw_usb-storage.ko
+	/sbin/depmod -a
+fi
+
+#######End: uninstall the patch kernel module hw_usb-storage for the SD no driver attached bug.################

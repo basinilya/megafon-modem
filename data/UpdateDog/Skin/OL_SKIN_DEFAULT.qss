@@ -1,0 +1,549 @@
+*{
+    font-family:Arial;
+     font:bold;
+     font-size:12px;
+     color:#5C5C5C;
+}
+*#Main_DialogFrame{
+   border-image: url(./Skin/res/frame_child_border.png) 28 3 5 3;
+   border-top-width: 31px;
+   border-right-width: 3px;
+   border-bottom-width: 6px;
+   border-left-width: 3px;
+   /*background-image: url(./Skin/res/messagebox_bg.png);*/
+}
+
+*#XMessageBox_Setting{
+   border-image: url(./Skin/res/frame_child_border2.png) 4 0 2 0;
+   border-top-width: 4px;
+   border-right-width: 0px;
+   border-bottom-width: 2px;
+   border-left-width: 0px;
+}
+
+/*
+.CDlgSetting{
+   background-image: url(./Skin/res/messagebox_bg.png);
+}
+*/
+/**/
+/*QGroupBox{
+   border-image: url(./Skin/res/group_box_bg_line_curve_box.png) 3 2 2 2;
+}*/
+/*Add by zhoujun 2010-12-8 begin
+QGroupBox { 
+ 	    border-image: url(./Skin/res/group_box_bg_line_curve_box.png) 3 2 2 2;
+	    border-top-width: 3px;
+	    border-right-width: 2px;
+	    border-bottom-width: 2px;
+	    border-left-width: 2px; 
+	    margin-top: 1ex;             
+          
+             }
+             
+ QGroupBox::title {
+   subcontrol-origin: margin;
+   left: 5px;
+   top: 1px;
+ color: rgb(0, 0, 0);}
+ /*Add by zhoujun 2010-12-8 end
+
+*#Main_GroupBox{
+    border-image: url(./Skin/res/messagebox_bg.png) 3 2 2 2;
+    border-width: 1px;
+    border-style: solid;
+}
+*#BGUpdate_Frame{
+    border-image: url(./Skin/res/group_box_bg_line_curve_box.PNG);
+    border-width: 1px;
+    border-style: solid;
+}
+
+*#Common_GroupBox{
+    border-image: url(./Skin/res/group_box_bg_line_curve_box.png) 3 2 2 2;
+    border-width: 1px;
+    border-style: solid;
+}
+/*
+.CDlgSheetUpdate{
+   background-image: url(./Skin/res/messagebox_bg.png);
+    border-radius: 5;
+}*/
+*#Sheet_GroupBox{
+    border-image: url(./Skin/res/messagebox_bg.png);
+    border-width: 1px;
+    border-style: solid;
+}
+IXMessageBox{
+   background-image: url(./Skin/res/messagebox_bg.png);
+   border-radius: 3;
+}
+/**#Common_Button{
+    border-image: url(./Skin/res/button_normal.png);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+    font:bold;
+    font-size:14px;
+    color:#5C5C5C;
+}
+*#Common_Button:hover{
+    border-image: url(./Skin/res/button_hover.png);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+    font:bold;
+    font-size:14px;
+    color:#5C5C5C;
+}
+*#Common_Button:pressed
+{
+    border-image: url(./Skin/res/button_pressed.png);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+    padding-left: 3px;
+    padding-top: 3px;
+    font:bold;
+    font-size:14px;
+    color:#5C5C5C;
+}
+*#Common_Button:focus
+{
+    border-image: url(./Skin/res/button_focus.png);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+    font:bold;
+    font-size:14px;
+    color:#5C5C5C;
+}
+*#Common_Button:disabled{
+    border-image: url(./Skin/res/button_disabled.png);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+    font:bold;
+    font-size:14px;
+    color:#5C5C5C;
+}*/
+
+/*Add by zhoujun 2010-12-8 begin */
+*#Common_Button {     
+     min-width: 88px;
+     min-height: 26px;
+     border-image: url(./Skin/res/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+     font-family:Arial;
+     font:bold;
+     font-size:13px;
+     color:#5C5C5C;
+}
+
+
+*#Common_Button:hover { 
+	border-image: url(./Skin/res/button_hover.png);
+	font-family:Arial;
+	font:bold;
+	font-size:13px;
+	color: white;
+}
+
+*#Common_Button:pressed {
+	border-image: url(./Skin/res/button_pressed.png);
+	font-family:Arial;
+	font:bold;
+	font-size:13px;
+	color: white;
+}
+*#Common_Button:focus{
+    border-image: url(./Skin/res/button_pressed.png);
+    font-family:Arial;
+    font:bold;
+    font-size:13px;
+	color: white;
+}
+*#Common_Button:disabled{
+border-image: url(./Skin/res/button_disabled.png);
+    font-family:Arial;
+    font-size:13px;
+    font:bold;
+	color: white;
+}
+/*Add by zhoujun 2010-12-8 end */
+
+*#Close_Button{
+    border-image: url(./Skin/res/close_button_normal.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Close_Button:hover{
+    border-image: url(./Skin/res/close_button_hover.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Close_Button:pressed
+{
+    border-image: url(./Skin/res/close_button_press.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Close_Button:disabled{
+    border-image: url(./Skin/res/close_button_disable.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Minimize_Button{
+    border-image: url(./Skin/res/minimum_normal.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Minimize_Button:hover{
+    border-image: url(./Skin/res/minimum_hover.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Minimize_Button:pressed
+{
+    border-image: url(./Skin/res/minimum_press.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Minimize_Button:disabled{
+    border-image: url(./Skin/res/minimum_disable.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+/*=======Begin 20100916  hkf31334 : set TitleText color ====*/
+*#LabelTitle { 
+	color: white;
+	font-family:Arial;
+}
+/*==================END=============================*/
+/*=======Begin 20100916  hkf31334 : set Mac TitleBar ====*/
+*#Mac_LabelTitle { 
+	color: white;
+	font-family:Arial;
+}
+
+*#Mac_Close_Button {
+	border: 1px;
+	background-image: url(./Skin/res/mac/close_button_normal.png);
+}
+
+*#Mac_Close_Button:hover {
+	background-image: url(./Skin/res/mac/close_button_hover.png);
+}
+
+*#Mac_Close_Button:pressed {
+	background-image: url(./Skin/res/mac/close_button_press.png);
+}
+
+*#Mac_Close_Button:!enabled {
+	background-image: url(./Skin/res/mac/close_button_disable.png);
+}
+
+*#Mac_Minimize_Button {
+	border: 1px;
+	background-image: url(./Skin/res/mac/minimum_normal.png);
+}
+
+*#Mac_Minimize_Button:hover {
+	background-image: url(./Skin/res/mac/minimum_hover.png);
+}
+
+*#Mac_Minimize_Button:pressed {
+	background-image: url(./Skin/res/mac/minimum_press.png);
+}
+
+*#Mac_Minimize_Button:!enabled {
+	background-image: url(./Skin/res/mac/minimum_disable.png);
+}
+/*=======End 20100814  hKF31334 : set Mac TitleBar ====*/
+*#Common_Line{
+		border-image:  url(./Skin/res/border_line.png);
+    border-radius: 3;
+}
+/*=============QCombobox============ */
+/*QComboBox{
+    border-image: url(./Skin/res/edit_ctrl_border_line_box.png) 1 2 1 2;
+    border-width: 1px;
+    border-style: solid;
+}
+
+QComboBox::drop-down{
+    border-image: url(./Skin/res/popup_controls_button_down.png);
+    border-width: 1px;
+    border-style: solid;
+}
+
+QComboBox::drop-down:hover{
+    border-image: url(./Skin/res/popup_controls_button_down_hover.png);
+    border-width: 1px;
+    border-style: solid;
+}
+
+QComboBox::drop-down:pressed{
+    border-image: url(./Skin/res/popup_controls_button_down_press.png);
+    border-width: 1px;
+    border-style: solid;
+}
+
+QComboBox::drop-down:disabled{
+    border-image: url(./Skin/res/popup_controls_button_down_gray.png);
+    border-width: 1px;
+    border-style: solid;
+}
+ QLineEdit:!editable {    
+     border-image: url(./Skin/res/tree_widget_bg_line_box.png)1 1 1 1;
+     border-top-width: 1px;
+     border-right-width: 1px;
+     border-bottom-width: 1px;
+     border-left-width: 1px; 
+     background: white;
+     selection-color: white;
+     selection-background-color: rgb(10, 36, 106);
+ }*/
+ 
+ /*Add by zhoujun 2010-12-8 begin*/
+ QComboBox{
+    border-image: url(./Skin/res/edit_ctrl_border_line_box.png) 1 2 1 2;
+    border-width: 1px;
+    border-style: solid;
+}  
+QComboBox:!enabled {
+     background-color: rgb(231, 231, 231);    
+}
+
+
+QComboBox::drop-down  { 	
+	image: url(./Skin/res/combobox_down_arrow_normal.png);	
+}
+
+QComboBox::drop-down:hover	 	{ image: url(./Skin/res/combobox_down_arrow_hover.png);}
+QComboBox::drop-down:!enabled	{ image: url(./Skin/res/combobox_down_arrow_gray.png);}
+/*Add by zhoujun 2010-12-8 end */
+  
+ QLineEdit[echoMode="2"] {
+     lineedit-password-character: 9679;
+ }
+  
+ QLineEdit:read-only {
+	background: white;
+	background-color: white;
+}
+
+ QLineEdit:editable {    
+     border-image: url(./Skin/res/tree_widget_bg_line_box.png)1 1 1 1;
+     border-top-width: 1px;
+     border-right-width: 1px;
+     border-bottom-width: 1px;
+     border-left-width: 1px; 
+     background: white;
+     selection-color: white;
+     selection-background-color: rgb(10, 36, 106);
+ }
+
+ QProgressBar {
+     border-image: url(./Skin/res/progressbar_unbg.png) 2 2 2 2;
+    border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;	
+	height: 15px;
+	text-align: center;
+ }
+
+ QProgressBar::chunk {
+     border-image: url(./Skin/res/progressbar_update_bg.png);
+ }
+
+
+
+QLineEdit{
+    border-image: url(./Skin/res/widget_bg_line_box.png);
+    border-width: 1px;
+    border-style: solid;
+}
+/*=============QRadioButton============*/
+
+QRadioButton::indicator:!enabled:unchecked  { image: url(./Skin/res/radio_button_disabled.png);       }
+QRadioButton::indicator:!enabled:checked    { image: url(./Skin/res/sel_radio_button_disabled.png);   }
+QRadioButton::indicator:unchecked           { image: url(./Skin/res/radio_button_normal.png);           }
+QRadioButton::indicator:unchecked:hover     { image: url(./Skin/res/radio_button_hover.png);       }
+QRadioButton::indicator:unchecked:pressed   { image: url(./Skin/res/radio_button_hover.png);       }
+QRadioButton::indicator::checked            { image: url(./Skin/res/sel_radio_button_normal.png);       }
+QRadioButton::indicator:checked:hover 	    { image: url(./Skin/res/sel_radio_button_hover.png);   }
+QRadioButton::indicator:checked:pressed     { image: url(./Skin/res/sel_radio_button_hover.png);   }
+ 
+ /*=============QCheckBox============*/
+
+QCheckBox::indicator:!enabled:unchecked     { image: url(./Skin/res/unsel_check_box_disabled.png);     }
+QCheckBox::indicator:!enabled:checked       { image: url(./Skin/res/checkbox_checked_disabled.png);           }
+QCheckBox::indicator:unchecked              { image: url(./Skin/res/unsel_check_box_unchecked.png);     }
+QCheckBox::indicator:unchecked:hover        { image: url(./Skin/res/unsel_check_box_hover.png);     }
+QCheckBox::indicator:unchecked:selected     { image: url(./Skin/res/unsel_check_box_hover.png);     }
+QCheckBox::indicator:checked                { image: url(./Skin/res/checkbox_checked_normal.png);           }
+QCheckBox::indicator:checked:hover          { image: url(./Skin/res/checkbox_checked_hover.png);           }
+QCheckBox::indicator:checked:pressed        { image: url(./Skin/res/checkbox_checked_pressed.png);           }
+QCheckBox::indicator:indeterminate:hover    { image: url(./Skin/res/unsel_check_box_hover.png);     }
+QCheckBox::indicator:indeterminate:selected { image: url(./Skin/res/checkbox_checked_hover.png);           }
+/*modify lkf28055 2011-01-21
+QTableWidget {	
+	border-image: url(./Skin/res/tree_widget_bg_line_top_curve_box.png) 2 2 2 2;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	background: white;
+}
+end modify lkf28055 2011-01-21*/
+/* ========== QHeaderView ==========    */
+ QHeaderView {
+    border-image: url(./Skin/res/table_header_bg.png);
+ }
+
+ QHeaderView::section {
+    border-image: url(./Skin/res/table_header_bg.png);
+    padding-left: 2px;
+ }
+
+
+ QHeaderView::section:hover {
+    border-image: url(./Skin/res/table_header_hover.png);
+ }
+
+ QHeaderView::section:pressed {
+    border-image: url(./Skin/res/table_header_press.png);
+ }
+
+ QHeaderView::section::margin
+ {
+  image: url(./Skin/res/table_header_separator.png);
+  image-position: right;
+ }
+
+ /*=============QScrollBar Horizontal ============*/
+  QScrollBar::horizontal {
+     background-image: url("./Skin/res/messagebox_bg.png");
+     height: 18px;
+     margin: 0px 18px 0px 18px;
+ }
+ 
+ 
+ QScrollBar::handle:horizontal {
+     border-image: url(./Skin/res/scrollbar_horizontal_normal.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-width: 20px;
+ }
+ 
+ QScrollBar::handle:horizontal:hover {
+     border-image: url(./Skin/res/scrollbar_horizontal_hover.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-width: 20px;
+ }
+ 
+ QScrollBar::handle:horizontal:pressed {
+     border-image: url(./Skin/res/scrollbar_horizontal_press.png) 2 2 2 2;
+     border-top-width: 1px;
+     border-right-width: 1px;
+     border-bottom-width: 1px;
+     border-left-width: 1px;
+     min-width: 20px;
+ }
+  
+
+ QScrollBar::add-line:horizontal {
+     background: rgb(92, 162, 213);
+     width: 18px;
+     subcontrol-position: right;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:horizontal {
+     background: rgb(92, 162, 213);
+     width: 18px;     
+     subcontrol-position: left;
+     subcontrol-origin: margin;
+ }
+
+  QScrollBar:left-arrow:horizontal { border-image: url(./Skin/res/popup_controls_button_left.png);  }
+ QScrollBar:left-arrow:horizontal:hover { border-image: url(./Skin/res/popup_controls_button_left_hover.png);   }
+  QScrollBar:right-arrow:horizontal { border-image: url(./Skin/res/popup_controls_button_right.png);   }
+ QScrollBar:right-arrow:horizontal:hover { border-image: url(./Skin/res/popup_controls_button_right_hover.png);   }
+ 
+ /*=============QScrollBar Vertical ============*/
+QScrollBar::vertical {
+     background: rgb(221, 241, 255);
+     width: 18px;
+     margin: 18px 0px 18px 0px;
+ }
+ 
+ QScrollBar::handle:vertical {
+     border-image: url(./Skin/res/scrollbar_vertical_normal.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-height: 20px;
+ }
+ QScrollBar::handle:vertical:hover {
+     border-image: url(./Skin/res/scrollbar_vertical_hover.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-height: 20px;
+ }
+ 
+ QScrollBar::handle:vertical:pressed {
+     border-image: url(./Skin/res/scrollbar_vertical_press.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-height: 20px;
+ }
+  
+ QScrollBar::add-line:vertical {
+     background: rgb(92, 162, 213);
+     height: 18px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     background: rgb(92, 162, 213);
+     height: 18px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+
+ 
+QScrollBar:up-arrow:vertical 			{ border-image: url(./Skin/res/popup_controls_button_up.png);   }
+QScrollBar:up-arrow:vertical:hover 		{ border-image: url(./Skin/res/popup_controls_button_up_hover.png);   }
+QScrollBar:down-arrow:vertical 			{ border-image: url(./Skin/res/popup_controls_button_down.png);   }
+QScrollBar:down-arrow:vertical:hover 	{ border-image: url(./Skin/res/popup_controls_button_down_hover.png);   }
+

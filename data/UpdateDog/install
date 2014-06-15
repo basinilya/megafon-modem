@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+###############################################################################
+#                                                                             #
+#                           Qt Version                                        #
+#                                                                             #
+###############################################################################
+
+if which xterm;
+then
+    TERMINAL=`which xterm`
+    ${TERMINAL} '-e' "'$1'"
+exit
+fi
+
+if which gnome-terminal;
+then
+    TERMINAL=`which gnome-terminal`
+    ${TERMINAL} '-e' "'$1'"
+echo ${TERMINAL} '-e' "'$1'"
+echo "exit"
+exit
+
+fi
+
+if which konsole;
+then
+    TERMINAL=`which konsole`
+    ${TERMINAL} '-e' "'$1'"
+exit
+fi
+
+

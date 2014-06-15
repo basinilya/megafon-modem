@@ -1,0 +1,166 @@
+#! /bin/bash
+
+if [ "$1" == "remove" ]
+then
+	if [ "$(/sbin/lsmod |grep pl2303)" != "" ]
+	then 
+		/sbin/rmmod -f pl2303
+	fi
+elif [ "$1" == "update" ]
+then
+	if [ "$(/sbin/lsmod |grep option)" != "" ]
+	then
+		/sbin/rmmod -f option
+	fi
+	if [ "$(/sbin/lsmod |grep pl2303)" != "" ]
+	then 
+		/sbin/rmmod -f pl2303
+	fi
+	
+	if [ "$(/sbin/lsmod |grep usbserial)" != "" ]
+	then
+		/sbin/rmmod -f usbserial
+	fi
+
+	/sbin/modprobe usbserial vendor=0x12d1 product=$2	
+
+elif [ "$1" == "load" ]
+then
+	/sbin/modprobe hw_cdc_driver
+	/sbin/modprobe option
+	echo 12D1 $2 > /sys/bus/usb-serial/drivers/option1/new_id
+	/bin/touch /dev/huawei_mobile
+elif [ "$1" == "unload" ]
+then
+        #Update for DTS2011050500830 lxz 20110520 
+	#/sbin/rmmod -f option
+	/sbin/rmmod option
+	/sbin/modprobe option
+	/bin/rm -f /dev/huawei_mobile
+elif [ "$1" == "bindusbstorage" ]
+then
+
+	for SEG in f7 f8 f9 f10 f11 f12 f13 
+	do
+		PORT=$(echo $2 | cut -d / -$SEG)
+		if [ "$(echo $PORT |grep : )" != "" ] 
+		then
+			break
+		fi
+        done
+	echo -n $PORT > /sys/bus/usb/drivers/option/unbind
+
+	if [ "$(/sbin/lsmod |grep usb_storage)" != "" ]
+	then 
+		echo -n $PORT > /sys/bus/usb/drivers/usb-storage/bind
+	else
+		/sbin/modprobe usb-storage
+                echo -n $PORT > /sys/bus/usb/drivers/usb-storage/bind
+	fi
+elif [ "$1" == "bindcdc_ether" ]
+then
+
+        for SEG in f7 f8 f9 f10 f11 f12 f13
+        do
+                PORT=$(echo $2 | cut -d / -$SEG)
+                if [ "$(echo $PORT |grep : )" != "" ]
+                then
+                        break
+                fi
+        done
+        echo -n $PORT > /sys/bus/usb/drivers/option/unbind
+
+        if [ "$(/sbin/lsmod |grep cdc_ether)" != "" ]
+        then
+                echo -n $PORT > /sys/bus/usb/drivers/cdc_ether/bind
+        else
+                /sbin/modprobe cdc_ether
+                echo -n $PORT > /sys/bus/usb/drivers/cdc_ether/bind
+        fi
+elif [ "$1" == "umount" ]
+then
+	for ((i=0;i<10;i=i+1))
+	do
+		sr=/dev/sr$i
+		if [ -b $sr ]
+		then
+			VID=`udevadm info -a -p $(udevadm info -q path -n $sr)|grep 12d1`
+			if [ "$(echo $VID|grep 12d1)" != "" ]
+			then
+				if [ "$(echo `mount|grep $sr`)" != "" ]
+				then	
+					echo "umount $sr">> /var/log/messages
+					/bin/umount $sr
+				fi	
+			fi
+		fi
+	done
+elif [ "$1" == "unbind_qmi_wwan" ]
+then
+	for SEG in f7 f8 f9 f10 f11 f12 f13
+	do
+		PORT=$(echo $2 | cut -d / -$SEG)
+		if [ "$(echo $PORT |grep : )" != "" ]
+		then
+			break
+		fi
+	done
+	echo -n $PORT > /sys/bus/usb/drivers/qmi_wwan/unbind
+
+	if [ "$(/sbin/lsmod |grep hw_cdc_driver)" != "" ]
+	then
+		echo -n $PORT > /sys/bus/usb/drivers/huawei_ether/bind
+	else
+		/sbin/modprobe hw_cdc_driver 
+		echo -n $PORT > /sys/bus/usb/drivers/huawei_ether/bind
+	fi
+elif [ "$1" == "unbind_cdc_wdm" ]
+then
+	for SEG in f7 f8 f9 f10 f11 f12 f13
+	do
+		PORT=$(echo $2 | cut -d / -$SEG)
+		if [ "$(echo $PORT |grep : )" != "" ]
+		then
+			break
+		fi
+	done
+	echo -n $PORT > /sys/bus/usb/drivers/cdc_wdm/unbind
+
+	if [ "$(/sbin/lsmod |grep hw_cdc_driver)" != "" ]
+	then
+		echo -n $PORT > /sys/bus/usb/drivers/huawei_ether/bind
+	else
+		/sbin/modprobe hw_cdc_driver 
+		echo -n $PORT > /sys/bus/usb/drivers/huawei_ether/bind
+	fi
+else
+
+	SYS_KERN_VER=`uname -r`
+	if [ "$SYS_KERN_VER" \< "2.6.25" ]
+	then
+		echo "Huawei NDIS can not support Current system"
+	else
+		for SEG in f7 f8 f9 f10 f11 f12 f13 
+		do
+			PORT=$(echo $1 | cut -d / -$SEG)
+			if [ "$(echo $PORT |grep : )" != "" ] 
+			then
+				break
+			fi
+                done
+		echo -n $PORT > /sys/bus/usb/drivers/option/unbind
+
+		if [ "$(/sbin/lsmod |grep hw_cdc_driver)" != "" ]
+		then 
+			echo -n $PORT > /sys/bus/usb/drivers/huawei_ether/bind
+		else
+			/sbin/modprobe hw_cdc_driver
+		fi
+	fi
+	
+	if [ "$(/sbin/lsmod |grep usb_storage)" == "" ]
+	then
+		/sbin/modprobe usb-storage
+	fi
+	
+fi

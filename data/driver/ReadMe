@@ -1,0 +1,18 @@
+1.Installatiion
+  a. To install the Linux Driver tool only:
+     call the following command in the installation directory:
+		./install $PATH         (The parameter "PATH" is where the driver directory is)
+     And the can copy usbmod file to /sbin/
+                 copy startMobilePartner file to /sbin/
+                 copy 10-Huawei-Datacard.rules file to /etc/udev/rules.d/
+                 register the auto run settengs into the current system.
+     To make the settings applied, you must restart the system.
+  b. To integrated the Linux Driver tool into the third dashboard application:
+     call "install norestart" in the installation tool of the third dashboard application. 
+     This call scheme will disable the restarting function in the tool installation.
+     And after the third dashboard application installed, its installation tool must restart the current system.
+ 
+ 2. To inquire about the version of the Linux Driver tool,
+    call HWActivator --version.
+
+ 3. The current version is : Linux Driver 4.19.19.00

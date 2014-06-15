@@ -1,0 +1,112 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">Croatian</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Updater</item>
+<item name="ID_BUTTON_OK">U redu</item>
+<item name="ID_BUTTON_CANCEL">Odustani</item>
+<item name="ID_MESSAGEBOX_ERROR">Pogreška</item>
+<item name="ID_MESSAGEBOX_QUESTION">Potvrdi</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Informacija</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Jeste li sigurni da želite izaći?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Nastaviti sa tekućim procesom preuzimanja sljedećeg puta?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Nastaviti sa tekućim ažuriranjem sljedećeg puta?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Nastaviti sa procesom instalacije sljedećeg puta?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Da</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">Ne</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Odustani</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Informacija</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">Nova verzija %1 će biti instalirana. Ovaj prozor će biti zatvoren.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">"%1" će biti okončana prije instalacije ažuriranja.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">Sigurni Ste da želite produžiti dalje?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">"%1" ne može biti prekinut od strane lica koje vrši ažuriranje.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">Morate prekinuti instalaciju ručno, prije no što ponovno pokušate sa instalacijom.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">Funkcija ažuriranja nije uspjela zato što je omogućena opcija  "Rad izvan mreže". Za početak uspješnog ažuriranja molimo da je onemogućite.</item>
+<item name="ID_SHEET_BUTTON_BACK">Natrag</item>
+<item name="ID_SHEET_BUTTON_NEXT">Dalje</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Preuzimanje</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Instalirati</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Ponovi</item>
+<item name="ID_SHEET_BUTTON_FINISH">Završiti</item>
+<item name="ID_SHEET_CAPTION">Intern. ažurir</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Otkrivanje ažuriranja...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT"></item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 se ažurira sam...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 je proces preuzimanja resuming...</item>
+<item name="ID_PAGE_FEATURE_TIP">Pronađeno ažuriranje</item>
+<item name="ID_PAGE_FEATURE_TIP1">Nove značajke</item>
+<item name="ID_PAGE_FEATURE_HEADER">Sastavni</item>
+<item name="ID_PAGE_FEATURE_HEADER1">Veličina</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Preuzeto</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">Prostor na disku je nedovoljan ili disk ne postoji.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">Preuzimanje ažuriranja je okončano.</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Status</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Ažuriranja su preuzeta</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Instalacijski postupak:</item>
+<item name="ID_PAGE_DONE_TOPIC">Ažuriranje je završeno. Hvala vam za korištenje Online Update Service.</item>
+<item name="ID_PAGE_DONE_RUN">Pokreni program nakon ažurirati</item>
+<item name="ID_PAGE_DONE_REBOOT">Ponovno startiraj računalo</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">Verzija koju koristite je najnovija verzija. Hvala vam za korištenje Online Update Service.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Ažuriranje nije uspjelo jer su nastupile neke pogreške.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Nemoguće komuniciranje sa poslužiteljem ažuriranja. Potvrditi da ste spojeni na Internet i pokušajte ponovno provjeriti ažuriranja.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">Onemogućeno periodično provjeravanje postojanja ažuriranja</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Provjeri ažuriranja svaki</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">dana</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Nemojte koristiti proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">Koristite IE kao postavke za proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Koristite svoje definiranje za http proxy</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Adrese</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Port</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">Korisničko ime</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Lozinka</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Proxy sigurnosne postavke</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Testiraj</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Otkriti vezu s mrežom.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Kliknite da biste poništili testiranje</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Otkrivanje, molim pričekajte...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">Nema mogućnosti detekcije proxz informacija iz Internet Explorera.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Povezivanje nije uspjelo.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Povezivanje je ostavreno.</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Postavke za ažuriranje</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">Pronađena je nova verzija.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Kliknuti ovdje za ažuriranje.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Detektovano ažuriranje...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Pronađeno ažuriranje. Kliknuti ovdje za preuzimanje.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">Ažuriranje nije pronađeno. Kliknuti ovdje za izlaz.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Preuzimanje ažuriranja...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Ažuriranje je preuzeto. Kliknuti ovdje za instaliranje.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Instaliranje ažuriranja...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Ažuriranje je dovršeno. Kliknuti ovdje za pregled rezultata ažuriranja.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Ažuriranje je neuspješno.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">Morate ponovo pokrenuti računalo da biste provjerili valjanost nadopunu. Kliknite "%1"
+ da biste ponovno odmah ili "%2" ručno restart kasnije.</item>
+<item name="ID_LIST_DOWNLOAD">Preuzeto</item>
+<item name="ID_LIST_INSTALLING">Instaliranje</item>
+<item name="ID_LIST_FINISHED">Završetak</item>
+<item name="ID_LIST_SUCCEED">Uspješno</item>
+<item name="ID_LIST_FAILED">Neuspješno</item>
+<item name="ID_LIST_CANCELED">Otkazano</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_MAINNAME">G3 eWalk</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH_UTPSFORCE">Vaša aplikacija treba biti ažurirana. Instalirajte ažuriranja.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_URLPROMPTFINISH">Ažuriranje završeno.</item>
+<item name="ID_TCPUANDUTPS_UPDATE_PROMPT">I firmver i softver trebaju biti ažurirani. Kliknite na %1 
+kako biste ažurirali firmver ili na "%2" kako biste ažurirali softver.</item>
+<item name="ID_STATIC_FIRMWAREUPDATE_PROMPT">Pronađena je nova verzija firmvera %1. Preuzmite novu verziju sa sljedećeg web-mjesta: </item>
+<item name="ID_MESSAGEBOX_UPDATE_SOFTWARE_FORCE">G3 eWalk treba biti ažuriran radi boljih brzih bežičnih mrežnih servisa.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NOTE">Napomena: Za nadogradnje softvera se ne plaća naknada niti protok.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_BREAK_DIALUP">Trenutna veza će biti prekinuta.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NORMAL">Ažuriranja pronađena. Preuzmite ih.</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">KB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+</module>
+</utpsdoc>

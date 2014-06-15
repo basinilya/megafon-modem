@@ -1,0 +1,19 @@
+#!/bin/sh
+# author: xionghao 00121577
+# date:   2008-08-07
+export LANG="en_US.UTF-8"
+export COLUMNS=256
+if [ "$1" = "" ]; then
+        echo "parameter error"
+else
+        DEVICE=$1
+fi
+
+PID=`fuser $DEVICE`
+
+if test $PID; then
+	echo "kill the user"
+	`fuser -k -15 $DEVICE`
+else
+	echo "no user"
+fi

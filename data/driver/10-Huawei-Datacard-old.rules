@@ -1,0 +1,1170 @@
+##
+## This rules are for the old version of udev( < udevinfo, version 098 ) 
+## The command to check the version is : udevinfo -V
+##
+###################################################################################
+
+BUS=="usb", ENV{MODALIAS}=="usb:v12D1*ipFF", ENV{MODALIAS}="option"
+BUS=="usb", ENV{MODALIAS}=="usb:v12D1*ip50", ENV{MODALIAS}="usb-storage"
+BUS=="usb", ENV{MODALIAS}=="usb:v12D1*ic02isc06ipFF", ENV{MODALIAS}="hw_cdc_driver"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1446*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D1*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1448*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1520*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1521*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1522*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1523*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1524*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1525*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1526*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1527*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1528*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1529*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p152A*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p152B*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p152C*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p152D*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p152E*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p152F*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1530*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1531*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1532*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1533*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1534*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1535*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1536*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1537*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1538*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1539*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p153A*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p153B*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p153C*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p153D*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p153E*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p153F*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1540*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1541*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1542*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1543*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1544*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1545*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1546*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1547*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1548*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1549*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p154A*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p154B*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p154C*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p154D*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p154E*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p154F*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1550*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1551*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1552*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1553*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1554*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1555*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1556*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0B*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1449*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AD*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1557*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1558*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1559*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1B*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1505*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B5*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C1*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C2*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C3*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C4*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C5*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14FE*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14FF*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B7*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14BA*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1F20*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1F21*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1F22*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1F23*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D50*", KERNEL=="sr[0-9]", NAME="hwcdrom", MODE="0666"
+
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", RUN+="/path/HWActivator"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AC*", RUN+="/sbin/modprobe hw_cdc_driver"
+
+##
+##  Notify the dashboard while plugging or unplugging the device with adding or removing /dev/huawei_mobile file
+##
+###################################################################################
+ACTION=="add", SYSFS{idVendor}=="12d1", KERNEL=="ttyUSB*", RUN+="/bin/touch /dev/huawei_mobile"
+ACTION=="remove", KERNEL=="ttyUSB*", RUN+="/bin/rm -f /dev/huawei_mobile"
+ACTION=="add", SYSFS{idVendor}=="12d1", KERNEL=="ttyUSB*", RUN+="/bin/rm -f /dev/ttyUSB%n"
+######Add for TD data card######################################
+ACTION=="add", SYSFS{idVendor}=="12d1", KERNEL=="ttyACM*", RUN+="/bin/touch /dev/huawei_mobile"
+ACTION=="remove", KERNEL=="ttyACM*", RUN+="/bin/rm -f /dev/huawei_mobile"
+
+
+######unbind option driver from NDIS ports and bind huawei_ether driver to NDIS ports###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="00", SYSFS{bInterfaceProtocol}=="00", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="06", SYSFS{bInterfaceProtocol}=="ff", RUN+="/sbin/usbmod $devpath"
+######ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="06", SYSFS{bInterfaceProtocol}=="00", RUN+="/sbin/usbmod $devpath"
+######unbind option driver from NDIS ports and bind CDC-ECM driver to NDIS ports###################################
+######must unbind data port first ,then unbind interrupt port ###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="06", SYSFS{bInterfaceProtocol}=="00", RUN+="/sbin/usbmod bindcdc_ether $devpath"
+
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="0d", SYSFS{bInterfaceProtocol}=="00", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="0d", SYSFS{bInterfaceProtocol}=="ff", RUN+="/sbin/usbmod $devpath"
+
+######unbind option driver from NDIS ports and bind ndis driver to NDIS ports ---single port:added by lxz 20120506###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="07", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="37", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="67", RUN+="/sbin/usbmod $devpath"
+
+######unbind option driver from NDIS ports and bind ndis driver to NDIS ports ---double port:added by lxz 20120506###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="08", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="09", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="38", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="39", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="68", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="69", RUN+="/sbin/usbmod $devpath"
+
+######unbind option driver from NDIS ports and bind ndis driver to NDIS ports ---ndis no 3G:added by lxz 20120506###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="11", RUN+="/sbin/usbmod $devpath"
+######unbind option driver from NDIS ports and bind ndis driver to NDIS ports ---ncm interface:added by lxz 20120506###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="16", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="46", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="76", RUN+="/sbin/usbmod $devpath"
+
+######unbind option driver from NDIS ports and bind ndis driver to NDIS ports ---single port:added by lxz 20120506###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="07", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="37", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="67", RUN+="/sbin/usbmod $devpath"
+######unbind option driver from NDIS ports and bind ndis driver to NDIS ports ---double port:added by lxz 20120506###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="08", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="09", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="38", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="39", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="68", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="69", RUN+="/sbin/usbmod $devpath"
+
+######unbind option driver from NDIS ports and bind ndis driver to NDIS ports ---ndis no 3G:added by lxz 20120506###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="11", RUN+="/sbin/usbmod $devpath"
+######unbind option driver from NDIS ports and bind ndis driver to NDIS ports ---ncm interface:added by lxz 20120506###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="16", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="46", RUN+="/sbin/usbmod $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="76", RUN+="/sbin/usbmod $devpath"
+
+######unbind option driver from massstorage ports and bind usb-storage driver to massstorage ports###################################
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceClass}=="08", SYSFS{bInterfaceSubClass}=="06", SYSFS{bInterfaceProtocol}=="50", RUN+="/sbin/usbmod bindusbstorage $devpath"
+
+#####added by l81005329 for DTS2012072704174 start
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="wwan*", SYSFS{bInterfaceProtocol}=="08", RUN+="/sbin/usbmod unbind_qmi_wwan $devpath"
+ACTION=="add", BUS=="usb", SYSFS{modalias}=="usb:v12D1*", KERNEL=="cdc-wdm*", SYSFS{bInterfaceProtocol}=="09", RUN+="/sbin/usbmod unbind_cdc_wdm $devpath"
+#####added by l81005329 for DTS2012072704174 end
+
+##########################################rename each port based on its protocols new pid#############################################
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_modem"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="02", NAME="ttyUSB_utps_pcui"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="03", NAME="ttyUSB_utps_diag"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="04", NAME="ttyUSB_utps_pscs"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="05", NAME="ttyUSB_utps_gps"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="06", NAME="ttyUSB_utps_control"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="31", NAME="ttyUSB_utps_modem"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="32", NAME="ttyUSB_utps_pcui"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="33", NAME="ttyUSB_utps_diag"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="34", NAME="ttyUSB_utps_pscs"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="35", NAME="ttyUSB_utps_gps"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="36", NAME="ttyUSB_utps_control"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="0a", NAME="ttyUSB_utps_bluetooth"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="0b", NAME="ttyUSB_utps_finger-print"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="0c", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="0d", NAME="ttyUSB_utps_mms"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="0e", NAME="ttyUSB_utps_pcvoice"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="0f", NAME="ttyUSB_utps_dvb"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="3a", NAME="ttyUSB_utps_bluetooth"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="3b", NAME="ttyUSB_utps_fingerprint"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="3c", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="3d", NAME="ttyUSB_utps_mms"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="3e", NAME="ttyUSB_utps_pcvoice"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="3f", NAME="ttyUSB_utps_dvb"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="46", NAME="ttyUSB_utps_ncm"
+
+##########################################rename each port based on its protocols new pid jungo#############################################
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_modem"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="02", NAME="ttyUSB_utps_pcui"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="03", NAME="ttyUSB_utps_diag"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="04", NAME="ttyUSB_utps_pscs"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="05", NAME="ttyUSB_utps_gps"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="06", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="31", NAME="ttyUSB_utps_modem"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="32", NAME="ttyUSB_utps_pcui"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="33", NAME="ttyUSB_utps_diag"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="34", NAME="ttyUSB_utps_pscs"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="35", NAME="ttyUSB_utps_gps"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="36", NAME="ttyUSB_utps_control"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="0a", NAME="ttyUSB_utps_bluetooth"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="0b", NAME="ttyUSB_utps_fingerprint"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="0c", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="0d", NAME="ttyUSB_utps_mms"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="0e", NAME="ttyUSB_utps_pcvoice"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="0f", NAME="ttyUSB_utps_dvb"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="3a", NAME="ttyUSB_utps_bluetooth"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="3b", NAME="ttyUSB_utps_fingerprint"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="3c", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="3d", NAME="ttyUSB_utps_mms"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="3e", NAME="ttyUSB_utps_pcvoice"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="3f", NAME="ttyUSB_utps_dvb"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="46", NAME="ttyUSB_utps_ncm"
+
+##########################################rename each port based on its protocols new pid no 3G#############################################
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="10", NAME="ttyUSB_utps_modem"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="12", NAME="ttyUSB_utps_pcui"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="13", NAME="ttyUSB_utps_diag"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="14", NAME="ttyUSB_utps_gps"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="15", NAME="ttyUSB_utps_pcvoice"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="16", NAME="ttyUSB_utps_ncm"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="17", NAME="ttyUSB_utps_modem"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="61", NAME="ttyUSB_utps_modem"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="62", NAME="ttyUSB_utps_pcui"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="63", NAME="ttyUSB_utps_diag"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="64", NAME="ttyUSB_utps_pcsc"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="65", NAME="ttyUSB_utps_gps"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="66", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="76", NAME="ttyUSB_utps_ncm"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="6a", NAME="ttyUSB_utps_bluetooth"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="6b", NAME="ttyUSB_utps_fingerprint"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="6c", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="6d", NAME="ttyUSB_utps_mms"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="6e", NAME="ttyUSB_utps_pcvoice"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="6f", NAME="ttyUSB_utps_dvb"
+
+##########################################rename each port based on its protocols new pid jungo no 3G#############################################
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="10", NAME="ttyUSB_utps_modem"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="12", NAME="ttyUSB_utps_pcui"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="13", NAME="ttyUSB_utps_diag"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="14", NAME="ttyUSB_utps_gps"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="15", NAME="ttyUSB_utps_pcvoice"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="16", NAME="ttyUSB_utps_ncm"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="17", NAME="ttyUSB_utps_modem"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="61", NAME="ttyUSB_utps_modem"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="62", NAME="ttyUSB_utps_pcui"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="63", NAME="ttyUSB_utps_diag"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="64", NAME="ttyUSB_utps_pcsc"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="65", NAME="ttyUSB_utps_gps"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="66", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="76", NAME="ttyUSB_utps_ncm"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="6a", NAME="ttyUSB_utps_bluetooth"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="6b", NAME="ttyUSB_utps_fingerprint"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="6c", NAME="ttyUSB_utps_control"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="6d", NAME="ttyUSB_utps_mms"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="6e", NAME="ttyUSB_utps_pcvoice"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="6f", NAME="ttyUSB_utps_dvb"
+
+##########################################add new port base on 2.4.5#############################################
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="18", NAME="ttyUSB_utps_shellA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="19", NAME="ttyUSB_utps_shellB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="1a", NAME="ttyUSB_utps_serialA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="1b", NAME="ttyUSB_utps_serialB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="1c", NAME="ttyUSB_utps_serialC"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="48", NAME="ttyUSB_utps_shellA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="49", NAME="ttyUSB_utps_shellB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="4a", NAME="ttyUSB_utps_serialA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="4b", NAME="ttyUSB_utps_serialB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="4c", NAME="ttyUSB_utps_serialC"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="78", NAME="ttyUSB_utps_shellA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="79", NAME="ttyUSB_utps_shellB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="7a", NAME="ttyUSB_utps_serialA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="7b", NAME="ttyUSB_utps_serialB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="01", SYSFS{bInterfaceProtocol}=="7c", NAME="ttyUSB_utps_serialC"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="18", NAME="ttyUSB_utps_shellA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="19", NAME="ttyUSB_utps_shellB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="1a", NAME="ttyUSB_utps_serialA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="1b", NAME="ttyUSB_utps_serialB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="1c", NAME="ttyUSB_utps_serialC"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="48", NAME="ttyUSB_utps_shellA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="49", NAME="ttyUSB_utps_shellB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="4a", NAME="ttyUSB_utps_serialA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="4b", NAME="ttyUSB_utps_serialB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="4c", NAME="ttyUSB_utps_serialC"
+
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="78", NAME="ttyUSB_utps_shellA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="79", NAME="ttyUSB_utps_shellB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="7a", NAME="ttyUSB_utps_serialA"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="7b", NAME="ttyUSB_utps_serialB"
+BUS=="usb",SYSFS{modalias}=="usb:v12D1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceSubClass}=="02", SYSFS{bInterfaceProtocol}=="7c", NAME="ttyUSB_utps_serialC"
+
+##########################################rename each port based on pids#############################################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1001*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1001*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1001*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A8*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A8*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A8*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1003*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1003*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A9*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A9*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_bt"
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1004*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1004*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1004*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1004*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1401*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1401*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1401*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1402*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1402*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1402*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1403*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1403*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1403*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1403*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1405*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1405*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1405*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1406*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1406*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1406*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1408*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1408*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1409*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1409*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1409*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1409*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AA*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AA*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AA*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AA*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p140F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1411*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1411*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1411*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1411*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_dvb"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1411*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1412*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1412*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1412*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1412*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1412*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcvoice"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1413*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1413*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1413*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1413*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1413*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1413*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="07", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcvoice"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1414*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1414*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1414*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1414*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1414*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcvoice"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1415*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1415*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1415*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1415*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_dvb"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1415*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1416*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1416*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1416*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1416*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_dvb"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1416*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1416*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1417*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1417*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1417*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1417*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1417*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1418*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1418*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1418*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1418*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1418*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1419*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1419*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1419*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1419*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1419*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1419*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p141F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1420*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1420*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1420*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1421*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1421*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1421*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1422*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1422*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1422*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1422*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1422*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1427*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1427*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1427*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1427*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1428*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1428*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1428*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1428*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1428*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1429*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1429*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1429*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1448*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1448*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+##########For NDIS devices#####################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1430*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1430*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1430*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1431*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1431*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1432*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1433*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1433*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1433*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1433*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1434*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1434*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1434*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1434*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1435*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1435*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1436*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1436*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1436*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1437*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1437*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1437*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1438*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1438*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1438*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1438*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1439*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1439*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1439*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1439*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p143A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p143A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p143B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p143B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p143B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p143E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p143E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AC*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AC*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AC*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AB*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AB*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AB*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_finger"
+
+##########The PIDs for the special operators#####################
+#############Modem only###################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1450*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1450*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1450*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1451*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1451*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1451*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1452*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1452*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1452*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1453*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1453*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1453*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1454*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1454*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1454*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1455*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1455*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1455*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1456*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1456*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1456*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1457*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1457*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1457*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1458*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1458*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1458*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1459*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1459*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1459*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p145F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1460*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1460*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1460*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1461*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1461*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1461*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1462*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1462*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1462*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1463*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1463*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1463*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+#############Modem + NDIS###################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1404*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1404*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1404*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1404*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1404*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ctrl"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1407*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1407*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1407*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1407*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ctrl"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p142B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ctrl"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_finger"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1464*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1464*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1464*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1465*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1465*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1465*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1466*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1466*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1466*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1467*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1467*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1467*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1468*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1468*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1468*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1469*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1469*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1469*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p146F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1470*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1470*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1470*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1471*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1471*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1471*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1472*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1472*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1472*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1473*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1473*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1473*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1474*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1474*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1474*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1475*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1475*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1475*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1476*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1476*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1476*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1477*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1477*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1477*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1478*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1478*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1478*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1479*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1479*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1479*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p147F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1480*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1480*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1480*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1481*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1481*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1481*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C8*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C8*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C8*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C9*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C9*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14C9*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CA*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CA*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CA*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CB*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CB*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CB*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CC*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CC*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14CC*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+######################################################E58eV begin##########################################################################################################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1491*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1491*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1492*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1492*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1493*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1493*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1494*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1494*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1495*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1495*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1496*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1496*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1497*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1497*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1498*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1498*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1499*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1499*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p149a*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p149a*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p149b*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p149c*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p149d*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p149e*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p149f*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14a0*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14a1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14a2*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14a3*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14a4*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+#################################################E583v end################################################################################################################
+
+
+#############Modem + NDIS + HID###################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1482*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1482*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1482*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1482*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="07", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1483*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1483*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1483*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1483*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="07", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1484*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1484*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1484*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1484*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="07", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1485*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1485*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1485*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1485*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="07", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1486*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1486*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1486*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1486*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="07", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1487*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1487*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1487*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1487*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1487*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1487*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1488*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1488*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1488*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1488*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1488*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1488*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1489*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1489*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1489*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1489*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1489*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1489*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p148B*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_ndis"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1510*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1510*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1510*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1510*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_video"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1510*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="07", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1510*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="10", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1510*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="11", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1511*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1511*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1511*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1511*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_video"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1511*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="09", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_gps"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1511*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="10", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1512*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1512*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1512*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_video"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1513*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1513*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1513*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1513*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_video"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1514*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1514*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1514*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1514*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_video"
+
+#####add by l81005329 for EC1762 DTS2012092500189 start
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1515*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1515*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1515*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+#####add by l81005329 for EC1762 DTS2012092500189 end
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1516*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1516*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1516*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1516*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="07", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+
+##########For the TD-SCDMA data card or module devices#####################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D03*", KERNEL=="ttyACM*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D03*", KERNEL=="ttyACM*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_mms"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D03*", KERNEL=="ttyACM*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D09*", KERNEL=="ttyACM*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D09*", KERNEL=="ttyACM*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_mms"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D09*", KERNEL=="ttyACM*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D50*", KERNEL=="ttyACM*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1D50*", KERNEL=="ttyACM*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="01", NAME="ttyUSB_utps_pcui"
+
+#########For the Jungo Devices #######################################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C05*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C05*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C05*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C06*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C06*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C07*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C07*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C07*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C07*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="06", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_bt"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C08*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C08*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C09*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C09*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0C*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0D*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C0F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C10*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C10*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C10*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C10*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C11*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C11*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C11*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C11*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C11*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C12*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C12*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C12*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C12*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C13*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C13*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C13*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C13*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C13*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C14*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C14*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C14*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C14*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C15*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C15*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C15*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C15*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C15*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C16*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C16*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C16*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C16*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C16*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="05", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_control"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C16*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="08", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_bt"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C23*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C23*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C23*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C23*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1444*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1444*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1445*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1445*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1445*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144E*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcvoice"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p144F*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AE*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AE*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AF*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AF*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14AF*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B0*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B0*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B0*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcvoice"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B1*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A5*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A5*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A5*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A6*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A6*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A6*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A7*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A7*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14A7*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C17*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C17*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C18*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C18*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C18*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C19*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C19*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_mms"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C19*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C19*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_mms"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p1C1A*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcsc"
+
+
+
+
+###############################DIAG+PCUI+NDIS+CDROM&SD#######################################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B8*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14B8*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+###############################ADD E177#######################################
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D2*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D2*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="03", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D2*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="04", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D3*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_modem"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D3*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D3*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="02", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"
+
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D4*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="00", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_diag"
+BUS=="usb", SYSFS{modalias}=="usb:v12D1p14D4*", KERNEL=="ttyUSB*", SYSFS{bInterfaceNumber}=="01", SYSFS{bInterfaceProtocol}=="ff", NAME="ttyUSB_utps_pcui"

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+	<module name="PriorityPlugin">
+
+		<item name="IDS_PLUGIN_NAME">Priority</item>
+		<item name="IDS_SETTING_NAME">Priority</item>
+		<item name="IDS_PROFILE">Profile</item>
+		<item name="IDS_PROMPT">MegaFon</item>
+		<item name="IDS_PROFILE_NAME_EMPTY">Profile name cannot be empty.</item>
+		<item name="IDS_PROFILE_NAME_REPEAT">A profile with this name already exists.</item>
+		<item name="IDS_AUTHENTICATION">Authentication:</item>
+		<item name="IDS_ENCRYPTION">Encryption:</item>
+		<item name="IDS_KEY_INDEX">Key Index:</item>
+		<item name="IDS_KEY">Network Key:</item>
+		<item name="IDS_KEY_CONFIRM">Confirm Network Key:</item>
+		<item name="IDS_AUTH_USERNAME">User Name:</item>
+		<item name="IDS_AUTH_PASSWORD">Password:</item>
+		<item name="IDS_PROFILE_ADD">Add</item>
+		<item name="IDS_PROFILE_DELETE">Delete</item>
+		<item name="IDS_PROFILE_EDIT">Edit</item>
+		<item name="IDS_PROFILE_UP">Up</item>
+		<item name="IDS_PROFILE_DOWN">Down</item>
+		<item name="IDS_WARNING_DELETE">Are you sure to delete the profile?</item>
+		<item name="IDS_ERROR_WRONG_AUTHENTICATION">Wrong authentication type!</item>
+		<item name="IDS_ERROR_KEY_EMPTY">The Network key cannot be empty!</item>
+		<item name="IDS_ERROR_KEY_DIFFERENT">The Network Key and the Confirm Network Key you entered do not match.\nPlease enter keys again!</item>
+		<item name="IDS_ERROR_PROFILE_DUPLICATE">Profile already exist!</item>
+		<item name="IDS_ERROR_PROFILE_NO_DELETE">This profile cannot be deleted!</item>
+		<item name="IDS_ERROR_KEY_WRONG_LENGTH">WRONG length, \ninput again</item>
+		<item name="IDS_OK">OK</item>
+		<item name="IDS_CANCEL">Cancel</item>	
+		<item name="IDS_NETWORK_NAME">SSID:</item>
+
+		<item name="IDS_PROFILE_BOX_TITLE">MegaFon</item>
+		<item name="IDS_PROFILE_ADD_TITLE">Add to Priority</item>
+		<item name="IDS_PROFILE_INFO">When connecting, it will follow this sequence.</item>
+		<item name="IDS_PROFILE_NEW">New</item>
+		<item name="IDS_LIST_NETWORK_NAME">Network Name:</item>
+		<item name="IDS_ENCRYPTION">Encryption:</item>
+		<item name="IDS_KEYINDEX">Key Index:</item>
+		
+		<item name="IDS_ERROR_EMPTY_SSID">The Network Name must not be empty!</item>
+		<item name="IDS_ERROR_KEY_WRONG_LENGTH_40">The Nerwork key must be one of the following:\n5 or 13 case-sensitive characters\n10 or 26 hexadecimal characters</item>
+   		<item name="IDS_ERROR_KEY_WRONG_LENGTH_128">The Nerwork key must be one of the following :\n8~63 case-senstive characters\n64 hexadecimal characters</item>
+	
+	</module>
+</utpsdoc>
+

@@ -1,0 +1,102 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">Serbian</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Упдатер</item>
+<item name="ID_BUTTON_OK">U redu</item>
+<item name="ID_BUTTON_CANCEL">Otkaži</item>
+<item name="ID_MESSAGEBOX_ERROR">Greška</item>
+<item name="ID_MESSAGEBOX_QUESTION">Potvrda</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Informacija</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Sigurni Ste da želite prekinuti?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Nastaviti sa tekućim skidanjem sadržaja sledećeg puta?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Nastaviti sa slanjem sadržaja sledećeg puta?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Nastaviti sa tekućom instalacijom sledećeg puta?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Da</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">Ne</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Otkaži</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Informacija</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">Nova verzija  % će biti instalirana. Ovaj prozor će biti zatvoren.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">"%1" će biti prekinuta pre instaliranja poboljšanja.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">Sigurni ste da želite nastaviti?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">"%1" ne može biti prekinuta od strane osobe koja je menja.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">Morate ručno zatvoriti pre početka ponovne instalacije.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">Funkcija obnavljanja je neuspešna zato što je uključena opcija "Rad u režimu Van mreže" u  Internet Explorer-u. Da ponovo počne uspešno obnavljanje molimo isključite je.</item>
+<item name="ID_SHEET_BUTTON_BACK">Natrag</item>
+<item name="ID_SHEET_BUTTON_NEXT">Dalje</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Skidanje sadržaja</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Instalirati</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Ponovni pokušaj</item>
+<item name="ID_SHEET_BUTTON_FINISH">Završiti</item>
+<item name="ID_SHEET_CAPTION">Ažuriraj na mreži</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Lokalizovanje fajlova za obnavljanje...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT">Piezīme. Neizņemiet datu karti un saglabājiet savienojumu.</item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 se sam obnavlja...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 nastavlja proces kopiranja...</item>
+<item name="ID_PAGE_FEATURE_TIP">Pronađeni novi fajlovi za obnavljanje</item>
+<item name="ID_PAGE_FEATURE_TIP1">Nove Opcije</item>
+<item name="ID_PAGE_FEATURE_HEADER">Komponents</item>
+<item name="ID_PAGE_FEATURE_HEADER1">Izmērs</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Skidanje</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">Nedostatak prostora na disku ili disk nije fizički prisutan.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">fajlovi za obnavljanje su skinuti</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Statuss</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Skidanje fajlova za obnavljanje je završeno</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Proces Instalacije:</item>
+<item name="ID_PAGE_DONE_TOPIC">Obnavljanje je završeno. Hvala vam što koristite Online Update Service.</item>
+<item name="ID_PAGE_DONE_RUN">Pokrenite program nakon obnavljanja</item>
+<item name="ID_PAGE_DONE_REBOOT">Restartujte računar</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">Verzija koju trenutno koristite je već najnovija verzija. Hvala vam što koristite Online Update Service.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Obnavljanje je neuspešno zbog nastale greške u samom procesu.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Nemoguće povezivanje sa serverom za obnavljanje. Potvrdi da ste povezani sa Internetom i ponovo pokušajte proveriti obnavljanje.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">Isključena opcija periodične provere obnavljanja</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Provera postajanja obnavljanja svakih</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">dana</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Ne koristite proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">Koristite IE podešavanja kao proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Koristiti Vaše http proxy podešavanje</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Adrese</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Port</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">Korisničko ime</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Lozinka</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Sigurnosno Proxy podešavanje</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Testiraj</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Kliknite da biste testirali mrežnu konekciju.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Kliknite da prekinete testiranje.</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Noteikšana, lūdzu uzgaidiet...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">Ne mogu se očitati proxy informacije iz Internet Explorera.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Povezivanje je neuspešno.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Povezivanje je uspešno.</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Podešavanje obnavljanja</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">Pronađena je nova verzija.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Kliknite ovde za obnavljanje.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Detektovanje obnavljanja...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Obnavljanje pronađeno. Kliknite ovde da ga skinete.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">Obnavljanje nije pronađeno. Kliknite ovde za izlazak.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Skidanje novih fajlova za obnavljanje...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Fajlovi za obnavljanje su skinuti. Kliknuti ovde za instaliranje.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Instaliranje novih fajlova za obnavljanje...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Obnavljanje je završeno. Kliknite ovde da vidite rezultat obnavljanja.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Proces obnavljanja neuspešan, zbog grešaka koje su nastupile.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">Morate restartovati Vaš računar da biste verifikovali novu verzij. Kliknite "%1"
+da biste restartovali sada ili "%2" da biste restartovali kasnije.</item>
+<item name="ID_LIST_DOWNLOAD">Skidanje</item>
+<item name="ID_LIST_INSTALLING">Instaliranje</item>
+<item name="ID_LIST_FINISHED">Završeno</item>
+<item name="ID_LIST_SUCCEED">Uspešno</item>
+<item name="ID_LIST_FAILED">Neuspešno</item>
+<item name="ID_LIST_CANCELED">Otkazano</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">KB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+</module>
+</utpsdoc>

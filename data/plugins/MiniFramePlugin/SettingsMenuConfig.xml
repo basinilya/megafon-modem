@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="sysconfig">
+   	<menu name="mysettings" parent="null">
+		<item type="ITEM"	id="IDS_MY_MENU_GENERAL">GENERAL</item>
+		<item type="ITEM"	id="IDS_MY_MENU_SMSCLIENT">1</item>
+        <item type="ITEM"	id="IDS_MY_MENU_PROFILE">2</item>
+        <item type="ITEM"	id="IDS_MY_MENU_NETWORK">3</item>
+        <item type="POPUP"  id="IDS_MY_SWITCH_SKIN"></item>
+	</menu>
+	<menu parent="">
+		<item type="ITEM" id="IDS_MINISKIN_BLACK"></item>
+		<item type="ITEM" id="IDS_MINISKIN_DEFAULT"></item>
+		<item type="ITEM" id="IDS_MINISKIN_FOOTBALL"></item>	
+	</menu>	
+</utpsdoc>

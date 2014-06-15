@@ -1,0 +1,8 @@
+#!/bin/sh
+# author:Derek116@huawei.com
+# data:  2008-10-20
+MYPWD=$(cd $(dirname $0); pwd)
+
+rm -f /dev/huawei_ppp_up
+cp -f "${MYPWD}/resolv.conf.local" /etc/resolv.conf
+rm -f "${MYPWD}/resolv.conf"

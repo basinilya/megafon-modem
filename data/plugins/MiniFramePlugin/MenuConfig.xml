@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="sysconfig">
+   	<menu name="mysettings" parent="null">
+		<item type="ITEM"	id="IDS_MY_MENU_SMS"></item>
+		<item type="ITEM"	id="IDS_MY_MENU_PHONEBOOK"></item>
+		<item type="ITEM"	id="IDS_MY_MENU_STATATICS"></item>
+		<item type="ITEM"	id="IDS_MY_MENU_USSD"></item>
+		<!--item type="ITEM"	id="IDS_MY_MENU_DIAGNOSE"></item-->
+   		<!--item type="ITEM"	id="IDS_MY_MENU_LINK1"></item>
+   		<item type="ITEM"	id="IDS_MY_MENU_LINK2"></item-->
+   		<item type="ITEM"  id="IDS_UPDATE_CHECKNOW"></item>
+   		<item type="POPUP"	id="IDS_MY_MENU_LINKS">links</item>
+	</menu>	
+	<menu parent="links">
+		<item type="ITEM" id="IDS_MY_MENU_ESHOP"></item>
+		<item type="ITEM" id="IDS_MY_MENU_MOBILEDEVICES"></item>
+		<item type="ITEM" id="IDS_MY_MENU_CHANGESIGNAL"></item>
+		<item type="ITEM" id="IDS_MY_MENU_TRAVA"></item>
+		<!--item type="ITEM" id="IDS_MY_MENU_TRAVAONLINE"></item--><!--user customize remove the menu-->
+		<item type="ITEM" id="IDS_MY_MENU_FILLUP"></item>
+		<item type="ITEM" id="IDS_MY_MENU_SERVICEGUIDE"></item>
+		<item type="ITEM" id="IDS_MY_MENU_SENDMMS"></item>
+		<item type="ITEM" id="IDS_MY_MENU_MULTIFON"></item>
+		<!--item type="ITEM" id="IDS_MY_MENU_TRAVA_LOCAL"></item--><!--linux version no need the menu-->
+	</menu>
+	<!--menu parent="updata">
+		<item type="ITEM" id="IDS_UPDATE_CHECKNOW"></item>
+		<item type="ITEM" id="IDS_UPDATE_SETTINGS"></item>	
+	</menu-->
+</utpsdoc>

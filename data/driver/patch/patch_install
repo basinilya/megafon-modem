@@ -1,0 +1,178 @@
+#!/bin/bash
+
+PATCH_PATH=$1
+: ${PATCH_PATH:=.}
+
+SYSTEM_BIT=$($(which getconf) LONG_BIT)
+SYS_KERN_VER=`uname -r`
+if [ $SYSTEM_BIT -gt 32 ]
+then
+	POSTFIX=_64
+else
+	POSTFIX=
+fi
+
+####1.add usbserial.ko patch
+if [ -f /etc/issue ]
+then
+	if [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 11)" != "" ]
+	then
+		echo "The current system is Fedora11"
+		USBSERIAL_SRC_PATH="$PATCH_PATH"/usbserial_src
+                USBSERIAL_KO_BAK=usbserial_orig.ko
+                USBSERIAL_KO=usbserial.ko
+		TARGET_PATH="$PATCH_PATH"/Fedora11$POSTFIX/
+	elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2009.1)" != "" ]
+	then
+		echo "The current system is Mandriva 2009.1"
+		USBSERIAL_SRC_PATH="$PATCH_PATH"/usbserial_src
+                USBSERIAL_KO_BAK=usbserial_orig.ko.gz
+                USBSERIAL_KO=usbserial.ko.gz
+		TARGET_PATH="$PATCH_PATH"/Mandriva200901$POSTFIX/
+	elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.0)" != "" ]
+	then
+		echo "The current system is Mandriva 2010.0"
+		USBSERIAL_SRC_PATH="$PATCH_PATH"/opensuse112_usbserial_src
+                USBSERIAL_KO_BAK=usbserial_orig.ko.gz
+                USBSERIAL_KO=usbserial.ko.gz
+		TARGET_PATH="$PATCH_PATH"/Mandriva2010$POSTFIX/
+	elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.1)" != "" ]
+	then
+		echo "The current system is Mandriva 2010.1"
+		USBSERIAL_SRC_PATH="$PATCH_PATH"/opensusue113_usbserial_src
+                USBSERIAL_KO_BAK=usbserial_orig.ko.gz
+                USBSERIAL_KO=usbserial.ko.gz
+		TARGET_PATH="$PATCH_PATH"/Mandriva20101$POSTFIX/
+	elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.2)" != "" ]
+	then
+		echo "The current system is Mandriva 2010.2"
+		USBSERIAL_SRC_PATH="$PATCH_PATH"/opensusue113_usbserial_src
+                USBSERIAL_KO_BAK=usbserial_orig.ko.gz
+                USBSERIAL_KO=usbserial.ko.gz
+		TARGET_PATH="$PATCH_PATH"/Mandriva20102$POSTFIX/
+	elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.2)" != "" ]
+	then
+		echo "The current system is openSUSE 11.2"
+		USBSERIAL_SRC_PATH="$PATCH_PATH"/opensuse112_usbserial_src
+                USBSERIAL_KO_BAK=usbserial_orig.ko
+                USBSERIAL_KO=usbserial.ko
+		TARGET_PATH="$PATCH_PATH"/OpenSUSE112$POSTFIX/
+	elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.3)" != "" ]
+	then
+		echo "The current system is openSUSE 11.3"
+		USBSERIAL_SRC_PATH="$PATCH_PATH"/opensusue113_usbserial_src
+                USBSERIAL_KO_BAK=usbserial_orig.ko
+                USBSERIAL_KO=usbserial.ko
+		TARGET_PATH="$PATCH_PATH"/OpenSUSE113$POSTFIX/
+	elif [ "$(cat /etc/issue |grep Red\ Flag)" != "" -a "$(cat /etc/issue |grep 7.0)" != "" ]
+	then
+		echo "The current system is Red Flag 7.0"
+		USBSERIAL_SRC_PATH="$PATCH_PATH"/usbserial_src
+                USBSERIAL_KO_BAK=usbserial_orig.ko
+                USBSERIAL_KO=usbserial.ko
+                OPTION_KO_BAK=option_orig.ko
+                OPTION_KO=option.ko
+		TARGET_PATH="$PATCH_PATH"/RedFlag7$POSTFIX/
+	fi
+fi
+
+OPTIONPATH=""
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Fedora 11 crash bug################
+echo "USBSERIAL_TARGET_PATH = $TARGET_PATH"
+if [ "$TARGET_PATH" != "" ]
+then
+      TARGET_FILE="$TARGET_PATH"usbserial.ko
+else
+      TARGET_FILE=""
+
+fi
+
+if [ "$TARGET_FILE" != "" ]
+then
+      TARGET_VER=`modinfo "$TARGET_FILE" |grep vermagic | awk '{print $2}'`
+      if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+      then
+		/sbin/modprobe -r option
+		/sbin/modprobe -r usbserial
+		if [ -f /opt/bakup/$USBSERIAL_KO_BAK ]
+		then
+			rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$USBSERIAL_KO
+			/sbin/depmod -a
+		else
+			/bin/mkdir /opt/bakup
+			mv 	/lib/modules/$(uname -r)/kernel/drivers/usb/serial/$USBSERIAL_KO /opt/bakup/$USBSERIAL_KO_BAK
+			/sbin/depmod -a
+		fi
+		cp "$TARGET_PATH"/usbserial.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$USBSERIAL_KO
+                OPTIONPATH="$TARGET_PATH"
+	else
+		if [ "$SYS_KERN_VER" != "$TARGET_VER" ]
+		then
+          		CUR_PATH=`pwd`
+	 		cd "$USBSERIAL_SRC_PATH"
+	      		make clean
+	      	  	make modules
+                	cd "$CUR_PATH"
+			/sbin/modprobe -r option
+			/sbin/modprobe -r usbserial
+			if [ -f /opt/bakup/$USBSERIAL_KO_BAK ]
+			then
+				rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$USBSERIAL_KO
+				/sbin/depmod -a
+			else
+				/bin/mkdir /opt/bakup
+				mv 	/lib/modules/$(uname -r)/kernel/drivers/usb/serial/$USBSERIAL_KO /opt/bakup/$USBSERIAL_KO_BAK
+				/sbin/depmod -a
+			fi
+		fi
+		cp "$USBSERIAL_SRC_PATH"/src/usbserial.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$USBSERIAL_KO
+                OPTIONPATH="$USBSERIAL_SRC_PATH"/src
+	fi
+	chmod 777 /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$USBSERIAL_KO
+	if [ "$(cat /etc/issue |grep Red\ Flag)" != "" -a "$(cat /etc/issue |grep 7.0)" != "" ]
+        then
+	    if [ -f /opt/bakup/$OPTION_KO_BAK ]
+	    then
+	        rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$OPTION_KO
+            else
+	        mv /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$OPTION_KO /opt/bakup/$OPTION_KO_BAK
+            fi
+	    cp "$OPTIONPATH"/option.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$OPTION_KO
+	    chmod 777 /lib/modules/$(uname -r)/kernel/drivers/usb/serial/$OPTION_KO
+        fi
+	/sbin/depmod -a
+	/sbin/modprobe option
+fi
+
+
+####2.add hw_usb-storage.ko patch#######################################
+if [ "$(cat /etc/issue |grep Ubuntu)" != "" -a "$(cat /etc/issue |grep 9.04)" != "" ]
+then
+	echo "The current system is Ubuntu 9.04"
+	USB_TARGET_PATH="$PATCH_PATH"/Ubuntu904$POSTFIX/
+elif [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 11)" != "" ]
+then
+	echo "The current system is Fedora 11"
+	USB_TARGET_PATH="$PATCH_PATH"/Fedora11$POSTFIX/
+elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2009.1)" != "" ]
+then
+	echo "The current system is Mandriva 2009.1"
+	USB_TARGET_PATH="$PATCH_PATH"/Mandriva200901$POSTFIX/
+fi
+
+#######Begin: install the patch kernel module hw_usb-storage for the SD no driver attached bug.################
+if [ "$USB_TARGET_PATH" != "" ]
+then
+  if [ -f /lib/modules/$(uname -r)/kernel/drivers/usb/storage/hw_usb-storage.ko ]
+  then
+	/sbin/rmmod -f hw_usb-storage
+	rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/storage/hw_usb-storage.ko
+	/sbin/depmod -a
+  fi
+  cp "$USB_TARGET_PATH"hw_usb-storage.ko  /lib/modules/$(uname -r)/kernel/drivers/usb/storage/
+  chmod a+x /lib/modules/$(uname -r)/kernel/drivers/usb/storage/hw_usb-storage.ko
+  /sbin/depmod -a
+  /sbin/modprobe hw_usb-storage
+  echo "ACTION==\"add\", SUBSYSTEMS==\"usb\", ATTRS{modalias}==\"usb:v12D1*ip50\", RUN+=\"/sbin/modprobe hw_usb-storage\"" >> /etc/udev/rules.d/10-Huawei-Datacard.rules
+fi
+#######End: install the patch kernel module hw_usb-storage for the SD no driver attached bug.################

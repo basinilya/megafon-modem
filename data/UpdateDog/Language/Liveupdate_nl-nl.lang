@@ -1,0 +1,112 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">Dutch</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Updater</item>
+<item name="ID_BUTTON_OK">OK</item>
+<item name="ID_BUTTON_CANCEL">Annuleren</item>
+<item name="ID_MESSAGEBOX_ERROR">Fout</item>
+<item name="ID_MESSAGEBOX_QUESTION">Bevestigen</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Informatie</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Wilt u echt afsluiten?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Wilt u de volgende keer het huidige downloadproces voortzetten?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Wilt u de volgende keer de huidige updatevoortgang voortzetten?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Wilt u de volgende keer de huidige installatievoortgang voortzetten?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Ja</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">Nee</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Annuleren</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Informatie</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">De nieuwe versie van %1 wordt geïnstalleerd. Dit venster wordt gesloten.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">"%1" wordt beëindigd voor de installatie van updates.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">Wilt u doorgaan?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">"%1" kan niet worden beëindigd door updater.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">U dient handmatig af te sluiten voor u opnieuw probeert te installeren.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">De update is mislukt omdat in Internet Explorer de optie 'Offline werken' aangevinkt is. Om de update op te starten, dient u dit uit te schakelen.</item>
+<item name="ID_SHEET_BUTTON_BACK">Terug</item>
+<item name="ID_SHEET_BUTTON_NEXT">Volgende</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Downloaden</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Installeren</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Opnieuw proberen</item>
+<item name="ID_SHEET_BUTTON_FINISH">Afwerking</item>
+<item name="ID_SHEET_CAPTION">Online bijwerken</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Zoeken naar updates...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT"></item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 wordt geupdate...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 is hervatten downloaden proces...</item>
+<item name="ID_PAGE_FEATURE_TIP">Updates gevonden</item>
+<item name="ID_PAGE_FEATURE_TIP1">Nieuwe Functies</item>
+<item name="ID_PAGE_FEATURE_HEADER">Onderdeel</item>
+<item name="ID_PAGE_FEATURE_HEADER1">Maat</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Gedownload</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">Onvoldoende schijfruimte of de schijf bestaat niet.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">Updates worden gedownload</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Status</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Volledige download van updates</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Installatieproces:</item>
+<item name="ID_PAGE_DONE_TOPIC">Update voltooid. Dank u voor het gebruikmaken van de Online Update Service.</item>
+<item name="ID_PAGE_DONE_RUN">Programma uitvoeren na de update</item>
+<item name="ID_PAGE_DONE_REBOOT">Computer opnieuw opstarten</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">De versie die u gebruikt is de meest recente. Dank u voor het gebruikmaken van de Online Update Service.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Update mislukt door fout.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Communicatie met de update-server niet mogelijk. Bevestig dat u verbinding heeft met internet en controleer opnieuw op updates.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">Periodiek naar updates zoeken uitschakelen</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Naar updates zoeken: elke</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">dagen</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Geen proxy gebruiken</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">Gebruik IE-instellingen als proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Gebruik eigen gedefinieerde http proxy</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Adres</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Poort</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">Gebruikersnaam</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Wachtwoord</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Beveiligingsinstellingen van proxy</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Testen</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Opsporen van de netwerkverbinding.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Klik hier om te annuleren testen</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Detectiemiddel, please wait...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">De Internet Explorer proxy informatie kan niet gelezen worden.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Verbinden mislukt.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Verbinding tot stand gebracht.</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Instellingen updaten</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">Nieuwe versie gevonden.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Klik hier voor update.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Zoeken naar updates...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Updates gevonden. Klik hier om te downloaden.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">Geen updates gevonden. Klik hier om af te sluiten.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Updates worden gedownload...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Updates gedownload. Klik hier om installatie te starten.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Updates worden geïnstalleerd...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Update voltooid. Klik hier om de resultaten van de update te bekijken.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Update mislukt door fout.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">U moet de computer opnieuw op te starten voor het valideren van de update. Klik op "%1" 
+opnieuw op te starten nu of "%2" handmatig opnieuw later.</item>
+<item name="ID_LIST_DOWNLOAD">Gedownload</item>
+<item name="ID_LIST_INSTALLING">Installeren</item>
+<item name="ID_LIST_FINISHED">Voltooid</item>
+<item name="ID_LIST_SUCCEED">Geslaagd</item>
+<item name="ID_LIST_FAILED">Mislukt</item>
+<item name="ID_LIST_CANCELED">Geannuleerd</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_MAINNAME">G3 eWalk</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH_UTPSFORCE">Je toepassing moet worden bijwerkt. Installeer de updates.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_URLPROMPTFINISH">Update voltooid.</item>
+<item name="ID_TCPUANDUTPS_UPDATE_PROMPT">Zowel de firmware als de software moet worden bijgewerkt. Klik op %1 
+om de firmware bij te werken of op "%2" om de software bij te werken.</item>
+<item name="ID_STATIC_FIRMWAREUPDATE_PROMPT">Er is een nieuwe firmwareversie %1 gevonden. Download de nieuwe versie vanaf de volgende website: </item>
+<item name="ID_MESSAGEBOX_UPDATE_SOFTWARE_FORCE">De G3 eWalk moet worden bijgewerkt voor betere high-speed draadloze netwerkservices.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NOTE">Opmerking: De software-upgrades zijn gratis.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_BREAK_DIALUP">De huidige verbinding wordt verbroken.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NORMAL">Updates gevonden. A.u.b. downloaden.</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">KB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+</module>
+</utpsdoc>

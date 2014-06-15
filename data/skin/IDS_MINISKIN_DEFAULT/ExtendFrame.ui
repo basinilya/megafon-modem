@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>miniplugin_bg</class>
+ <widget class="QWidget" name="miniplugin_bg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>430</width>
+    <height>244</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>430</width>
+    <height>244</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>430</width>
+    <height>244</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Mobile Partner</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="X" stdset="0">
+   <number>10</number>
+  </property>
+  <property name="Y" stdset="0">
+   <number>190</number>
+  </property>
+  <property name="Length" stdset="0">
+   <number>3</number>
+  </property>
+  <widget class="QLabel" name="AppUIPlugin_bglabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>342</width>
+     <height>159</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>342</width>
+     <height>159</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>342</width>
+     <height>159</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_seven">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_seven{border-image: url(./skin/IDS_MINISKIN_DEFAULT/7.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+#miniplugin_seven:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/7_hover.png); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string/>
+   </property>
+   <property name="URL" stdset="0">
+    <string>http://www.sina.com.cn</string>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_SINA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_two">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>4</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_two{border-image: url(./skin/IDS_MINISKIN_DEFAULT/2.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+#miniplugin_two:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/2_hover.png); 
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string>F367D78A-0578-FBC4-A89E-65CB0AB3CCDE</string>
+   </property>
+   <property name="URL" stdset="0">
+    <string>http://www.baidu.com</string>
+   </property>
+   <property name="EXEPATH" stdset="0">
+    <string>c:\windows</string>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_BAIDU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_five">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>62</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_five{border-image: url(./skin/IDS_MINISKIN_DEFAULT/5.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+#miniplugin_five:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/5_hover.png); 
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string>F367D78A-0578-FBC4-A89E-65CB0AB3CCAD</string>
+   </property>
+   <property name="URL" stdset="0">
+    <string/>
+   </property>
+   <property name="EXEPATH" stdset="0">
+    <string>C:/WINDOWS/system32/calc.exe</string>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_CALC</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_one">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>4</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_one{border-image: url(./skin/IDS_MINISKIN_DEFAULT/1.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+#miniplugin_one:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/1_hover.png); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>72</width>
+     <height>71</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="pixmap" stdset="0">
+    <pixmap>../../../../Documents and Settings/Administrator/.designer/backup/1.PNG</pixmap>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string>A6CD67EE-16A0-4dbd-9ACB-34801E876418</string>
+   </property>
+   <property name="URL" stdset="0">
+    <string>http://www.google.cn</string>
+   </property>
+   <property name="EXEPATH" stdset="0">
+    <string/>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_GOOGLE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_six">
+   <property name="geometry">
+    <rect>
+     <x>242</x>
+     <y>62</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_six{border-image: url(./skin/IDS_MINISKIN_DEFAULT/6.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+#miniplugin_six:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/6_hover.png); 
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string>F367D78A-0578-FBC4-A89E-65CB0AB3CADC</string>
+   </property>
+   <property name="URL" stdset="0">
+    <string>http://www.tianya.cn</string>
+   </property>
+   <property name="EXEPATH" stdset="0">
+    <string/>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_TIANYA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_eight">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>110</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_eight{border-image: url(./skin/IDS_MINISKIN_DEFAULT/8.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+#miniplugin_eight:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/8_hover.png); 
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string/>
+   </property>
+   <property name="URL" stdset="0">
+    <string>http://www.qq.com</string>
+   </property>
+   <property name="EXEPATH" stdset="0">
+    <string/>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_QQ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_four">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>62</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_four{border-image: url(./skin/IDS_MINISKIN_DEFAULT/4.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+#miniplugin_four:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/4_hover.png); 
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string>F367D78A-0578-FBC4-A89E-65CB0AB3CCDB</string>
+   </property>
+   <property name="URL" stdset="0">
+    <string>http://www.sohu.com</string>
+   </property>
+   <property name="EXEPATH" stdset="0">
+    <string/>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_SOHU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_nine">
+   <property name="geometry">
+    <rect>
+     <x>242</x>
+     <y>110</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_nine{border-image: url(./skin/IDS_MINISKIN_DEFAULT/9.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+#miniplugin_nine:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/9_hover.png); 
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string>ED395DF6-E3BA-478e-8AE9-D8A1BF090214</string>
+   </property>
+   <property name="URL" stdset="0">
+    <string/>
+   </property>
+   <property name="EXEPATH" stdset="0">
+    <string/>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_SMS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="miniplugin_three">
+   <property name="geometry">
+    <rect>
+     <x>242</x>
+     <y>4</y>
+     <width>27</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>27</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_three{border-image: url(./skin/IDS_MINISKIN_DEFAULT/3.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+#miniplugin_three:hover{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/3_hover.png); 
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="CLASSID" stdset="0">
+    <string>ED395DF6-E3BA-478e-8AE9-D8A1BF090214</string>
+   </property>
+   <property name="URL" stdset="0">
+    <string>http://www.huawei.com</string>
+   </property>
+   <property name="EXEPATH" stdset="0">
+    <string/>
+   </property>
+   <property name="TOOLTIPID" stdset="0">
+    <string>IDS_TOOLTIP_HUAWEI</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_one">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>35</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_one{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_one:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_GOOGLE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_two">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>35</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_two{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_two:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_BAIDU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_three">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>35</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_three{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_three:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_HUAWEI</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_four">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>94</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_four{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_four:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_SOHU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_five">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>94</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_five{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_five:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_CALC</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_six">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>94</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_six{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_six:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_TIANYA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_seven">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_seven{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_seven:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_SINA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_eight">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>140</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_eight{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_eight:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_QQ</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="miniplugin_Label_nine">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>140</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#miniplugin_Label_nine{color:black;font-size:12px;font-family:Arial;}
+#miniplugin_Label_nine:hover{color:blue;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="LANGID" stdset="0">
+    <string>IDS_TOOLTIP_SMS</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

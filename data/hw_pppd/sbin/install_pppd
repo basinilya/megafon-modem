@@ -1,0 +1,11 @@
+#!/bin/bash
+INSTALLPATH=${PWD}/hw_pppd/sbin
+if [ "$(ls -l /lib/libc.so.* | awk -F "->" '{print$2}' | grep libc-2.12.1.so )" != "" ]
+then
+	rm -f ${INSTALLPATH}/pppd
+	cp -f ${INSTALLPATH}/extends/pppd2_12_1/pppd ${INSTALLPATH}
+	echo "PPPD Not support Current System to the PPPD Update..." 		
+        rm -rf ${INSTALLPATH}/extends
+else
+	rm -rf ${INSTALLPATH}/extends
+fi

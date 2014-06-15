@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<server>
+		<ip>update-nl.huawei.com</ip>
+		<port>80</port>
+		<virtualdirectory>MegaFon_Russia</virtualdirectory>
+		<ssl>0</ssl>
+		<customdirectory>Megafon_C209</customdirectory>
+	</server>
+		<components>
+		<component>
+			<name>UTPS</name>
+			<directory></directory>
+			<main>1</main>
+			<processname>MobilePartner.bin</processname>
+			<displayname>MegaFon | Modem</displayname>
+			<sequence>3</sequence>
+		</component>
+		<component>
+			<name>TCPU</name>
+			<directory></directory>
+			<main>0</main>
+			<processname>MobilePartner.bin</processname>
+			<displayname>MegaFon | Modem</displayname>
+			<sequence>2</sequence>
+		</component>
+		<component>
+			<name>UTPS Flash</name>
+			<directory></directory>
+			<main>0</main>
+			<processname>MobilePartner.bin</processname>
+			<displayname>MegaFon | Modem</displayname>
+			<sequence>1</sequence>
+		</component>
+	</components>
+</root>

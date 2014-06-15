@@ -1,0 +1,93 @@
+#!/bin/bash
+
+PATCH_PATH=$1
+: ${PATCH_PATH:=.}
+
+SYSTEM_BIT=$($(which getconf) LONG_BIT)
+
+if [ $SYSTEM_BIT -gt 32 ]
+then
+	POSTFIX=_64
+else
+	POSTFIX=
+fi
+
+SYS_KERN_VER=`uname -r`
+
+if [ -f /etc/issue ]
+then
+        if [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 12)" != "" ]
+	then
+		echo "The current system is Fedora 12"
+                TARGET_PATH="$PATCH_PATH"/Fedora12$POSTFIX/
+		TARGET_PATH_SRC="$PATCH_PATH"/31.5kernel-opensuse11.2-fedora12
+	elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.0)" != "" ]
+	then
+		echo "The current system is openSUSE 11.0"
+		TARGET_PATH="$PATCH_PATH"/OpenSUSE11.0$POSTFIX/
+		TARGET_PATH_SRC="$PATCH_PATH"/25.5kernel-opensuse11.0
+	elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.1)" != "" ]
+	then
+		echo "The current system is openSUSE 11.1"
+		TARGET_PATH="$PATCH_PATH"/OpenSUSE11.1$POSTFIX/
+		TARGET_PATH_SRC="$PATCH_PATH"/27.7kernel-opensuse11.1
+	elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.2)" != "" ]
+	then
+		echo "The current system is openSUSE 11.2"
+		TARGET_PATH="$PATCH_PATH"/OpenSUSE11.2$POSTFIX/
+		TARGET_PATH_SRC="$PATCH_PATH"/31.5kernel-opensuse11.2-fedora12
+	fi
+fi
+
+
+
+
+#######Begin: copy the acm_patch modules cdc-acm.ko to replace the crash bug################
+echo "ACM_TARGET_PATH = $TARGET_PATH"
+if [ "$TARGET_PATH" != "" ]
+then
+      TARGET_FILE="$TARGET_PATH"/cdc-acm.ko
+else
+      TARGET_FILE=""
+fi
+
+if [ "$TARGET_FILE" != "" ]
+then
+	TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+      	if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+	then
+		/sbin/modprobe -r cdc_acm
+		if [ -f /opt/acm_bakup/cdc-acm.ko ]
+		then
+			rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko
+			/sbin/depmod -a
+		else
+			/bin/mkdir /opt/acm_bakup
+			mv 	/lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko /opt/acm_bakup/cdc-acm.ko
+			/sbin/depmod -a
+		fi
+		cp "$TARGET_PATH"/cdc-acm.ko /lib/modules/$(uname -r)/kernel/drivers/usb/class/
+	else
+		CUR_PATH=`pwd`
+		cd "$TARGET_PATH_SRC"
+		/sbin/modprobe -r cdc_acm
+		if [ -f /opt/acm_bakup/cdc-acm.ko ]
+		then
+			rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko
+			/sbin/depmod -a
+		else
+			/bin/mkdir /opt/acm_bakup
+			mv 	/lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko /opt/acm_bakup/cdc-acm.ko
+			/sbin/depmod -a
+		fi
+		make clean
+		make modules
+		cd "$CUR_PATH"
+		cp "$TARGET_PATH_SRC"/src/cdc-acm.ko /lib/modules/$(uname -r)/kernel/drivers/usb/class/
+	fi
+	chmod 777 /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko
+	/sbin/depmod -a
+	/sbin/modprobe cdc_acm
+	TARGET_PATH=""
+fi
+#######End: copy the acm_patch modules cdc-acm.ko to replace the crash bug################

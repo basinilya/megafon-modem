@@ -1,0 +1,113 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">Germany</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Updater</item>
+<item name="ID_BUTTON_OK">OK</item>
+<item name="ID_BUTTON_CANCEL">Abbrechen</item>
+<item name="ID_MESSAGEBOX_ERROR">Fehler</item>
+<item name="ID_MESSAGEBOX_QUESTION">Bestätigen</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Information</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Wollen Sie wirklich beenden?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Beim nächsten Mal den aktuellen Download-Vorgang fortsetzen?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Beim nächsten Mal den aktuellen Update-Vorgang fortsetzen?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Beim nächsten Mal den aktuellen Installations-Vorgang fortsetzen?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Ja</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">Nein</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Abbrechen</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Information</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">Die neue Version von %1 wird installiert. Dieses Fenster wird geschlossen.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">"%1" muss vor Installation der Updates geschlossen werden.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">Wollen Sie fortfahren?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">"%1" lässt sich vom Updater nicht schließen.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">Manuelles Schließen vor erneutem Installationsversuch erforderlich.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">Der Updatemechanismus ist fehlgeschlagen da im Internet Explorer die Opton "Offlinebetrieb" aktiviert ist . Zum erfolgreichen Start des Updates bitte diese Option deaktivieren.</item>
+<item name="ID_SHEET_BUTTON_BACK">Zurück</item>
+<item name="ID_SHEET_BUTTON_NEXT">Nächster</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Download</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Installieren</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Erneut versuchen</item>
+<item name="ID_SHEET_BUTTON_FINISH">Fertig stellen</item>
+<item name="ID_SHEET_CAPTION">Online-Aktualisierung</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Updates werden gesucht...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT"> </item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 führt Update selbstständig durch...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 ist die Wiederaufnahme der Download-Prozess...</item>
+<item name="ID_PAGE_FEATURE_TIP">Updates gefunden</item>
+<item name="ID_PAGE_FEATURE_TIP1">Neue Funktionen</item>
+<item name="ID_PAGE_FEATURE_HEADER">Component</item>
+<item name="ID_PAGE_FEATURE_HEADER1">Size</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Download beendet</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">Nicht genügend Speicherplatz vorhanden oder Datenträger ist nicht vorhanden.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">Download der Updates</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Status</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Download aller Updates</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Installations-Vorgang:</item>
+<item name="ID_PAGE_DONE_TOPIC">Update abgeschlossen. Vielen Dank, dass Sie den Online-Update-Service verwendet haben.</item>
+<item name="ID_PAGE_DONE_RUN">Programm nach Update ausführen</item>
+<item name="ID_PAGE_DONE_REBOOT">Computer neu starten</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">Bei der von Ihnen verwendeten Version handelt es sich bereits um die neueste Version. Vielen Dank, dass Sie den Online-Update-Service verwendet haben.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Update aufgrund eines Fehlers fehlgeschlagen.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Keine Verbindung mit dem Update-Server möglich. Stellen Sie sicher, dass die Internetverbindung hergestellt ist und suchen Sie erneut nach Updates.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">Periodische Update-Suche deaktivieren</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Nach Updates suchen alle</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">Tage</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Proxy nicht verwenden</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">IE-Einstellungen als Proxy verwenden</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Selbstdefinierten HTTP-Proxy verwenden</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Adresse</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Port</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">Benutzername</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Passwort</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Sicherheitseinstellungen des Proxys</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Test</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Erkennen Sie die Netzwerkverbindung.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Klicken Sie auf, um den Vorgang abzubrechen Tests</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Erkennung, bitte warten...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">Die Daten des Internet-Explorer-Proxys sind nicht lesbar.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Verbindung fehlgeschlagen.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Verbindung hergestellt.</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Update-Einstellungen</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">Neue Version gefunden.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Zum Durchführen des Updates hier klicken.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Updates werden gesucht...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Updates gefunden. Zum Download hier klicken.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">Keine Updates gefunden. Zum Beenden hier klicken.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Download der Updates...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Download der Updates abgeschlossen. Zur Installation hier klicken.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Installation der Updates...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Update abgeschlossen. Zur Ansicht des Update-Ergebnisses hier klicken.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Update aufgrund eines Fehlers fehlgeschlagen.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">Sie müssen Ihren Computer neu starten, um das Update. Klicken Sie auf "%1" 
+jetzt neu zu starten oder "%2", um später manuell neu starten.</item>
+<item name="ID_LIST_DOWNLOAD">Download beendet</item>
+<item name="ID_LIST_INSTALLING">Installation</item>
+<item name="ID_LIST_FINISHED">Abgeschlossen</item>
+<item name="ID_LIST_SUCCEED">Erfolgreich</item>
+<item name="ID_LIST_FAILED">Fehlgeschlagen</item>
+<item name="ID_LIST_CANCELED">Abgebrochen</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">KB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+<item name="ID_MAINNAME">G3 eWalk</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH_UTPSFORCE">Ihre Anwendung muss aktualisiert werden. Bitte installieren Sie die Aktualisierungen.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_URLPROMPTFINISH">Aktualisierung abgeschlossen.</item>
+<item name="ID_TCPUANDUTPS_UPDATE_PROMPT">Firmware und Software müssen aktualisiert werden. Klicken Sie auf %1, 
+um die Firmware oder auf "%2", um die Software zu aktualisieren.
+um die Firmware oder auf "%2", um die Software zu aktualisieren.</item>
+<item name="ID_STATIC_FIRMWAREUPDATE_PROMPT">Eine neue Firmwareversion %1 wurde gefunden. Bitte laden Sie die neue Version auf folgender Website herunter: </item>
+<item name="ID_MESSAGEBOX_UPDATE_SOFTWARE_FORCE">Das G3 eWalk muss für verbesserte drahtlose Hochgeschwindigkeits-Netzwerkdienste aktualisiert werden.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NOTE">Hinweis: Die Software-Aktualisierungen sind kostenlos.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_BREAK_DIALUP">Die aktuelle Verbindung wird getrennt.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NORMAL">Aktualisierungen gefunden. Bitte herunterladen.</item>
+</module>
+</utpsdoc>

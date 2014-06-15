@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<utpsdoc type="WiFiProfile">
+
+<function>
+	<default>0</default>
+	<SSIDNotify>0</SSIDNotify>
+        <DisplayAuth>0</DisplayAuth>
+
+	<auth>
+	<item name="open" ></item>
+	<item name="shared" ></item>
+	<item name="WPA(EAP)" ></item>
+	<item name="WPAPSK" ></item>
+	<item name="WPA2(EAP)" ></item>
+	<item name="WPA2PSK"></item>
+	<item name="IEEE 802.1X" ></item>
+	</auth>
+
+        <Encrypt>
+	<item name="none" ></item>
+	<item name="WEP"></item>
+	<item name="TKIP"></item>
+	<item name="CCMP"></item>
+	</Encrypt>
+
+	<profilesameAsSSID>true</profilesameAsSSID>
+	<InitDisconnected>true</InitDisconnected>
+	<ExitDisconnected>true</ExitDisconnected>
+</function>
+
+<AuthService>
+<map>
+<item name="None" Service="">0</item>
+<!--item name="ChinaTelecom Web Auth" Service="WebAuth">1</item-->
+<!--item name="PPPoE" Service="PPPoE">2</item-->
+<!--item name="TMN Web Auth" Service="WebAuth">3</item-->
+<item name="SingTel Web Auth" Service="WebAuth">1</item>
+</map>
+
+<type>
+	<item index="0" langid="IDS_NO_AUTH" ></item>
+	<!--item index="1" langid="IDS_WEB_AUTH_CHINATELECOM" ></item-->
+	<!--item index="2" langid="IDS_PPPOE_AUTH" ></item-->
+	<!--item index="3" langid="IDS_WEB_AUTH_TNM" ></item-->
+	<item index="1" langid="IDS_WEB_AUTH_TNM" ></item>
+</type>
+
+</AuthService>
+
+<webAuth>
+	<User-Agent>CDMA+WLAN</User-Agent>
+	<Prefix></Prefix>
+	<infix></infix>
+	<suffix></suffix>
+</webAuth>
+
+
+
+<conflictService>
+<!--item>AcPrfMgrSvc</item-->
+<item RestartCard="1">WLANKEEPER</item>
+<item>S24EventMonitor</item>
+<item>wltrysvc</item>
+<item>eNet Service</item>
+<item>SwiWiFiComm</item>
+<item>AcSvc</item>
+</conflictService>
+
+<conflictApp>
+<!--item>
+<AppName>tscui.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>HKEY_LOCAL_MACHINE\SOFTWARE\BellMobility</RegPath>
+<RegKey>ExePath</RegKey>
+<DisplayName>Bell Mobile Connect</DisplayName>
+<cmdLine>true</cmdLine>
+<RestartCard>false</RestartCard>
+</item-->
+
+<item>
+<AppName>UI.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{D4B5467F-B1F6-43EB-A73D-035881F17B3E}</RegPath>
+<RegKey>InstallLocation</RegKey>
+<DisplayName>UI</DisplayName>
+</item>
+
+<item>
+<AppName>iFrmewrk.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Run</RegPath>
+<RegKey>IntelWireless</RegKey>
+<DisplayName>Intel(R) PROSet/Wireless</DisplayName>
+<cmdLine>true</cmdLine>
+<RestartCard>true</RestartCard>
+</item>
+
+<item>
+<AppName>ACTray.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{7EB114D8-207F-45AE-BABD-1669715F2630}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACMainGUI.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{7EB114D8-207F-45AE-BABD-1669715F2630}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>Access Connections.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{7EB114D8-207F-45AE-BABD-1669715F2630}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>Access Connections.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{8E537894-A559-4D60-B3CB-F4485E3D24E3}</RegPath>
+<RegKey>InstallLocation</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACWLIcon.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{7EB114D8-207F-45AE-BABD-1669715F2630}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACWLIcon.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{8E537894-A559-4D60-B3CB-F4485E3D24E3}</RegPath>
+<RegKey>InstallLocation</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACTray.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4BD295B9-0190-4C54-B08E-33A6ECA922DF}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>Access Connections.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4BD295B9-0190-4C54-B08E-33A6ECA922DF}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACMainGUI.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4BD295B9-0190-4C54-B08E-33A6ECA922DF}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACWLIcon.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4BD295B9-0190-4C54-B08E-33A6ECA922DF}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACTray.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6BCA18A4-BB64-4A96-9AC4-E6A6DA072DE3}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>Access Connections.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6BCA18A4-BB64-4A96-9AC4-E6A6DA072DE3}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACMainGUI.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6BCA18A4-BB64-4A96-9AC4-E6A6DA072DE3}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>ACWLIcon.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6BCA18A4-BB64-4A96-9AC4-E6A6DA072DE3}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Access Connections</DisplayName>
+</item>
+
+<item>
+<AppName>Dot1xCfg.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{7EB114D8-207F-45AE-BABD-1669715F2630}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName></DisplayName>
+</item>
+
+<item>
+<AppName>eNMTray.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{C06554A1-2C1E-4D20-B613-EE62C79927CC}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Acer eNet Management</DisplayName>
+</item>
+
+
+<item>
+<AppName>GCXXManager.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Sony Ericsson\GCXX Manager\UninstallInfo\Applets\InstalledFiles</RegPath>
+<RegKey>MiscCopyFiles1</RegKey>
+<DisplayName>Sony Ericsson Wireless Manager</DisplayName>
+</item>
+
+<!--item>
+<AppName>ePower_DMC.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Sony Ericsson\GCXX Manager\UninstallInfo\Applets\InstalledFiles</RegPath>
+<RegKey>DisplayIcon</RegKey>
+</item>
+
+<item>
+<AppName>eNMTray.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{C06554A1-2C1E-4D20-B613-EE62C79927CC}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+</item-->
+
+<!--item>
+<AppName>LPMGR.EXE</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{CF5737AF-8550-4546-A69B-0EA9EF5A9B55}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Productivity Center</DisplayName>
+</item-->
+
+<item>
+<AppName>AMSG.EXE</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{E7E836B8-4BDD-454F-82E6-5FEA17C83AD4}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>ThinkVantage Message Center</DisplayName>
+</item>
+
+
+
+<item>
+<AppName>OSCM3.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{1592C0AE-33C4-4729-85A0-EC9B2F217477}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sprint PCS Vision</DisplayName>
+</item>
+
+<item>
+<AppName>Watcher.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{40CD5E65-BCEC-46B0-AAC8-9E8C3AB887E9}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sierra Wireless AirCard Watcher</DisplayName>
+</item>
+
+<item>
+<AppName>Network Adapter Manager.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{40CD5E65-BCEC-46B0-AAC8-9E8C3AB887E9}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sierra Wireless AirCard Watcher</DisplayName>
+</item>
+
+<item>
+<AppName>Watcher.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{EFC10E88-F0C3-403B-86FE-73ADA3A7DB90}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sierra Wireless AirCard Watcher</DisplayName>
+</item>
+
+<item>
+<AppName>Network Adapter Manager.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{EFC10E88-F0C3-403B-86FE-73ADA3A7DB90}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sierra Wireless AirCard Watcher</DisplayName>
+</item>
+
+
+<item>
+<AppName>MPWatcher.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{81EF21D5-6584-4050-A9BC-216DA20FED76}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sierra Wireless AirCard Watcher</DisplayName>
+</item>
+
+<item>
+<AppName>Watcher.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{39EA265C-37BB-4EDC-9437-4F6524371A9D}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sierra Wireless AirCard Watcher</DisplayName>
+</item>
+
+<item>
+<AppName>Network Adapter Manager.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{39EA265C-37BB-4EDC-9437-4F6524371A9D}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sierra Wireless AirCard Watcher</DisplayName>
+</item>
+
+<item>
+<AppName>Watcher.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{22BAA100-F022-483C-80E4-EBAB5A767B20}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Sierra Wireless AirCard Watcher</DisplayName>
+</item>
+
+<item>
+<AppName>iPassConnectGUI.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Classes\CLSID\{1CEFFC82-3A08-40AD-84A4-87ED705F1408}\VersionIndependentProgID</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>iPass Connect</DisplayName>
+</item>
+
+<item>
+<AppName>iPassConnectEngine.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Classes\CLSID\{1CEFFC82-3A08-40AD-84A4-87ED705F1408}\VersionIndependentProgID</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>iPass Connect</DisplayName>
+</item>
+
+<item>
+<AppName>CingularCCM.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Cingular</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Cingular Connection Manager</DisplayName>
+</item>
+
+<item>
+<AppName>odClientMgr.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>{B3358201-26E9-4283-AE39-656008B60B3A}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Funk Odyssey Client</DisplayName>
+</item>
+
+<item>
+<AppName>ConnectionClient.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>{F6926D2B-1837-4F2C-A3FD-FE6B7E750662}</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>AEGIS SecureConnect</DisplayName>
+</item>
+
+<item>
+<AppName>quickset.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Dell Computer Corporation\QuickSet</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Dell QuickSet</DisplayName>
+</item>
+
+
+<item>
+<AppName>bcmwltry.exe</AppName>
+<RegHead>2</RegHead>
+<RegPath>SOFTWARE\Dell Computer Corporation\QuickSet</RegPath>
+<RegKey>DisplayIcon</RegKey>
+<DisplayName>Dell /Broadcom Wireless Utility</DisplayName>
+</item>
+</conflictApp>
+
+<WisprSSID>
+	<!-- match字段表示匹配类型, 0x1表示不区分大小写,否则区分; 0x2表示SSID支持模糊匹配,否则精确匹配;默认0-->
+	<!-- suffix字段表示预置的账号后缀,多个预置以分号隔开-->
+	<!--item name="hinet" match="0" suffix=""></item-->
+	<!--item name="Dlink" match="1" suffix="sss;sgt;"></item-->
+</WisprSSID>
+<x8021XSSID>
+   <item>eap-open</item>
+   <item>BB</item>
+   <item>CC</item>
+   <item>DD</item>
+</x8021XSSID>
+<EAPREALMNAME>
+<item>wlan.mnc00.mcc460.3gppnetwork.org</item> 
+</EAPREALMNAME>
+</utpsdoc>

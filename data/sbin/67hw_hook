@@ -1,0 +1,22 @@
+#!/bin/bash
+case $1 in
+    #suspend to disK
+    hibernate)
+        dbus-send --system /com/huawei/utps2/linux/powermgr com.huawei.utps2.linux.powermgr.Hibernate
+        ;;
+    #suspend to RAM
+    suspend)
+        dbus-send --system /com/huawei/utps2/linux/powermgr com.huawei.utps2.linux.powermgr.Suspend
+        ;;
+    #resume from disk
+    thaw)
+        dbus-send --system /com/huawei/utps2/linux/powermgr com.huawei.utps2.linux.powermgr.Thaw
+        ;;
+    #resume from RAM
+    resume)
+        dbus-send --system /com/huawei/utps2/linux/powermgr com.huawei.utps2.linux.powermgr.Resume
+        ;;
+    *)
+        echo hello
+        ;;
+esac

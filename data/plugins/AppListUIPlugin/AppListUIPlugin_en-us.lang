@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="AppListUIPlugin">
+<item name="IDS_TOOLTIP_SMS">SMS</item>
+<item name="IDS_TOOLTIP_GOOGLE">Google</item>
+<item name="IDS_TOOLTIP_BAIDU">Baidu</item>
+<item name="IDS_TOOLTIP_SOHU">sohu</item>
+<item name="IDS_TOOLTIP_TIANYA">tianya</item>
+<item name="IDS_TOOLTIP_HUAWEI">huawei</item>
+<item name="IDS_TOOLTIP_QQ">QQ</item>
+<item name="IDS_TOOLTIP_CALC">Calc</item>
+<item name="IDS_TOOLTIP_SINA">Sina</item>
+</module>
+</utpsdoc>

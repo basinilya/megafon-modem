@@ -1,0 +1,162 @@
+*{
+    font-size:12px;
+    font-family:Arial;
+}
+*#Main_DialogFrame{
+   border-image: url(./Skin/res/frame_child_border.png) 31 3 5 3;
+   border-top-width: 31px;
+   border-right-width: 3px;
+   border-bottom-width: 5px;
+   border-left-width: 3px;
+   background-image: url(./Skin/res/uiplugin_bg.png);
+}
+
+/*
+.CDlgSetting{
+   background-image: url(./Skin/res/uiplugin_bg.png);
+}
+*/
+/**/
+QGroupBox{
+   border-image: url(./Skin/res/uiplugin_bg.png);
+}
+*#Main_GroupBox{
+    border-image: url(./Skin/res/uiplugin_bg.png);
+    border-width: 1px;
+    border-style: solid;
+}
+*#BGUpdate_Frame{
+    border-image: url(./Skin/res/group_box_bg_line_curve_box.png);
+    border-width: 1px;
+    border-style: solid;
+}
+
+*#Common_GroupBox{
+    border-image: url(./Skin/res/group_box_bg_line_curve_box.png);
+    border-width: 1px;
+    border-style: solid;
+}
+/*
+.CDlgSheetUpdate{
+   background-image: url(./Skin/res/uiplugin_bg.png);
+    border-radius: 5;
+}*/
+*#Sheet_GroupBox{
+    border-image: url(./Skin/res/uiplugin_bg.png);
+    border-width: 1px;
+    border-style: solid;
+}
+IXMessageBox{
+   background-image: url(./Skin/res/uiplugin_bg.png);
+   border-radius: 3;
+}
+
+*#Close_Button{
+    border-image: url(./Skin/res/close_button_normal.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Close_Button:hover{
+    border-image: url(./Skin/res/close_button_hover.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Close_Button:pressed
+{
+    border-image: url(./Skin/res/close_button_press.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Close_Button:disabled{
+    border-image: url(./Skin/res/close_button_disable.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Minimize_Button{
+    border-image: url(./Skin/res/minimum_normal.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Minimize_Button:hover{
+    border-image: url(./Skin/res/minimum_hover.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Minimize_Button:pressed
+{
+    border-image: url(./Skin/res/minimum_press.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+*#Minimize_Button:disabled{
+    border-image: url(./Skin/res/minimum_disable.png);
+    border-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3;
+}
+
+/*=======Begin 20100916  hkf31334 : set TitleText color ====*/
+*#LabelTitle { 
+	color: white;
+	font-family:Arial;
+}
+/*==================END=============================*/
+/*=======Begin 20100916  hkf31334 : set Mac TitleBar ====*/
+*#Mac_LabelTitle { 
+	color: white;
+	font-family:Arial;
+}
+
+*#Mac_Close_Button {
+	border: 1px;
+	background-image: url(./Skin/res/mac/close_button_normal.png);
+}
+
+*#Mac_Close_Button:hover {
+	background-image: url(./Skin/res/mac/close_button_hover.png);
+}
+
+*#Mac_Close_Button:pressed {
+	background-image: url(./Skin/res/mac/close_button_press.png);
+}
+
+*#Mac_Close_Button:!enabled {
+	background-image: url(./Skin/res/mac/close_button_disable.png);
+}
+
+*#Mac_Minimize_Button {
+	border: 1px;
+	background-image: url(./Skin/res/mac/minimum_normal.png);
+}
+
+*#Mac_Minimize_Button:hover {
+	background-image: url(./Skin/res/mac/minimum_hover.png);
+}
+
+*#Mac_Minimize_Button:pressed {
+	background-image: url(./Skin/res/mac/minimum_press.png);
+}
+
+*#Mac_Minimize_Button:!enabled {
+	background-image: url(./Skin/res/mac/minimum_disable.png);
+}
+/*=======End 20100814  hKF31334 : set Mac TitleBar ====*/
+*#Common_Line{
+		border-image:  url(./Skin/res/border_line.png);
+    border-radius: 3;
+}

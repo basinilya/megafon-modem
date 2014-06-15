@@ -1,0 +1,184 @@
+--- linux-2.6.34.7_orig/drivers/usb/serial/usb-serial.c	2010-09-13 12:54:58.000000000 -0400
++++ linux-2.6.34.7/drivers/usb/serial/usb-serial.c	2011-01-13 19:38:28.000000000 -0500
+@@ -17,6 +17,10 @@
+  *
+  */
+ 
++//From: ma rui <m00150988@huawei.com>
++//  This patch for opensuse 11.3 / Mandriva 20102 kernel panic when user hibernate and resume with the huawei datacard recognise huawei data card. 
++//Signed-off-by:ma rui <m00150988@huawei.com>
++
+ #include <linux/kernel.h>
+ #include <linux/errno.h>
+ #include <linux/init.h>
+@@ -42,7 +46,7 @@
+  * Version Information
+  */
+ #define DRIVER_AUTHOR "Greg Kroah-Hartman, greg@kroah.com, http://www.kroah.com/linux/"
+-#define DRIVER_DESC "USB Serial Driver core"
++#define DRIVER_DESC "patch for openSUSE 11.3 crash USB Serial Driver core"
+ 
+ /* Driver structure we register with the USB core */
+ static struct usb_driver usb_serial_driver = {
+@@ -65,6 +69,7 @@ static int debug;
+ /* initially all NULL */
+ static struct usb_serial *serial_table[SERIAL_TTY_MINORS];
+ static DEFINE_MUTEX(table_lock);
++
+ static LIST_HEAD(usb_serial_driver_list);
+ 
+ /*
+@@ -150,26 +155,41 @@ static void destroy_serial(struct kref *
+ 
+ 	serial = to_usb_serial(kref);
+ 
++
+ 	dbg("%s - %s", __func__, serial->type->description);
+ 
+ 	/* return the minor range that this device had */
+-	if (serial->minor != SERIAL_TTY_NO_MINOR)
++	if (serial->minor != SERIAL_TTY_NO_MINOR) {
+ 		return_serial(serial);
+-
+-	if (serial->attached)
+-		serial->type->release(serial);
+-
++	}
++   	//printk(KERN_ERR"marui-%s: called2--\n", __func__);
++	if (serial->attached && serial->type)
++        {
++            	printk(KERN_ERR"marui-%s:  serial->attached \n", __func__);
++                if (!serial->disconnected)
++		{   
++                    serial->type->release(serial);
++                }
++                else
++                {
++                    printk(KERN_ERR"marui-%s: release\n", __func__);
++                }
++        }
++	printk(KERN_ERR"fxz-%s: release\n", __func__);
+ 	/* Now that nothing is using the ports, they can be freed */
+ 	for (i = 0; i < serial->num_port_pointers; ++i) {
+ 		port = serial->port[i];
+ 		if (port) {
+ 			port->serial = NULL;
++			printk(KERN_ERR"fxz-%s: port begin\n", __func__);
+ 			put_device(&port->dev);
++			printk(KERN_ERR"fxz-%s: port end\n", __func__);
+ 		}
+ 	}
+-
++	printk(KERN_ERR"fxz-%s: serial usbputdev begin\n", __func__);
+ 	usb_put_dev(serial->dev);
+ 	kfree(serial);
++	printk(KERN_ERR"fxz-%s: serial usbputdev end\n", __func__);
+ }
+ 
+ void usb_serial_put(struct usb_serial *serial)
+@@ -268,6 +288,7 @@ static int serial_open(struct tty_struct
+ 	struct usb_serial_port *port = tty->driver_data;
+ 
+ 	dbg("%s - port %d", __func__, port->number);
++        printk(KERN_ERR"%s start !!!! \n",__func__);
+ 	return tty_port_open(&port->port, tty, filp);
+ }
+ 
+@@ -306,6 +327,8 @@ static void serial_close(struct tty_stru
+ {
+ 	struct usb_serial_port *port = tty->driver_data;
+ 	dbg("%s - port %d", __func__, port->number);
++        printk(KERN_ERR"%s start\n",__func__);
++
+ 	tty_port_close(&port->port, tty, filp);
+ }
+ 
+@@ -328,23 +351,41 @@ static void serial_cleanup(struct tty_st
+ 	/* The console is magical.  Do not hang up the console hardware
+ 	 * or there will be tears.
+ 	 */
++        printk(KERN_ERR"%s start\n",__func__);
+ 	if (port->console)
++        {
+ 		return;
+-
++        } 
+ 	dbg("%s - port %d", __func__, port->number);
+ 
+ 	tty->driver_data = NULL;
+ 
+-	serial = port->serial;
+-	owner = serial->type->driver.owner;
+ 
++	serial = port->serial;
++	mutex_lock(&serial->disc_mutex);
++        if (!serial->disconnected) 
++	    owner = serial->type->driver.owner;
++	mutex_unlock(&serial->disc_mutex);
+ 	mutex_lock(&serial->disc_mutex);
+ 	if (!serial->disconnected)
+ 		usb_autopm_put_interface(serial->interface);
+ 	mutex_unlock(&serial->disc_mutex);
+ 
++
++        if (NULL == serial)
++        {
++              printk(KERN_ERR"%s NULL == serial\n",__func__);
++              return ;
++        }
++
++        printk(KERN_ERR"%s begin\n",__func__);
+ 	usb_serial_put(serial);
+-	module_put(owner);
++        printk(KERN_ERR"%s end\n",__func__);
++	mutex_lock(&serial->disc_mutex);
++        if (!serial->disconnected && NULL != owner) {
++	    module_put(owner);
++	}
++	mutex_unlock(&serial->disc_mutex);
+ }
+ 
+ static int serial_write(struct tty_struct *tty, const unsigned char *buf,
+@@ -501,9 +542,10 @@ static int serial_tiocmget(struct tty_st
+ 	struct usb_serial_port *port = tty->driver_data;
+ 
+ 	dbg("%s - port %d", __func__, port->number);
+-
+-	if (port->serial->type->tiocmget)
+-		return port->serial->type->tiocmget(tty, file);
++        if (NULL != port && NULL != port->serial && NULL != port->serial->type && NULL != port->serial->type->tiocmget) 
++	{
++            return port->serial->type->tiocmget(tty, file);
++        }
+ 	return -EINVAL;
+ }
+ 
+@@ -688,6 +730,8 @@ static const struct tty_port_operations
+ int usb_serial_probe(struct usb_interface *interface,
+ 			       const struct usb_device_id *id)
+ {
++
++        printk(KERN_ERR"%s openSUSE 11.3\n",__func__);
+ 	struct usb_device *dev = interface_to_usbdev(interface);
+ 	struct usb_serial *serial = NULL;
+ 	struct usb_serial_port *port;
+@@ -1052,6 +1096,8 @@ int usb_serial_probe(struct usb_interfac
+ 
+ 	usb_serial_console_init(debug, minor);
+ 
++        
++
+ exit:
+ 	/* success */
+ 	usb_set_intfdata(interface, serial);
+@@ -1110,7 +1156,10 @@ void usb_serial_disconnect(struct usb_in
+ 	serial->type->disconnect(serial);
+ 
+ 	/* let the last holder of this object cause it to be cleaned up */
++	//mutex_lock(&serial->disc_mutex);
+ 	usb_serial_put(serial);
++        printk(KERN_ERR"%s serial start\n",__func__);
++	//mutex_unlock(&serial->disc_mutex);
+ 	dev_info(dev, "device disconnected\n");
+ }
+ EXPORT_SYMBOL_GPL(usb_serial_disconnect);

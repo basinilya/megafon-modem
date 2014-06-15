@@ -1,0 +1,90 @@
+#!/bin/bash
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Fedora 11 crash bug################
+if [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 11)" != "" ]
+then
+		/sbin/modprobe -r option
+		/sbin/modprobe -r usbserial
+		if [ -f /opt/bakup/usbserial_orig.ko ]
+		then
+			rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko
+			mv 	/opt/bakup/usbserial_orig.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko 
+			rm -rf /opt/bakup
+		fi
+		/sbin/depmod -a
+		/sbin/modprobe option
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Fedora 11 crash bug################
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Mandirva 200901 crash bug################
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2009.1)" != "" ]
+then
+		/sbin/modprobe -r option
+		/sbin/modprobe -r usbserial
+		if [ -f /opt/bakup/usbserial_orig.ko.gz ]
+		then
+			rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+			mv 	/opt/bakup/usbserial_orig.ko.gz /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz 
+			rm -rf /opt/bakup
+		fi
+		/sbin/depmod -a
+		/sbin/modprobe option
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Mandirva 200901 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Mandirva 2010.0 crash bug################
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.0)" != "" ]
+then
+		/sbin/modprobe -r option
+		/sbin/modprobe -r usbserial
+		if [ -f /opt/bakup/usbserial_orig.ko.gz ]
+		then
+			rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+			mv 	/opt/bakup/usbserial_orig.ko.gz /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz 
+			rm -rf /opt/bakup
+		fi
+		/sbin/depmod -a
+		/sbin/modprobe option
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Mandirva 2010.0 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for Mandirva 201001 crash bug################
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.1)" != "" ]
+then
+		/sbin/modprobe -r option
+		/sbin/modprobe -r usbserial
+		if [ -f /opt/bakup/usbserial_orig.ko.gz ]
+		then
+			rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+			mv 	/opt/bakup/usbserial_orig.ko.gz /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz 
+			rm -rf /opt/bakup
+		fi
+		/sbin/depmod -a
+		/sbin/modprobe option
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for Mandirva 201001 crash bug################
+
+#######Begin: copy the patch module usbserial.ko to replace the orginal one for openSUSE11.2 crash bug################
+if [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.2)" != "" ]
+then
+                /sbin/modprobe -r option
+                /sbin/modprobe -r usbserial
+                if [ -f /opt/bakup/usbserial_orig.ko.gz ]
+                then
+                        rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+                        mv      /opt/bakup/usbserial_orig.ko.gz /lib/modules/$(uname -r)/kernel/drivers/usb/serial/usbserial.ko.gz
+                        rm -rf /opt/bakup
+                fi
+                /sbin/depmod -a
+                /sbin/modprobe option
+fi
+#######End: copy the patch module usbserial.ko to replace the orginal one for openSUSE11.2 crash bug################
+
+#######Begin: uninstall the patch kernel module hw_usb-storage for the SD no driver attached bug.################
+if [ -f /lib/modules/$(uname -r)/kernel/drivers/usb/storage/hw_usb-storage.ko ]
+then
+	/sbin/rmmod -f hw_usb-storage
+	rm -f /lib/modules/$(uname -r)/kernel/drivers/usb/storage/hw_usb-storage.ko
+	/sbin/depmod -a
+fi
+
+#######End: uninstall the patch kernel module hw_usb-storage for the SD no driver attached bug.################

@@ -1,0 +1,119 @@
+#!/bin/bash
+#  pls add rules to udev, this can execute our background program automatically.
+#   ACTION=="add", ATTRS{idVendor}=="12d1", KERNEL=="ttyUSB*", RUN+="/bin/touch /dev/huawei_mobile"
+#   ACTION=="add", ATTRS{idVendor}=="12d1", KERNEL=="ttyUSB*", RUN+="/bin/startMobilePartner"    *********<<<<
+
+export DISPLAY=":0"
+export XAUTHLOCALNAME=`hostname`
+
+####################Begin: Add the solution for the issue that run dashboard before login on Desktop#########################
+###Begin: DTS2011120607325 lkf36757 update 2011-12-21
+if [ "$(cat /etc/issue |grep Fedora)" != "" ]
+then
+    ####DTS2012051902287 added by l81005329 2012-06-11
+    if [ "$(cat /etc/issue |grep 16)" != "" -o "$(cat /etc/issue |grep 17)" != "" ]
+    then
+        while [ "$(who |grep :0)" != "" -a "$(who|awk '{print $1}'|grep unknown)" != "" -o "$(echo `who`)" == "" ]
+        do
+              sleep 3
+        done
+    fi
+elif [ "$(cat /etc/issue |grep Ubuntu)" != "" -a "$(cat /etc/issue |grep 11.10)" != "" ]
+then
+	sleep 3
+elif [ "$(cat /etc/issue |grep Mint)" != "" -a "$(cat /etc/issue |grep 12)" != "" ]
+then
+	sleep 3
+else
+    while [ "$(who |grep :0)" == "" -a "$(who |grep console)" == "" ]
+    do
+          sleep 3
+    done
+fi
+###End:DTS2011120607325 lkf36757 update 2011-12-21
+####################End: Add the solution for the issue that run dashboard before login on Desktop##########################
+
+if [ "$1" != "" ]
+then 
+	exec $1
+	exit 0
+fi
+
+if [ -r /etc/default/locale ]; then
+  . /etc/default/locale
+  export LANG LANGUAGE
+elif [ -r /etc/environment ]; then
+  . /etc/environment
+  export LANG LANGUAGE
+fi
+
+
+if [ -f /etc/datacard_config ]
+then
+    . /etc/datacard_config
+    echo ""$path/$name""
+    if [ -x "$path/$name" ]
+    then
+       echo "`date` exec $path/$name " >> /var/log/syslog
+       exec "$path/$name"
+       exit 0
+    fi
+fi
+
+DESKTOP_FILE=`grep -H 'Comment=MobilePartner Application' /root/Desktop/*.desktop | awk -F ':' '{print $1}' `
+
+if [ -f "$DESKTOP_FILE" ];then
+    echo "find desktop file, $DESKTOP_FILE"
+else
+    DESKTOP_FILE="/root/Desktop/MobilePartner.desktop"
+    if [ -f "$DESKTOP_FILE" ];then
+       echo "use $DESKTOP_FILE"
+    else
+       DESKTOP_FILE="/etc/datacard_config"
+       echo "use $DESKTOP_FILE"
+    fi
+fi
+
+MOBILE_HOME_PATH=`grep -H Path "$DESKTOP_FILE" | awk -F '=' '{print $2}'`
+MOBILE_EXEC=`grep -H Exec "$DESKTOP_FILE" | awk -F '=' '{print $2}'`
+
+
+#LOGFILE="`dirname $MOBILE_EXEC`/hello.txt"
+LOGFILE="/dev/null"
+DATE=`date`
+LINE=0
+if [ -e $LOGFILE ]
+then
+LINE=`wc -l $LOGFILE | awk '{print $1}'`
+fi
+
+echo " $LINE hello world!!! ==== $DATE" >> $LOGFILE
+
+
+
+echo DISPLAY=$DISPLAY
+echo XAUTHLOCALNAME=$XAUTHLOCALNAME
+
+
+
+echo MOBILE_EXEC=$MOBILE_EXEC
+echo ISRUNNING=$ISRUNNING
+
+if [ -x $MOBILE_EXEC ]
+then
+#echo "\"$MOBILE_EXEC\" is running." | wall
+exec $MOBILE_EXEC
+else
+    #echo "\"$MOBILE_EXEC\" is not exist or is running." | wall
+    echo "\"$MOBILE_EXEC\" is not exist or is running."
+    MOBILE_EXEC="/usr/bin/MobilePartner"
+
+    if [ -x $MOBILE_EXEC ]
+    then
+        #echo "\"$MOBILE_EXEC\" is running." | wall
+        exec "$MOBILE_EXEC"
+    else
+        echo "PATH=$PATH"
+        exec MobilePartner
+    fi
+fi

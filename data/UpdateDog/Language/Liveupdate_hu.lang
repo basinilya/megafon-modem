@@ -1,0 +1,113 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">Hungarian</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Programfrissítő</item>
+<item name="ID_BUTTON_OK">OK</item>
+<item name="ID_BUTTON_CANCEL">Mégse</item>
+<item name="ID_MESSAGEBOX_ERROR">Hiba</item>
+<item name="ID_MESSAGEBOX_QUESTION">Megerősít</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Információ</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Biztosan kilép?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Legközelebb folytatja a jelenlegi letöltési folyamatot?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Legközelebb folytatja a jelenlegi feltöltési folyamatot?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Legközelebb folytatja a jelenlegi telepítési folyamatot?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Igen</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">Nem</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Mégse</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Információ</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">A % új változata telepítésre kerül. Ez az ablak bezáródik.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">A "%1" megszakad a frissítés telepítése előtt.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">Biztosan folytatja?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">A frissítő nem tudja befejezni a "%1"-t.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">Be kell zárnia manuálisan, mielőtt újra megpróbálja telepíteni.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">A frissítési funkció nem működik mivel az Intenet Explorer-en a "Kapcsolat nélküli munka" opció engedélyezve van. A frissítés sikeres indítása érdekében iktassa ki azt.</item>
+<item name="ID_SHEET_BUTTON_BACK">Vissza</item>
+<item name="ID_SHEET_BUTTON_NEXT">Következő</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Letöltés</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Install</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Újra</item>
+<item name="ID_SHEET_BUTTON_FINISH">Befejezés</item>
+<item name="ID_SHEET_CAPTION">Kapcsolatfelvétel</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Frissítések keresése...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT"></item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 frissíti önmagát...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 folytatási letöltése folyamatban...</item>
+<item name="ID_PAGE_FEATURE_TIP">Frissítés található</item>
+<item name="ID_PAGE_FEATURE_TIP1">Új jellemzők</item>
+<item name="ID_PAGE_FEATURE_HEADER">Alkatrész</item>
+<item name="ID_PAGE_FEATURE_HEADER1">Méret</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Letöltve</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">A diszken nincs elegendő hely vagy a diszk nem található.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">A frissítés letöltése befejeződött</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Állapot</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Frissítések letöltése kész</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Telepítési folyamat:</item>
+<item name="ID_PAGE_DONE_TOPIC">Frissítés kész. Köszönjük, hogy igénybe vette az Online frissítési szolgáltatást.</item>
+<item name="ID_PAGE_DONE_RUN">Futassa a programot a frissítés után</item>
+<item name="ID_PAGE_DONE_REBOOT">Indítsa újra a számítógépet</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">Az Ön által használt verzió már a legújabb verzió. Köszönjük, hogy igénybe vette az Online frissítési szolgáltatást.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Frissítés sikertelen, mert néhány hiba történt.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Nem tud kommunikálni a frissítési kiszolgálóval. Erősítse meg, hogy csatlakozva van az internethez és próbálkozzon újból a program frissítésével.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">A rendszeres frissítések ellenőrzésének letiltása</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Frissítések ellenőrzése minden</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">nap</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Ne használjon proxyt</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">Az IE beállítások használata proxyként</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Saját maga által meghatározott http proxy használata</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Cím</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Port</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">Felhasználónév</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Jelszó</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Proxy biztonsági beállítások</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Teszt</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Észlelés a hálózati kapcsolat.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Kattintson a Mégse vizsgálatok</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Kimutatására, kérjük várjon...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">Nem olvasható  az Internet Explorer proxy információ.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Csatlakozás sikertelen.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Csatlakozás sikerült.</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Frissítési beállítások</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">Új verzió található.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Kattintson ide a frissítéshez.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Frissítések keresése...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Frissítés található. Kattintson ide a letöltéshez.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">Nem található frissítés. Kattintson ide a kilépéshez.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Frissítések letöltése...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Frissítések letöltése kész. Kattintson ide a telepítéshez.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Frissítések telepítése...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Frissítés befejeződött. Kattintson ide a frissítési eredmény megtekintéséhez.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Frissítés sikertelen, mert néhány hiba történt.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">Azt újra kell indítani a számítógépet érvényesíti a frissítést. Kattintson a "%1"
+ újraindítás most, vagy "%2", hogy manuálisan indítsa újra később.</item>
+<item name="ID_LIST_DOWNLOAD">Letöltve</item>
+<item name="ID_LIST_INSTALLING">Telepítés</item>
+<item name="ID_LIST_FINISHED">Befejeződött</item>
+<item name="ID_LIST_SUCCEED">Sikerült</item>
+<item name="ID_LIST_FAILED">Sikertelen</item>
+<item name="ID_LIST_CANCELED">Törölve</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">KB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+<item name="ID_MAINNAME">G3 eWalk</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH_UTPSFORCE">Alkalmazását frissíteni kell! Kérem, telepítse a frissítéseket!</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_URLPROMPTFINISH">A frissítés befejeződött.</item>
+<item name="ID_TCPUANDUTPS_UPDATE_PROMPT">A firmwaret és a szoftvert is frissíteni kell! Kattintson ide %1 
+a firmware frissítéséhez, vagy kattintson ide, "%2" a szoftver frissítéséhez!
+a firmware frissítéséhez, vagy kattintson ide, "%2" a szoftver frissítéséhez!</item>
+<item name="ID_STATIC_FIRMWAREUPDATE_PROMPT">Új firmware változatot találtam - %1. Kérem, töltse le az új változatot a következő weboldalról: </item>
+<item name="ID_MESSAGEBOX_UPDATE_SOFTWARE_FORCE">A G3 eWalk alkalmazást frissíteni kell a nagysebességű hálózati szolgáltatások javításához.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NOTE">Megjegyzés: A szoftverfrissítések és letöltésük ingyenes.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_BREAK_DIALUP">Az aktuális kapcsolat meg lesz szakítva.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NORMAL">Frissítéseket találtam. Kérem, töltse le!</item>
+</module>
+</utpsdoc>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="MiniFramePlugin">
+<item name="IDS_LANGUAGE_NAME">English</item>
+<item name="IDS_FRAME_TITLE">MegaFon | Modem</item>
+<item name="IDS_HELP">Help</item>
+<item name="IDS_XFRAME_OPER">Operation</item>
+<item name="IDS_MAINFRM_RF_ENABLE">Enable Radio</item>
+<item name="IDS_MAINFRM_RF_DISABLE">Disable Radio</item>
+<item name="IDS_XFRAME_OPTION">Settings</item>
+<item name="IDS_MAINFRM_LANG_PROMPT">Language</item>
+<item name="IDS_MAINFRM_MENU_PIN">PIN Operations</item>
+<item name="IDS_XFRAME_DEVMGR">Choose Device</item>
+<item name="IDS_MAINFRM_DIAGNOSTICS_WINDOWSTXT">Diagnostics</item>
+<item name="IDS_MAINFRM_PIN_VERIFY_WINDOWSTXT">Enter PIN</item>
+<item name="IDS_MAINFRM_PIN_UNLOCK_WINDOWSTXT">Unlock PIN</item>
+<item name="IDS_MAINFRM_MENU_CHANGEPIN">Modify PIN</item>
+<item name="IDS_MAINFRM_MENU_ENABLEPIN">Enable PIN Verification</item>
+<item name="IDS_MAINFRM_MENU_DISABLEPIN">Disable PIN Verification</item>
+<item name="IDS_MAINFRM_MENU_MAINFR_HELP">Online Help...\tF1</item>
+<item name="IDS_MAINFRM_MENU_MAINFR_ABOUT">About</item>
+<item name="IDS_SETTINGS">Settings</item>
+<item name="IDS_DIALUPUI_CONNECT">Connect</item>
+<item name="IDS_DIALUPUI_CANCEL">Cancel</item>
+<item name="IDS_DIALUPUI_DISCONNECT">Disconnect</item>
+<item name="IDS_CALL_MENU">Call</item>
+<item name="IDS_DISPLAY">Display</item>
+<item name="IDS_CALL_ANSWER">Call Answer</item>
+<item name="IDS_CALL_HANGUP">Call Hang</item>
+<item name="IDS_EXIT">Exit</item>
+<item name="IDS_MINI_CONNECTING">Connecting...</item>
+<item name="IDS_MINI_CANCELING">Cancelling...</item>
+<item name="IDS_MINI_DISCONNECTING">Disconnecting...</item>
+<item name="IDS_MINI_TOOLTIP_SETTINGS">Settings</item>
+<item name="IDS_MINI_TOOLTIP_WEBKIT">Webkit</item>
+<item name="IDS_SIGNAL_STRENGTH">Signal strength %d%%</item>
+<item name="IDS_NO_DEVICE">Device not found</item>
+<item name="IDS_NO_SIM">SIM not found</item>
+<item name="IDS_PIN_BLOCKED">PUK is locked</item>
+<item name="IDS_PIN_NOT_INITIALISED">PIN is locked</item>  
+<item name="IDS_MINI_UNSOLVED_MSG_PROMPT">You have %d unread message(s)</item>
+<item name="IDS_MINI_UNSOLVED_CALL_PROMPT">You have %d missed call(s)</item>
+<item name="IDS_MINI_WIFI_SEARCHING">Searching wifi network...</item>
+<item name="IDS_MINI_WIFI_NO_NETWORK">No wifi network</item>
+<!--Add by zhoujun begin 2010-8-2 -->
+<item name="IDS_MAINFRM_FILE">   Service</item>
+<item name="IDS_MAINFRM_SETTING">   Settings</item>
+<item name="IDS_MAINFRM_HELP">Helps</item>
+<item name="IDS_MAINFRM_USSD">Balance</item>
+<item name="IDS_MAINFRM_NETINFO">Statistics</item>
+<item name="IDS_MY_MENU_SMS">SMS-Client</item>
+<item name="IDS_MY_MENU_PHONEBOOK">Contacts</item>
+<item name="IDS_MY_MENU_STATATICS">Statistic</item>
+<item name="IDS_MY_MENU_USSD">Balance</item>
+<item name="IDS_MY_MENU_DIAGNOSE">Diagnostic</item>
+<!--item name="IDS_MY_MENU_LINK1">TRAVA</item>
+<item name="IDS_MY_MENU_LINK2">MULTIFON.RU</item-->
+<item name="IDS_MY_MENU_GENERAL">General</item>
+<item name="IDS_MY_MENU_SMSCLIENT">SMS-Client</item>
+<item name="IDS_MY_MENU_PROFILE">Profile</item>
+<item name="IDS_MY_MENU_NETWORK">Network</item>
+<item name="IDS_MY_MENU_ABOUT">About this program</item>
+<item name="IDS_MY_MENU_HELP">Online help</item>
+<item name="IDS_MAINFRM_UPDATEVIA">Online Update</item>
+<item name="IDS_UPDATE_CHECKNOW">Online Update</item>
+<item name="IDS_UPDATE_SETTINGS">Settings</item>
+<item name="IDS_MY_SWITCH_SKIN">Switch Skin</item>
+<item name="IDS_MINISKIN_DEFAULT">DEFAULT MINI</item>
+<item name="IDS_MINISKIN_BLACK">BLACK</item>
+<item name="IDS_MINISKIN_FOOTBALL">FOOTBALL</item>
+<!--Add by zhoujun end 2010-8-2 -->
+<!--add by cKF14969 2010-07-26 begin-->
+<item name="IDS_MINI_NOSERVICE">Disconnected</item>
+<!--item name="IDS_MINI_NOSERVICE">Не подключен</item-->
+<!--item name="IDS_MINI_LASTCAPTION">Последний сеанс:</item-->
+<item name="IDS_MINI_LASTCAPTION">Last connection:</item>
+<!--add by cKF14969 2010-07-26 end-->
+<!--add by KF28394 2010-11-29 begin-->
+<item name="IDS_MY_MENU_LINKS">MegaFon</item>
+<item name="IDS_MY_MENU_ESHOP">eShop</item>
+<item name="IDS_MY_MENU_MOBILEDEVICES">Mobile Devices</item>
+<item name="IDS_MY_MENU_CHANGESIGNAL">Change Signal</item>
+<item name="IDS_MY_MENU_TRAVA">Trava</item>
+<item name="IDS_MY_MENU_TRAVAONLINE">Trava-Online</item>
+<item name="IDS_MY_MENU_FILLUP">Fill Up</item>
+<item name="IDS_MY_MENU_SERVICEGUIDE">Service Guide</item>
+<item name="IDS_MY_MENU_SENDMMS">Send MMS</item>
+<item name="IDS_MY_MENU_MULTIFON">MultiFon</item>
+<!--add by KF28394 2010-11-29 end-->
+<item name="IDS_MY_MENU_TRAVA_LOCAL">Trava-Online</item>
+<item name="IDS_CANT_SEND_USSD_TITLE">MegaFon</item>
+<item name="IDS_CANT_SEND_USSD_CONTENT">The LTE network doesn't support the USSD, please change to 3G/2G network to send USSD.</item>
+</module>
+</utpsdoc>

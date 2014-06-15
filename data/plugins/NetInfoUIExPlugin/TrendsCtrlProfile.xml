@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DOCTYPE TrendsCtrlProfile SYSTEM "TrendsCtrlProfile.dtd"-->
+<TrendsCtrlProfile version="1.0">
+	<Graphic>
+		<Color id="ID_BACKGROUND1" color="#FF000000"/>
+		<Color id="ID_BACKGROUND2" color="#FF000000"/>
+		<Color id="ID_PLOT1" color="#B0BBCED6"/>
+		<Color id="ID_PLOT2" color="#B016D116"/>
+		<Color id="ID_GRID" color="#FF00EAEA"/>
+		<Color id="ID_TEXT" color="#FFFFFFFF"/>
+	</Graphic>
+	<Text>
+		<Font id="ID_PLOT" family="Arial" style="Regular" size="9"/>
+		<Font id="ID_XUNITS" family="Arial" style="Regular" size="9"/>
+		<Font id="ID_YUNITS" family="Arial" style="Regular" size="9"/>
+		<Font id="ID_YRANGES" family="Arial" style="Regular" size="8"/>
+		<Font id="ID_SPEED" family="Arial" style="Regular" size="14"/>
+		<Font id="ID_TEXT" family="Arial" style="Regular" size="10"/>
+	</Text>
+</TrendsCtrlProfile>

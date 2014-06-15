@@ -1,0 +1,37 @@
+#! /bin/sh
+
+case "$1" in
+ 	hibernate|suspend)
+
+		;;
+	thaw|resume)
+	   if [ "$(/sbin/lsmod |grep cdc_acm)" != "" ]
+       then
+           /sbin/rmmod cdc-acm
+       fi
+       if [ "$(/sbin/lsmod |grep uhci_hcd)" != "" ]
+       then
+           /sbin/rmmod uhci-hcd
+       fi
+       if [ "$(/sbin/lsmod |grep ehci_hcd)" != "" ]
+       then
+           /sbin/rmmod ehci-hcd
+       fi
+       if [ "$(ls /lib/modules/$(uname -r)/kernel/drivers/usb/host/uhci-hcd.ko*)" != "" ]
+       then
+            /sbin/modprobe uhci-hcd
+       fi
+       if [ "$(ls /lib/modules/$(uname -r)/kernel/drivers/usb/host/ehci-hcd.ko*)" != "" ]
+       then
+            /sbin/modprobe ehci-hcd
+       fi
+       if [ "$(ls /lib/modules/$(uname -r)/kernel/drivers/usb/class/cdc-acm.ko*)" != "" ]
+       then
+           /sbin/modprobe cdc-acm
+       fi
+		;;
+	*)
+		;;
+esac
+
+exit 0

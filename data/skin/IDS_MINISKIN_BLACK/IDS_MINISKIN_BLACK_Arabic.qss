@@ -1,0 +1,307 @@
+*#miniplugin_bgwidget{
+	border-image: url("./skin/IDS_MINISKIN_BLACK/transparent.png");
+}
+
+*#miniplugin_swnamelabel{
+    font-family:Arial;
+    font-size:12px;
+    color:white;
+}
+
+*#miniplugin_connecttimelabel {
+    font:bold;
+    font-size:12px; 
+    font-family:Arial;
+    color:#AAAAAA;
+}
+
+*#miniplugin_uploadtextlabel, 
+*#miniplugin_downloadtextlabel{
+    font:bold;
+    font-size:12px;
+    font-family:Arial;
+    color:white
+}
+
+*#miniplugin_operatorNamelabel{
+    margin-top: 0px;
+    font:bold;
+    font-size:12px;
+    font-family:Arial;
+    color:white;
+}
+
+*#miniplugin_syssrvlabel{
+    font: bold 14px;
+    font-size:16px;
+    font-family:Arial;
+    color:#538D08;
+}
+
+*#miniplugin_connectbtn,
+*#miniplugin_disconnectingbtn,
+*#miniplugin_connectingbtn
+{
+ 	border-image: url(./skin/IDS_MINISKIN_BLACK/connectbtn_normal_Arabic.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:14px;
+	font-family:Arial;
+	color:white;
+}
+
+*#miniplugin_disconnectbtn 
+{
+ 	border-image: url(./skin/IDS_MINISKIN_BLACK/disconnect_normal_Arabic.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:14px;
+	font-family:Arial;
+	color:white;
+}
+
+*#miniplugin_disconnectingbtn:pressed,
+*#miniplugin_disconnectbtn:pressed
+{
+ 	border-image: url(./skin/IDS_MINISKIN_BLACK/disconnect_pressed_Arabic.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:14px;
+	font-family:Arial;
+	color:white;
+}
+
+*#miniplugin_disconnectbtn:hover,
+*#miniplugin_connectingbtn:hover
+{
+	 border-image: url(./skin/IDS_MINISKIN_BLACK/disconnect_on_Arabic.png);   
+}
+*#miniplugin_connectbtn:pressed,
+
+
+   /* AJ2D17215 add by cKF26894 2010 4.26 begin */
+
+*#miniplugin_connectbtn:hover,
+*#miniplugin_connectingbtn:hover
+{
+	 border-image: url(./skin/IDS_MINISKIN_BLACK/connectbtn_on_Arabic.png);   
+}
+*#miniplugin_connectbtn:pressed,
+*#miniplugin_connectingbtn:pressed
+
+{
+	 border-image: url(./skin/IDS_MINISKIN_BLACK/connectbtn_down_Arabic.png);   
+}
+   /* AJ2D17215 add by cKF26894 2010 4.26 end */
+   
+*#miniplugin_modalExtendApp{
+border-image: url(./skin/IDS_MINISKIN_BLACK/miniplugin_ExtendAppBtn_Arabic.png);
+}
+*#miniplugin_modalExtendApp:hover{
+border-image: url(./skin/IDS_MINISKIN_BLACK/miniplugin_ExtendAppBtn_hover_Arabic.png);
+}
+
+*#miniplugin_modalExtendApp:pressed{
+border-image: url(./skin/IDS_MINISKIN_BLACK/miniplugin_ExtendAppBtn_pressed_Arabic.png);
+}   
+
+
+*#miniplugin_minimizebtn { 
+border: 1px;
+background-image: url(./skin/IDS_MINISKIN_BLACK/minimizebtn_minimum_Arabic.png);
+}
+*#miniplugin_minimizebtn:hover{
+border:1px;
+background-image: url(./skin/IDS_MINISKIN_BLACK/minimizebtn_minimum_select_Arabic.png);
+}
+
+*#miniplugin_closebtn{
+border: 1px;
+background-image: url(./skin/IDS_MINISKIN_BLACK/closebtn_close_Arabic.png);
+}
+
+*#miniplugin_closebtn:hover{
+border:1px;
+background-image: url(./skin/IDS_MINISKIN_BLACK/closebtn_close_select_Arabic.png);
+}
+
+*#miniplugin_statsticswidget
+{
+	 background-image: url(./skin/IDS_MINISKIN_BLACK/statsticswidget_frame.png);   
+}
+
+*#miniplugin_modalsmsbtn
+	   
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/smsbtn_unselmsg.png);   
+}
+
+*#miniplugin_modalsmsbtn:hover,
+*#miniplugin_modalsmsbtn :focus:hover,
+*#miniplugin_modalsmsbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/smsbtn_selmsg.png);   
+}
+
+*#miniplugin_modalstatisticsbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/statisticbtn_unselflowrate.png);   
+}
+*#miniplugin_modalstatisticsbtn:hover,
+*#miniplugin_modalstatisticsbtn:focus:hover,	   
+*#miniplugin_modalstatisticsbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/statisticbtn_selflowrate.png);   
+}
+
+*#miniplugin_modalwebkitbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/pbbtn_unselpb.png);   
+}
+
+*#miniplugin_modalwebkitbtn:hover,
+*#miniplugin_modalwebkitbtn:focus:hover,	   
+*#miniplugin_modalwebkitbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/pbbtn_selpb.png);   
+}
+
+
+
+*#miniplugin_modalpbbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/pbbtn_unselpb.png);   
+}
+
+*#miniplugin_modalpbbtn:hover,
+*#miniplugin_modalpbbtn:focus:hover,	   
+*#miniplugin_modalpbbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/pbbtn_selpb.png);   
+}
+
+*#miniplugin_menubtn   
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/menubtn_unselmenu.png);   
+}
+
+*#miniplugin_menubtn:hover,
+*#miniplugin_menubtn:focus:hover,
+*#miniplugin_menubtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_BLACK/menubtn_selmenu.png);   
+}
+
+*#miniplugin_menubtn::menu-indicator
+{
+   border-image: url(./skin/IDS_MINISKIN_BLACK/transparent.png);   
+}
+
+*#miniplugin_newsmslabel,miniplugin_newcalllabel
+{
+    border-image: url(./skin/IDS_MINISKIN_BLACK/comm_popup_number.png);   
+    text-align: center;
+}
+*#ViewButton,
+*#CancelButton,
+*#DiagnosticsUIPlugin_pushButtonCancel, *#DiagnosticsUIPlugin_pushButtonRefresh, 
+*#DiagnosticsUIPlugin_pushButtonSave
+{
+   min-width: 80px;  min-height: 24px;
+   max-width: 80px;  max-height: 24px;
+}
+
+*#DiagnosticsUIPlugin_pushButtonCdmaSave,
+*#DiagnosticsUIPlugin_pushButtonCdmaRefresh,
+*#DiagnosticsUIPlugin_pushButtonCdmaCancel
+{     
+     min-width: 80px;  min-height: 24px;
+     max-width: 80px;  max-height: 24px;
+}
+*#ToolBar::menu-indicator {
+image:none
+ }
+
+/* ========== Font Size ========== */
+
+/* set for all widgets font size */
+* {
+font-size: 12px;
+}
+
+
+
+
+/* ========== QDialog ========== */
+
+ QGroupBox { 
+	    border-top-width: 3px;
+	    border-right-width: 2px;
+	    border-bottom-width: 2px;
+	    border-left-width: 2px; 
+	    margin-top: 1ex;             
+          
+             }
+             
+ QGroupBox::title {
+   subcontrol-origin: margin;
+   left: 5px;
+   top: 1px;
+ }
+ 
+
+
+
+QMenu::item
+{
+     padding: 4px 30px 4px 24px;
+}
+QMenu::item:selected 
+{
+  background: rgba(131, 131, 131, 150);
+}
+
+QMenu::separator 
+{
+     height: 2px;
+     background-image: url(./skin/IDS_MINISKIN_BLACK/menu_line.png); 
+     margin-left: 20px;
+ }
+QMenu::item:!enabled {color:gray; }
+QMenu
+{
+   background-image: url(./skin/IDS_MINISKIN_BLACK/menu_bg.png);   
+   margin: 0px; /* some spacing around the menu */
+   font-size:12px;
+   font-family:Arial;
+}
+
+QWebView
+{
+	border-top-width: 3px transparent;
+	border-right-width: 2px transparent;
+	border-bottom-width: 3px transparent;
+	border-left-width: 2px transparent;
+}
+
+*#miniplugin_arrowright
+{
+    border-image: url(./skin/IDS_MINISKIN_BLACK/Arrow_right_1_Arabic.png);   
+    text-align: center;
+}
+*#miniplugin_arrowleft
+{
+    border-image: url(./skin/IDS_MINISKIN_BLACK/Arrow_left_1_Arabic.png);   
+    text-align: center;
+}
+/* 2010-05-10  cKF26894  AJ2D17482  when the message arrive don't show view and cacel button */
+/* 2010-04-26  cKF26894  AJ2D17215  move the cursor on the Connect button.click the button but don't move the cursor all along. the  state of the button don't change. */

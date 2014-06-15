@@ -1,0 +1,46 @@
+#!/bin/sh
+######################################################################
+#
+# Determine the device to be terminated.
+# Author: jiangyanfeng@gmail.com
+# Date: Apr-7,2008
+#
+export COLUMNS=256
+if [ "$1" = "" ]; then
+	echo "ERROR: Parameter error"
+	echo "Usage: $0 <device_filename>"
+	echo "eg: $0 /dev/ttyUSB0"
+	exit 1
+else
+	DEVICE=$1
+fi
+######################################################################
+#DTS2010092103826 Modify by zhanghuolong 2010-10-17 begin
+PID=`ps -ef | grep -v grep | grep -v "ppp-off" |grep "$DEVICE" | grep "pppd" | awk '{ print $2; exit }'`
+
+if test $PID; then
+        kill -s 9 $PID
+
+        sleep 2s
+
+        PID=`ps -ef | grep -v grep | grep -v "ppp-off" | grep "$DEVICE" | grep "pppd" | awk '{ print $2; exit }'`
+        
+        if test $PID; then
+                echo "ERROR: Terminated ppp link to $DEVICE failed /proc/$PID"
+                kill -s 9 $PID
+                sleep 0.1s
+                rm -f /var/run/ppp-HuaweiMobile.pid
+                rm -f /dev/huawei_ppp_up
+                if [ -d "/proc/$PID" ]; then
+                   exit 3
+                fi
+
+        fi
+##DTS2010092103826 Modify by zhanghuolong 2010-10-17 end
+# Success. wait 3 seconds to let pppd clean up its own junk.
+        echo "PPP link to $DEVICE terminated"
+        exit 0
+fi
+#
+echo "ERROR: PPP link is not active on $DEVICE"
+exit 2

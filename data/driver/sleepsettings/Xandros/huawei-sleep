@@ -1,0 +1,4 @@
+# /etc/acpi/events/huawei-sleep
+
+event=button[ /]sleep
+action=/etc/acpi/huawei-sleep.sh

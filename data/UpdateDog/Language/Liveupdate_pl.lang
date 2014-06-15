@@ -1,0 +1,112 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">Polish</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Updater</item>
+<item name="ID_BUTTON_OK">OK</item>
+<item name="ID_BUTTON_CANCEL">Anuluj</item>
+<item name="ID_MESSAGEBOX_ERROR">Błąd</item>
+<item name="ID_MESSAGEBOX_QUESTION">Potwierdź</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Informacja</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Na pewno zakończyć?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Kontynuować obecne pobieranie następnym razem?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Kontynuować obecną aktualizację następnym razem?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Kontynuować obecną instalację następnym razem?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Tak</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">Nie</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Anuluj</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Informacja</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">Zostanie zainstalowana nowa wersja %1. To okno zostanie zamknięte.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">"%1" zostanie zakończony przed instalacją aktualizacji.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">Na pewno kontynuować?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">"%1" nie może zostać zakończony przez aktualizatora.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">Musisz zamknąć ręcznie przed ponowną próbą instalacji.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">Funkcja aktualizacji nie działa ponieważ w przeglądarce Internet Explorer włączona jest opcja "Pracuj w trybie offline". Aby uruchomić aktualizację proszę ją wyłączyć.</item>
+<item name="ID_SHEET_BUTTON_BACK">Z powrotem</item>
+<item name="ID_SHEET_BUTTON_NEXT">Następny</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Pobieranie</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Zainstaluj</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Spróbuj ponownie</item>
+<item name="ID_SHEET_BUTTON_FINISH">Wykończenie</item>
+<item name="ID_SHEET_CAPTION">Aktualizacje online</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Wykrywanie aktualizacji...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT"></item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 przeprowadza autoaktualizację...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 jest wznowienie procesu pobierania...</item>
+<item name="ID_PAGE_FEATURE_TIP">Znaleziono aktualizacje...</item>
+<item name="ID_PAGE_FEATURE_TIP1">Nowe cechy</item>
+<item name="ID_PAGE_FEATURE_HEADER">Składnik</item>
+<item name="ID_PAGE_FEATURE_HEADER1">Rozmiar</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Pobrano</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">Za mało miejsca na dysku lub nie wykryto dysku.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">Trwa pobieranie aktualizacji</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Status</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Pobieranie wszystkich aktualizacji</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Instalacja</item>
+<item name="ID_PAGE_DONE_TOPIC">Aktualizacja jest zakończona. Dziękujemy za ukorzystanie z Serwisu Aktualizacji Online.</item>
+<item name="ID_PAGE_DONE_RUN">Włącz program po aktualizacji</item>
+<item name="ID_PAGE_DONE_REBOOT">Uruchom ponownie komputer</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">Używana przez Ciebie wersja jest już wersją najnowszą. Dziękujemy za korzystanie z Serwisu Aktualizacji Online.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Aktualizacja nieskuteczna z powodu nieznanego błędu.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Włącz komunikację z serwerem aktualizacji. Potwierdź, że masz połączenie z Internetem i spróbuj ponownie sprawdzić aktualizacje.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">Wyłącz okresowy test na aktualizacje</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Test na aktualizacje co</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">dni</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Nie używaj serwera proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">Używaj ustawień IE jako serwera proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Użyj  określonego przez siebie serwera http proxy</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Adres</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Port</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">Nazwa użytkownika</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Hasło</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Ustawienia bezpieczeństwa serwera proxy</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Testuj</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Wykrywanie połączenia sieciowego.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Kliknij, aby anulować badania</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Wykrywanie, prosimy poczekać...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">Nie można odczytać informacji serwera proxy Internet Explorer</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Połączenie nieskuteczne</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Połączenie skuteczne</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Ustawienia aktualizacji</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">Znaleziono nową wersję.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Kliknij w celu aktualizacji</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Trwa wykrywanie aktualizacji...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Znaleziono aktualizacje. Kliknij tutaj, aby pobrać.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">Nie znaleziono aktualizacji. Kliknij tutaj, aby wyjść.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Trwa pobieranie aktualizacji...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Aktualizacje zostały pobrane. Kliknij tutaj, aby przeprowadzić instalację.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Instalacja aktualizacji...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Aktualizacja została zakończona. Kliknij tutaj, aby zobaczyć wynik aktualizacji.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Aktualizacja nieskuteczna, ponieważ wystąpił błąd.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">Musisz ponownie uruchomić komputer, aby potwierdzić aktualizację. Kliknij przycisk "%1",
+aby ponownie uruchomić lub "%2" ręcznie uruchomić ponownie później.</item>
+<item name="ID_LIST_DOWNLOAD">Pobrano</item>
+<item name="ID_LIST_INSTALLING">Instalacja</item>
+<item name="ID_LIST_FINISHED">Zakończono</item>
+<item name="ID_LIST_SUCCEED">Skutecznie</item>
+<item name="ID_LIST_FAILED">Nieskutecznie</item>
+<item name="ID_LIST_CANCELED">Przerwano</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_MAINNAME">G3 eWalk</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH_UTPSFORCE">Aplikacja musi zostać zaktualizowana. Zainstaluj aktualizacje.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_URLPROMPTFINISH">Aktualizacja zakończona.</item>
+<item name="ID_TCPUANDUTPS_UPDATE_PROMPT">Należy zaktualizować oprogramowanie sprzętowe i program. Kliknij %1 
+w celu zaktualizowania oprogramowania sprzętowego lub "%2" w celu zaktualizowania programu.</item>
+<item name="ID_STATIC_FIRMWAREUPDATE_PROMPT">Znaleziono nową wersję oprogramowania sprzętowego %1. Pobierz nową wersję z następującej witryny internetowej: </item>
+<item name="ID_MESSAGEBOX_UPDATE_SOFTWARE_FORCE">Należy zaktualizować G3 eWalk w celi zapewnienia lepszej obsługi szybkiej sieci bezprzewodowej.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NOTE">Uwaga: Aktualizacje programowe są darmowe.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_BREAK_DIALUP">Bieżące połączenie zostanie przerwane.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NORMAL">Znaleziono aktualizacje. Pobierz je.</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">KB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+</module>
+</utpsdoc>

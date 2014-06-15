@@ -1,0 +1,137 @@
+#!/bin/bash
+
+NDIS_PATH=$1
+: ${NDIS_PATH:=./}
+
+SYSTEM_BIT=$($(which getconf) LONG_BIT)
+SYS_KERN_VER=`uname -r`
+
+if [ "$SYS_KERN_VER" \< "2.6.25" ]
+then
+	echo "NDIS can not support Current system"
+	exit 0
+fi
+
+if [ $SYSTEM_BIT -gt 32 ]
+then
+	POSTFIX=_64
+else
+	POSTFIX=
+fi
+
+if [ -f /etc/issue ]
+then
+	if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2009.1)" != "" ]
+	then
+		echo "The current system is Mandriva 2009.1"
+		TARGET_FILE="$NDIS_PATH"/Mandriva200901$POSTFIX/hw_cdc_driver.ko	
+	elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.0)" != "" ]
+	then
+		echo "The current system is Mandriva 2010"
+		TARGET_FILE="$NDIS_PATH"/Mandriva2010$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.1)" != "" ]
+	then
+		echo "The current system is Mandriva 2010.1"
+		TARGET_FILE="$NDIS_PATH"/Mandriva20101$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2010.2)" != "" ]
+	then
+		echo "The current system is Mandriva 2010.2"
+		TARGET_FILE="$NDIS_PATH"/Mandriva20102$POSTFIX/hw_cdc_driver.ko	
+	elif [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2011)" != "" ]
+	then
+		echo "The current system is Mandriva 2011"
+		TARGET_FILE="$NDIS_PATH"/Mandriva2011$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 11)" != "" ]
+	then
+		echo "The current system is Fedora 11"
+		TARGET_FILE="$NDIS_PATH"/Fedora11$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 12)" != "" ]
+	then
+		echo "The current system is Fedora 12"
+		TARGET_FILE="$NDIS_PATH"/Fedora12$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 13)" != "" ]
+        then
+		echo "The current system is Fedora 13"
+		TARGET_FILE="$NDIS_PATH"/Fedora13$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 14)" != "" ]
+	then
+		echo "The current system is Fedora 14"
+		TARGET_FILE="$NDIS_PATH"/Fedora14$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 15)" != "" ]
+	then
+		echo "The current system is Fedora 15"
+		TARGET_FILE="$NDIS_PATH"/Fedora15$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 16)" != "" ]
+	then
+		echo "The current system is Fedora 16"
+		TARGET_FILE="$NDIS_PATH"/Fedora16$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 17)" != "" ]
+	then
+		echo "The current system is Fedora 17"
+		TARGET_FILE="$NDIS_PATH"/Fedora17$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.2)" != "" ]
+	then
+		echo "The current system is openSUSE 11.2"
+		TARGET_FILE="$NDIS_PATH"/OpenSUSE112$POSTFIX/hw_cdc_driver.ko
+        elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.3)" != "" ]
+	then
+		echo "The current system is openSUSE 11.3"
+		TARGET_FILE="$NDIS_PATH"/OpenSUSE113$POSTFIX/hw_cdc_driver.ko  
+        elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.4)" != "" ]
+	then
+		echo "The current system is openSUSE 11.4"
+		TARGET_FILE="$NDIS_PATH"/OpenSUSE114$POSTFIX/hw_cdc_driver.ko  
+	elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 12.1)" != "" ]
+	then
+		echo "The current system is openSUSE 12.1"
+		TARGET_FILE="$NDIS_PATH"/OpenSUSE121$POSTFIX/hw_cdc_driver.ko  
+	elif [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 12.2)" != "" ]
+	then
+		echo "The current system is openSUSE 12.2"
+		TARGET_FILE="$NDIS_PATH"/OpenSUSE122$POSTFIX/hw_cdc_driver.ko  
+	elif [ "$(cat /etc/issue |grep Debian)" != "" -a "$(cat /etc/issue |grep 6.0)" != "" ]
+	then
+		echo "The current system is Debian 6.0"
+		TARGET_FILE="$NDIS_PATH"/Debian6$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Debian)" != "" -a "$(cat /etc/issue |grep 5.0)" != "" ]
+	then
+		echo "The current system is Debian 5.0"
+		TARGET_FILE="$NDIS_PATH"/Debian5$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Mint)" != "" -a "$(cat /etc/issue |grep 11)" != "" ]
+	then
+		echo "The current system is Linux Mint11"
+		TARGET_FILE="$NDIS_PATH"/Mint11$POSTFIX/hw_cdc_driver.ko
+	elif [ "$(cat /etc/issue |grep Mint)" != "" -a "$(cat /etc/issue |grep 12)" != "" ]
+	then
+		echo "The current system is Linux Mint12"
+		TARGET_FILE="$NDIS_PATH"/Mint12$POSTFIX/hw_cdc_driver.ko
+	fi	
+fi
+if [ -f "$TARGET_FILE" ]
+then
+    TARGET_VER=`modinfo $TARGET_FILE |grep vermagic | awk '{print $2}'`
+fi
+
+if [ "$SYS_KERN_VER" = "$TARGET_VER" ]
+then
+	cp "$TARGET_FILE" /lib/modules/$(uname -r)/kernel/drivers/net/usb/
+	chmod a+x /lib/modules/$(uname -r)/kernel/drivers/net/usb/hw_cdc_driver.ko
+	$(which depmod) -a
+	$(which modprobe) hw_cdc_driver
+else
+	CUR_PATH=`pwd`
+	cd "$NDIS_PATH"/ndis_src
+	./make_driver.sh
+	cd "$CUR_PATH"
+	if [ -f /lib/modules/$(uname -r)/kernel/drivers/net/usb/hw_cdc_driver.ko ]
+	then
+		echo -e "\033[34;1m\nThe Linux NDIS driver is installed successfully.\033[0;0m"
+	else
+		#echo -e "\033[31;1m\nThere is some problems happened while compiling the ndis driver, \nplease enter any key to stop this compilation, \ncorrect the problems and compile again.\nOtherwise, NDIS feature can not be used.\033[0;0m"
+		echo -e "\033[31;1m\nInstall NDIS driver failed.\nThe compiling environment is not all ready.\nPlease check gcc, make and kernel buid(/lib/modules/$(uname -r)/build) to be all installed?\n\033[34;1mNow please enter any key to finish other installations.\033[0;0m"
+		read -n 1
+		echo -e "\033[31;1mNDIS is disabled, and only Modem can be used.\033[0;0m"
+		exit 0
+
+	fi
+fi	

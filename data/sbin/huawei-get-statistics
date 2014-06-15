@@ -1,0 +1,38 @@
+#!/bin/bash
+
+PPPLINKNAME="/var/run/ppp-HuaweiMobile.pid"
+NETDEVNAME="/proc/net/dev" # add by zkf20747 for fix DTS2010091601272 
+
+if [ ! -f $PPPLINKNAME ]
+then
+    exit 0
+fi
+
+PPPNAME=`cat $PPPLINKNAME | grep ppp`
+
+if [ "x${PPPNAME}" = "x" ]
+then
+    exit 0
+fi
+
+# edit by zkf20747 DTS2010091601272 begin
+
+#RXBYTES=`ifconfig $PPPNAME | grep "RX bytes" | sed "s/TX[^$]*// g" | sed "s/([^$]*)//g" | sed "s/[^0-9]//g"` 
+#TXBYTES=`ifconfig $PPPNAME | grep "TX bytes" | sed "s/RX[^$]*TX// g" | sed "s/([^$]*)//g" | sed "s/[^0-9]//g"` 
+
+RXBYTES=`cat $NETDEVNAME | grep $PPPNAME | awk -F : '{print $2}'|awk '{print $1}'` 
+TXBYTES=`cat $NETDEVNAME | grep $PPPNAME | awk -F : '{print $2}'|awk '{print $9}'` 
+
+# edit by zkf20747 DTS2010091601272 end
+
+if [ "x${1}" = "xRX" ]
+then
+    exit $RXBYTES
+elif [ "x${1}" = "xTX" ]
+then
+    exit $TXBYTES
+fi
+
+echo "0,${RXBYTES},${TXBYTES}"
+
+exit 0

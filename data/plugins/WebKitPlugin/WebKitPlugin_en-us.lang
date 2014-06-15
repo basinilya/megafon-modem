@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="webkitPlugin">
+<item name="IDS_LANGUAGE_NAME">English</item>
+<item name="IDS_FRAME_TITLE">Web Kit</item>
+<item name="IDS_TAB_LOCAL">Local</item>
+<item name="IDS_TAB_HUAWEI">Huawei</item>
+<item name="IDS_TAB_MICROSOFT">Microsoft</item>
+
+
+
+
+	
+</module>
+</utpsdoc>

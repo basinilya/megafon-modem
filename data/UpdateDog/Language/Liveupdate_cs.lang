@@ -1,0 +1,112 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">Czech</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Updater</item>
+<item name="ID_BUTTON_OK">OK</item>
+<item name="ID_BUTTON_CANCEL">Zrušit</item>
+<item name="ID_MESSAGEBOX_ERROR">Chyba</item>
+<item name="ID_MESSAGEBOX_QUESTION">Potvrdit</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Informace</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Jste si jisti, že chcete odejít?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Příště pokračovat v aktuálním procesu stahování?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Příště pokračovat v aktuálním procesu aktualizace?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Příště pokračovat v aktuálním procesu instalace?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Ano</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">Ne</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Zrušit</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Informace</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">Bude instalována nová verze %1. Toto okno bude uzavřeno.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">„%1“ bude před instalací ukončeno.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">Jste si jisti, že chcete pokračovat?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">„%1“ nemůže být aktualizátorem ukončeno.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">Před dalším pokusem o instalaci musíte aplikaci zavřít ručně.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">Funkce aktualizace selhala, protože v internetovém prohlížeči je povolena možnost „Pracovat offline“. Abyste mohli aktualizaci úspěšně spustit, tuto funkci prosím zrušte.</item>
+<item name="ID_SHEET_BUTTON_BACK">Zpět</item>
+<item name="ID_SHEET_BUTTON_NEXT">Příští</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Stáhnout</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Instalovat</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Zkusit znovu</item>
+<item name="ID_SHEET_BUTTON_FINISH">Skončit</item>
+<item name="ID_SHEET_CAPTION">Aktualizace online</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Zjišťování aktualizací...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT"></item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 se aktualizuje...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 je obnovení procesu stahování...</item>
+<item name="ID_PAGE_FEATURE_TIP">Aktualizace nalezeny</item>
+<item name="ID_PAGE_FEATURE_TIP1">Nové prvky</item>
+<item name="ID_PAGE_FEATURE_HEADER">složka</item>
+<item name="ID_PAGE_FEATURE_HEADER1">velikost</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Staženo</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">Na disku není dostatek místa, nebo disk neexistuje.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">Stahují se aktualizace</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Stav</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Stahování aktualizací dokončeno</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Proces instalace:</item>
+<item name="ID_PAGE_DONE_TOPIC">Aktualizace je dokončena. Děkujeme za používání Aktualizační služby online.</item>
+<item name="ID_PAGE_DONE_RUN">Po aktualizaci spustit program</item>
+<item name="ID_PAGE_DONE_REBOOT">Restartujte počítač</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">Verze, jí používáte, je nejnovější. Děkujeme za používání Aktualizační služby online.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Aktualizace selhala, protože se došlo k chybě.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Nelze komunikovat s aktualizačním serverem. Ujistěte se, že jste připojeni k internetu a zkuste aktualizace zkontrolovat znovu.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">Zrušit periodické kontroly aktualizací.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Zkontrolovat aktualizace každých</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">dní</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Nepoužívat proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">Použít nastavení IE jako proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Použít osobně definovanou http proxy</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Adresa</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Port</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">Uživatelské jméno</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Heslo</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Nastavení zabezpečení proxy</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Kouška</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Detekovat připojení k síti.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Klepnutím zrušíte testování</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Nalezení, čekejte prosím...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">Nemohu přečíst proxy informace Internet exploreru.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Připojení se nezdařilo.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Připojení úspěšné.</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Nastavení aktualizace</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">Nalezena nová verze.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Pro aktualizaci klikněte sem.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Zjišťování aktualizací...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Aktualizace nalezeny Pro stažení klikněte sem.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">Žádné aktualizace nebyly nalezeny Pro odchod klikněte sem.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Stahování aktualizací...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Aktualizace staženy. Pro instalaci klikněte sem.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Instalace aktualizací...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Aktualizace dokončena. Pro přehled výsledku aktualizace klikněte sem.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Aktualizace selhala, protože se došlo k chybě.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">Musíte restartovat počítač ověřit aktualizaci. Klikněte na "%1"
+ restartovat nyní, nebo "%2" ručně restartovat později.</item>
+<item name="ID_LIST_DOWNLOAD">Staženo</item>
+<item name="ID_LIST_INSTALLING">Instalace</item>
+<item name="ID_LIST_FINISHED">Dokončena</item>
+<item name="ID_LIST_SUCCEED">Úspěšná</item>
+<item name="ID_LIST_FAILED">Selhala</item>
+<item name="ID_LIST_CANCELED">Zrušena</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_MAINNAME">G3 eWalk</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH_UTPSFORCE">Vaše aplikace vyžaduje aktualizaci. Nainstalujte aktualizace.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_URLPROMPTFINISH">Aktualizace byla dokončena.</item>
+<item name="ID_TCPUANDUTPS_UPDATE_PROMPT">Je nutné aktualizovat firmware a software. Klikněte na %1 
+pro aktualizaci firmwaru nebo "%2" pro aktualizaci softwaru.</item>
+<item name="ID_STATIC_FIRMWAREUPDATE_PROMPT">Byla nalezena nová verze firmwaru %1. Stáhněte si novou verzi na následujících webových stránkách: </item>
+<item name="ID_MESSAGEBOX_UPDATE_SOFTWARE_FORCE">G3 eWalk je nutné aktualizovat, abyste získali lepší vysokorychlostní bezdrátové síťové služby.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NOTE">Poznámka: Aktualizace softwaru jsou bez poplatků a nemají vliv na průtok.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_BREAK_DIALUP">Aktuální připojení bude odpojeno.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NORMAL">Byly nalezeny aktualizace. Stáhněte je prosím.</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">kB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+</module>
+</utpsdoc>

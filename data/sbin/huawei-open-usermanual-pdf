@@ -1,0 +1,20 @@
+#!/bin/bash
+
+for HTMLVIEWER in \
+evince \
+kpdf
+do
+    VIEWER=`which ${HTMLVIEWER}`
+
+    if [ "x${VIEWER}" != "x" ]
+    then
+        xhost +
+        su - root -c "DISPLAY=:0.0 ${VIEWER} $1"
+        exit 0
+    fi
+done
+
+exit 1
+
+
+

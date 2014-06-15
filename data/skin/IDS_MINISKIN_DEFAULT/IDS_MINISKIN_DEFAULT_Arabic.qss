@@ -1,0 +1,275 @@
+*#miniplugin_bgwidget{
+	border-image: url("./skin/IDS_MINISKIN_DEFAULT/transparent.png");
+}
+
+*#DeviceMgrUI_labelInfoLabel
+{
+    font-size:14px; 
+}
+
+*#miniplugin_swnamelabel{
+    font-family:Arial;
+    font-size:12px;
+}
+
+*#miniplugin_connecttimelabel {
+    font:bold;
+    font-size:12px; 
+    font-family:Arial;
+    color:#AAAAAA;
+}
+
+*#miniplugin_uploadtextlabel, 
+*#miniplugin_downloadtextlabel{
+    font:bold;
+    font-size:11px;
+    font-family:Arial;
+    color:#2A2A2A
+}
+
+*#miniplugin_operatorNamelabel{
+    margin-top: 0px;
+    font:bold;
+    font-size:16px;
+    font-family:Arial;
+    color:#5C5C5C;
+}
+
+*#miniplugin_syssrvlabel{
+    font: bold 14px;
+    font-size:16px;
+    font-family:Arial;
+    color:#538D08;
+}
+
+*#miniplugin_connectbtn,
+*#miniplugin_disconnectingbtn,
+*#miniplugin_connectingbtn
+{
+ 	border-image: url(./skin/IDS_MINISKIN_DEFAULT/connectbtn_normal.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+*#miniplugin_disconnectbtn 
+{
+ 	border-image: url(./skin/IDS_MINISKIN_DEFAULT/connectbtn_normal.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#494949;
+}
+   /* AJ2D17215 add by cKF26894 2010 4.26 begin */
+*#miniplugin_disconnectbtn:hover,
+*#miniplugin_connectbtn:hover,
+*#miniplugin_disconnectingbtn:hover,
+*#miniplugin_connectingbtn:hover
+{
+	 border-image: url(./skin/IDS_MINISKIN_DEFAULT/connectbtn_on.png);   
+}
+*#miniplugin_connectbtn:pressed,
+*#miniplugin_disconnectingbtn:pressed,
+*#miniplugin_connectingbtn:pressed,
+*#miniplugin_disconnectbtn:pressed
+
+{
+	 border-image: url(./skin/IDS_MINISKIN_DEFAULT/connectbtn_down.png);   
+}
+   /* AJ2D17215 add by cKF26894 2010 4.26 end */
+
+*#miniplugin_minimizebtn { 
+border: 1px;
+background-image: url(./skin/IDS_MINISKIN_DEFAULT/minimizebtn_minimum.png);
+}
+*#miniplugin_minimizebtn:hover{
+border:1px;
+background-image: url(./skin/IDS_MINISKIN_DEFAULT/minimizebtn_minimum_select.png);
+}
+
+*#miniplugin_closebtn{
+border: 1px;
+background-image: url(./skin/IDS_MINISKIN_DEFAULT/closebtn_close.png);
+}
+*#miniplugin_modalExtendApp{
+border-image: url(./skin/IDS_MINISKIN_DEFAULT/miniplugin_ExtendAppBtn.png);
+}
+*#miniplugin_modalExtendApp:hover{
+border-image: url(./skin/IDS_MINISKIN_DEFAULT/miniplugin_ExtendAppBtn_hover.png);
+}
+
+*#miniplugin_modalExtendApp:pressed{
+border-image: url(./skin/IDS_MINISKIN_DEFAULT/miniplugin_ExtendAppBtn_pressed.png);
+}
+*#miniplugin_closebtn:hover{
+border:1px;
+background-image: url(./skin/IDS_MINISKIN_DEFAULT/closebtn_close_select.png);
+}
+
+*#miniplugin_statsticswidget
+{
+	 background-image: url(./skin/IDS_MINISKIN_DEFAULT/statsticswidget_frame.png);   
+}
+
+*#miniplugin_modalsmsbtn
+	   
+{
+	border-image: url(./skin/IDS_MINISKIN_DEFAULT/smsbtn_unselmsg.png);   
+}
+
+*#miniplugin_modalsmsbtn:hover,
+*#miniplugin_modalsmsbtn :focus:hover,
+*#miniplugin_modalsmsbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_DEFAULT/smsbtn_selmsg.png);   
+}
+
+*#miniplugin_modalstatisticsbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_DEFAULT/statisticbtn_unselflowrate.png);   
+}
+*#miniplugin_modalstatisticsbtn:hover,
+*#miniplugin_modalstatisticsbtn:focus:hover,	   
+*#miniplugin_modalstatisticsbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_DEFAULT/statisticbtn_selflowrate.png);   
+}
+
+*#miniplugin_modalpbbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_DEFAULT/pbbtn_unselpb.png);   
+}
+
+*#miniplugin_modalpbbtn:hover,
+*#miniplugin_modalpbbtn:focus:hover,	   
+*#miniplugin_modalpbbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_DEFAULT/pbbtn_selpb.png);   
+}
+
+*#miniplugin_menubtn   
+{
+	border-image: url(./skin/IDS_MINISKIN_DEFAULT/menubtn_unselmenu.png);   
+}
+
+*#miniplugin_menubtn:hover,
+*#miniplugin_menubtn:focus:hover,
+*#miniplugin_menubtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_DEFAULT/menubtn_selmenu.png);   
+}
+
+*#miniplugin_menubtn::menu-indicator
+{
+   border-image: url(./skin/IDS_MINISKIN_DEFAULT/transparent.png);   
+}
+
+*#miniplugin_newsmslabel,miniplugin_newcalllabel
+{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/comm_popup_number.png);   
+    text-align: center;
+}
+*#ViewButton,
+*#CancelButton
+{
+   min-width: 86px;  min-height: 24px;
+   max-width: 86px;  max-height: 24px;
+}
+*#DiagnosticsUIPlugin_pushButtonCancel, *#DiagnosticsUIPlugin_pushButtonRefresh, 
+*#DiagnosticsUIPlugin_pushButtonSave
+{
+   min-width: 96px;  min-height: 24px;
+   max-width: 96px;  max-height: 24px;
+}
+
+*#DiagnosticsUIPlugin_pushButtonCdmaSave,
+*#DiagnosticsUIPlugin_pushButtonCdmaRefresh,
+*#DiagnosticsUIPlugin_pushButtonCdmaCancel
+{     
+     min-width: 96px;  min-height: 24px;
+     max-width: 96px;  max-height: 24px;
+}
+*#SMSUIPLUGIN_memfullclosebtn
+{
+     min-width: 96px;  min-height: 24px;
+     max-width: 96px;  max-height: 24px;
+}
+
+
+*#ToolBar::menu-indicator {
+image:none
+ }
+
+/* ========== Font Size ========== */
+
+/* AJ2D17545 xKF27545 modify 2010-08-06 begin fixed the SMS wrap issue */
+/* set for all widgets font size */
+/*
+* {
+     font-size: 12px;
+     font-family:Arial;
+}
+*/
+/* AJ2D17545 xKF27545 modify 2010-08-06 end */
+
+QTableWidget {	
+	background: white;
+}
+
+/* ========== QDialog ========== */
+
+ QGroupBox { 
+	    border-top-width: 3px;
+	    border-right-width: 2px;
+	    border-bottom-width: 2px;
+	    border-left-width: 2px; 
+	    margin-top: 1ex;             
+          
+             }
+             
+ QGroupBox::title {
+   subcontrol-origin: margin;
+   left: 5px;
+   top: 1px;
+ }
+ 
+
+
+
+QMenu::item
+{
+     padding: 4px 30px 4px 24px;
+}
+QMenu::item:selected 
+{
+  background: rgba(131, 131, 131, 150);
+}
+
+QMenu::separator 
+{
+     height: 2px;
+     background-image: url(./skin/IDS_MINISKIN_DEFAULT/menu_line.png); 
+     margin-left: 20px;
+ }
+QMenu::item:!enabled {color:gray; }
+QMenu
+{
+   background-image: url(./skin/IDS_MINISKIN_DEFAULT/menu_bg.png);   
+   margin: 0px; /* some spacing around the menu */
+   font-size:12px;
+   font-family:Arial;
+}
+
+/*2010-06-09 DTS2010060200827 P72152 Unwanted popups coming in WIn7 / Linux */
+/* 2010-05-10  cKF26894  AJ2D17482  when the message arrive don't show view and cacel button */
+/* 2010-04-26  cKF26894  AJ2D17215  move the cursor on the Connect button.click the button but don't move the cursor all along. the  state of the button don't change. */
+/*2010-06-20 P72152 Table widget background is not drawing properly*/

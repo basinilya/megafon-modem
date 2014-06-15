@@ -1,0 +1,44 @@
+#!/bin/bash
+
+if [ `id | awk '{print $1}'` != "uid=0(root)" ]
+then
+    echo -e "{LYouMustBeRoot}"
+    echo -e "\n{LInstallEnd}"
+    read RESP
+    exit
+fi
+
+RUNP=`ps -ef |grep -v grep |grep MobilePartner.bin | awk '{print $2}'`
+
+if [ "x${RUNP}" != "x" ]
+then
+    echo -e "{LProgramRunning}"
+    echo -e "\n{LInstallEnd}"
+    read RESP
+    exit
+fi
+
+{INSTALLPATH}/driver/Uninstall
+#{INSTALLPATH}/autorun/huawei_autostart stop
+#{INSTALLPATH}/autorun/huawei_autostart uninstall
+rm -rf {INSTALLPATH}
+rm -rf /usr/local/hw_pppd
+grep -v MobilePartner.sh /etc/sudoers > /etc/sudoers.bak 2>&1
+sed -i "s/# ,{REQUIRETTY},{DELETECOMMENT}/{REQUIRETTY}/g" /etc/sudoers.bak 2>/dev/null
+cp -f /etc/sudoers.bak /etc/sudoers
+rm -f /etc/sudoers.bak
+if [ -d /root/Desktop ]
+then
+    rm -rf /root/Desktop/MobilePartner.desktop
+else
+    rm -rf /root/MobilePartner.desktop
+fi
+rm -rf /usr/share/applications/MobilePartner.desktop
+rm -rf /usr/share/applications/UninstallMobilePartner.desktop
+if [ -f {CONFIG_FILE} ]
+then
+    rm -rf {CONFIG_FILE}
+fi
+
+#removing /etc/pm/sleep.d/67hw_hook
+rm -f /etc/pm/sleep.d/67hw_hook

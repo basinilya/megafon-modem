@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="sysconfig">
+   	<menu name="mysettings" parent="null">
+		<item type="ITEM"	id="IDS_MY_MENU_ABOUT"></item>
+		<item type="ITEM"	id="IDS_MY_MENU_HELP"></item>
+		<item type="ITEM"	id="IDS_MY_MENU_DIAGNOSE"></item>
+	</menu>	
+</utpsdoc>

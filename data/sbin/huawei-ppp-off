@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/hw_pppd/sbin/ppp-off "$1"

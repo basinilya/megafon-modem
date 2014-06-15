@@ -1,0 +1,14 @@
+#!/bin/sh
+# author: xionghao 00121577
+# date:   2008-08-07
+export LANG="en_US.UTF-8"
+export COLUMNS=256
+if [ "$1" = "" ]; then
+        echo "parameter error"
+	exit 2
+else
+        FILENAME=$1
+fi
+
+rm -f $FILENAME
+

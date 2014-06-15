@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Application;Network
+Comment=${HW_SOFTWARENAME} Applications
+Comment[en]=${HW_SOFTWARENAME} Applications
+Encoding=UTF-8
+Name=${HW_SOFTWARENAME}
+Name[en]=${HW_SOFTWARENAME}
+Terminal=false
+Type=Application
+Exec=${HW_INSTALLPATH}/ReadDisplay
+Icon=${HW_INSTALLPATH}/mobile.png
+Path=${HW_INSTALLPATH}

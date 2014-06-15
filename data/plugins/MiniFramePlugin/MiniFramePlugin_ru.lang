@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="MiniFramePlugin">
+<item name="IDS_LANGUAGE_NAME">Русский</item>
+<item name="IDS_FRAME_TITLE">МегаФон | Модем</item>
+<item name="IDS_HELP">Справка</item>
+<item name="IDS_XFRAME_OPER">Операция</item>
+<item name="IDS_MAINFRM_LANG_PROMPT">Язык</item>
+<item name="IDS_MAINFRM_MENU_PIN">Операции с PIN-кодом</item>
+<item name="IDS_XFRAME_DEVMGR">Выбор устройства</item>
+<item name="IDS_MAINFRM_DIAGNOSTICS_WINDOWSTXT">Диагностика</item>
+<item name="IDS_MAINFRM_RF_ENABLE">Включить радио...</item>
+<item name="IDS_MAINFRM_RF_DISABLE">Отключить радио...</item>
+<item name="IDS_XFRAME_OPTION">Настройки</item>
+<item name="IDS_MAINFRM_PIN_VERIFY_WINDOWSTXT">Ввести PIN-код</item>
+<item name="IDS_MAINFRM_PIN_UNLOCK_WINDOWSTXT">Разблокировать PIN-код</item>
+<item name="IDS_MAINFRM_MENU_CHANGEPIN">Изменить PIN-код</item>
+<item name="IDS_MAINFRM_MENU_ENABLEPIN">Включить проверку PIN-кода</item>
+<item name="IDS_MAINFRM_MENU_DISABLEPIN">Отключить проверку PIN-кода</item>
+<item name="IDS_MAINFRM_MENU_MAINFR_HELP">Руководство...\tF1</item>
+<item name="IDS_MAINFRM_MENU_MAINFR_ABOUT">О программе</item>
+<item name="IDS_SETTINGS">Настройки</item>
+<item name="IDS_DIALUPUI_CONNECT">Подключить</item>
+<item name="IDS_DIALUPUI_CANCEL">Отмена</item>
+<item name="IDS_DIALUPUI_DISCONNECT">Отключить</item>
+<item name="IDS_CALL_MENU">Вызов</item>
+<item name="IDS_DISPLAY">вывод...</item>
+<item name="IDS_CALL_ANSWER">Ответ на вызов</item>
+<item name="IDS_CALL_HANGUP">Вызов заверш.</item>
+<item name="IDS_EXIT">Выход</item>
+<item name="IDS_MINI_CONNECTING">Подключение...</item>
+<item name="IDS_MINI_CANCELING">Отмена...</item>
+<item name="IDS_MINI_DISCONNECTING">Отключение...</item>
+<item name="IDS_MINI_TOOLTIP_SETTINGS">Настройки</item>
+<item name="IDS_MINI_TOOLTIP_WEBKIT">Веб-инструменты</item>
+<item name="IDS_SIGNAL_STRENGTH">Уровень сигнала %d%%</item>
+<item name="IDS_NO_DEVICE">Устройство не обнаружено</item>
+<item name="IDS_NO_SIM">SIM-карта не обнаружена</item>
+<item name="IDS_PIN_BLOCKED">PUK-код заблокирован</item>
+<item name="IDS_PIN_NOT_INITIALISED">PIN-код заблокирован</item>  
+<item name="IDS_MINI_UNSOLVED_MSG_PROMPT">%d непрочитанных сообщений</item>
+<item name="IDS_MINI_UNSOLVED_CALL_PROMPT">%d пропущенных вызовов</item>
+<item name="IDS_MINI_WIFI_SEARCHING">Идет поиск сети Wi-Fi</item>
+<item name="IDS_MINI_WIFI_NO_NETWORK">Сеть Wi-Fi не найдена</item>
+<!--Add by zhoujun begin 2010-8-2 -->
+<item name="IDS_MAINFRM_FILE">Сервисы</item>
+<item name="IDS_MAINFRM_SETTING">Настройки</item>
+<item name="IDS_MAINFRM_HELP">Справка</item>
+<item name="IDS_MAINFRM_USSD">Баланс</item>
+<item name="IDS_MAINFRM_NETINFO">Подробная  статистика</item>
+<item name="IDS_MY_MENU_SMS">SMS-клиент</item>
+<item name="IDS_MY_MENU_PHONEBOOK">Контакты</item>
+<item name="IDS_MY_MENU_STATATICS">Статистика</item>
+<item name="IDS_MY_MENU_USSD">Баланс</item>
+<item name="IDS_MY_MENU_DIAGNOSE">Диагностика</item>
+<item name="IDS_MY_MENU_LINK1">Трава</item>
+<item name="IDS_MY_MENU_LINK2">MULTIFON.RU</item>
+<item name="IDS_MY_MENU_GENERAL">Основные</item>
+<item name="IDS_MY_MENU_SMSCLIENT">SMS-клиент</item>
+<item name="IDS_MY_MENU_PROFILE">Профиль</item>
+<item name="IDS_MY_MENU_NETWORK">Сеть</item>
+<item name="IDS_MY_MENU_ABOUT">О программе</item>
+<item name="IDS_MY_MENU_HELP">Руководство</item>
+<item name="IDS_MAINFRM_UPDATEVIA">Обновление программы</item>
+<item name="IDS_UPDATE_CHECKNOW">Обновление программы</item>
+<item name="IDS_UPDATE_SETTINGS">Настройки</item>
+<item name="IDS_MY_SWITCH_SKIN">Переключить скин</item>
+<item name="IDS_MINISKIN_DEFAULT">Обычный</item>
+<item name="IDS_MINISKIN_BLACK">Черный</item>
+<item name="IDS_MINISKIN_FOOTBALL">Футбол</item>
+<!--Add by zhoujun end 2010-8-2 -->
+<!--add by cKF14969 2010-07-26 begin-->
+<item name="IDS_MINI_NOSERVICE">Не подключен</item>
+<!--item name="IDS_MINI_NOSERVICE">Не подключен</item-->
+<!--item name="IDS_MINI_LASTCAPTION">Последний сеанс:</item-->
+<item name="IDS_MINI_LASTCAPTION">Последний сеанс:</item>
+<!--add by cKF14969 2010-07-26 end-->
+<!--add by KF28394 2010-11-29 begin-->
+<item name="IDS_MY_MENU_LINKS">МегаФон</item>
+<item name="IDS_MY_MENU_ESHOP">Интернет-магазин</item>
+<item name="IDS_MY_MENU_MOBILEDEVICES">Мобильные устройства</item>
+<item name="IDS_MY_MENU_CHANGESIGNAL">Замени гудок</item>
+<item name="IDS_MY_MENU_TRAVA">Трава</item>
+<item name="IDS_MY_MENU_TRAVAONLINE">Трава-Онлайн</item>
+<item name="IDS_MY_MENU_FILLUP">Пополнить счет</item>
+<item name="IDS_MY_MENU_SERVICEGUIDE">Сервис-Гид</item>
+<item name="IDS_MY_MENU_SENDMMS">Отправить MMS</item>
+<item name="IDS_MY_MENU_MULTIFON">МультиФон</item>
+<!--add by KF28394 2010-11-29 end-->
+<item name="IDS_MY_MENU_TRAVA_LOCAL">Трава-Онлайн</item>
+<item name="IDS_CANT_SEND_USSD_TITLE">МегаФон</item>
+<item name="IDS_CANT_SEND_USSD_CONTENT">LTE сеть не поддерживает запросы USSD, Вам необходимо перейти в 3G/2G  для работы с USSD.</item>
+</module>
+</utpsdoc>

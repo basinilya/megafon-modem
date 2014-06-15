@@ -1,0 +1,2678 @@
+*#miniplugin_bgwidget{
+	border-image: url("./skin/IDS_MINISKIN_FOOTBALL/bgwidget_bg.png");
+}
+
+*#DeviceMgrUI_labelInfoLabel
+{
+    font-size:14px; 
+}
+
+*#miniplugin_swnamelabel{
+    font-family:Arial;
+    font-size:12px;
+    color:green;
+}
+
+*#miniplugin_connecttimelabel {
+    font:bold;
+    font-size:12px; 
+    font-family:Arial;
+    color:#AAAAAA;
+}
+
+*#miniplugin_uploadtextlabel, 
+*#miniplugin_downloadtextlabel{
+    font:bold;
+    font-size:14px;
+    font-family:Arial;
+    color:rgb(207,238,205); /*Modify by zhoujun 2010-10-23 just for football skin*/
+}
+
+*#miniplugin_operatorNamelabel{
+    margin-top: 0px;
+    font:bold;
+    font-size:12px;
+    font-family:Arial;
+    color:#5C5C5C;
+}
+
+*#miniplugin_syssrvlabel{
+    font: bold 14px;
+    font-size:16px;
+    font-family:Arial;
+    color:#538D08;
+}
+
+*#miniplugin_connectbtn,
+*#miniplugin_disconnectingbtn,
+*#miniplugin_connectingbtn
+{
+ 	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/connectbtn_normal.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#5D920B;
+}
+
+*#miniplugin_disconnectbtn 
+{
+ 	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/disconnect_normal.png); 
+	border-top: 2px transparent; 
+	border-bottom: 2px transparent; 
+	border-right: 2px transparent; 
+	border-left: 2px transparent;
+	font:bold;
+	font-size:16px;
+	font-family:Arial;
+	color:#494949;
+}
+   /* AJ2D17215 add by cKF26894 2010 4.26 begin */
+*#miniplugin_connectbtn:pressed,
+*#miniplugin_disconnectingbtn:pressed,
+*#miniplugin_connectingbtn:pressed,
+*#miniplugin_disconnectbtn:pressed
+
+{
+	 border-image: url(./skin/IDS_MINISKIN_FOOTBALL/disconnect_pressed.png);   
+}
+*#miniplugin_disconnectbtn:hover,
+*#miniplugin_connectbtn:hover,
+*#miniplugin_disconnectingbtn:hover,
+*#miniplugin_connectingbtn:hover
+{
+	 border-image: url(./skin/IDS_MINISKIN_FOOTBALL/connectbtn_on.png);   
+}
+
+*#miniplugin_disconnectbtn:hover,
+*#miniplugin_disconnectingbtn:hover,
+*#miniplugin_disconnectbtn:hover
+{
+	 border-image: url(./skin/IDS_MINISKIN_FOOTBALL/disconnect_on.png);   
+}
+   /* AJ2D17215 add by cKF26894 2010 4.26 end */
+
+*#miniplugin_minimizebtn { 
+border: 1px;
+background-image: url(./skin/IDS_MINISKIN_FOOTBALL/minimizebtn_minimum.png);
+}
+
+*#miniplugin_closebtn{
+border: 1px;
+background-image: url(./skin/IDS_MINISKIN_FOOTBALL/closebtn_close.png);
+}
+
+*#miniplugin_statsticswidget
+{
+	 background-image: url(./skin/IDS_MINISKIN_FOOTBALL/statsticswidget_frame.png);   
+}
+
+*#miniplugin_modalsmsbtn
+	   
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/smsbtn_unselmsg.png);   
+}
+
+*#miniplugin_modalsmsbtn:hover,
+*#miniplugin_modalsmsbtn :focus:hover,
+*#miniplugin_modalsmsbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/smsbtn_selmsg.png);   
+}
+
+*#miniplugin_modalstatisticsbtn
+{
+    font-size:1px;
+    color:rgb(208,235,165);
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/statisticbtn_unselflowrate.png);   
+}
+*#miniplugin_modalstatisticsbtn:hover,
+*#miniplugin_modalstatisticsbtn:focus:hover,	   
+*#miniplugin_modalstatisticsbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/statisticbtn_selflowrate.png);   
+}
+
+*#miniplugin_modalwebkitbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/pbbtn_unselpb.png);   
+}
+
+*#miniplugin_modalwebkitbtn:hover,
+*#miniplugin_modalwebkitbtn:focus:hover,	   
+*#miniplugin_modalwebkitbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/pbbtn_selpb.png);   
+}
+
+
+
+*#miniplugin_modalpbbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/pbbtn_unselpb.png);   
+}
+
+*#miniplugin_modalpbbtn:hover,
+*#miniplugin_modalpbbtn:focus:hover,	   
+*#miniplugin_modalpbbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/pbbtn_selpb.png);   
+}
+
+*#miniplugin_menubtn   
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/menubtn_unselmenu.png);   
+}
+
+*#miniplugin_menubtn:hover,
+*#miniplugin_menubtn:focus:hover,
+*#miniplugin_menubtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/menubtn_selmenu.png);   
+}
+
+*#miniplugin_menubtn::menu-indicator
+{
+   border-image: url(./skin/IDS_MINISKIN_FOOTBALL/transparent.png);   
+}
+
+*#miniplugin_newsmslabel,miniplugin_newcalllabel
+{
+    border-image: url(./skin/IDS_MINISKIN_FOOTBALL/comm_popup_number.png);   
+    text-align: center;
+}
+*#ViewButton,
+*#CancelButton
+{
+   min-width: 86px;  min-height: 24px;
+   max-width: 86px;  max-height: 24px;
+}
+*#DiagnosticsUIPlugin_pushButtonCancel, *#DiagnosticsUIPlugin_pushButtonRefresh, 
+*#DiagnosticsUIPlugin_pushButtonSave
+{
+   min-width: 96px;  min-height: 24px;
+   max-width: 96px;  max-height: 24px;
+}
+
+*#DiagnosticsUIPlugin_pushButtonCdmaSave,
+*#DiagnosticsUIPlugin_pushButtonCdmaRefresh,
+*#DiagnosticsUIPlugin_pushButtonCdmaCancel
+{     
+     min-width: 96px;  min-height: 24px;
+     max-width: 96px;  max-height: 24px;
+}
+*#SMSUIPLUGIN_memfullclosebtn
+{
+     min-width: 96px;  min-height: 24px;
+     max-width: 96px;  max-height: 24px;
+}
+*#ToolBar::menu-indicator {
+image:none
+ }
+/*add by zhoujun 2010-09-17 begin, the second UI*/
+*#AddrBookUIPlugin_selectContacts_Mybutton,
+*#AddrBookUIPlugin_selectContacts_My2button
+{
+   border-image: url(./skin/IDS_MINISKIN_DEFAULT/select_number.png);  
+}
+*#miniplugin_modalussdbtn
+{
+        border-image: url(./skin/IDS_MINISKIN_DEFAULT/unsel_ussd.png);
+        font:bold;
+        font-size:12px; 
+        font-family:Arial;
+        color:#5C5C5C;   
+}
+*#miniplugin_modalussdbtn:hover,
+*#miniplugin_modalussdbtn:focus:hover,
+*#miniplugin_modalussdbtn:pressed
+{
+        border-image: url(./skin/IDS_MINISKIN_DEFAULT/sel_ussd.png);     
+}
+
+*#miniplugin_mymodalfunctionbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/filebtn_selmsg.png);
+       font:bold;
+       font-size:1px; 
+       font-family:Arial;
+       color:#5C5C5C;   
+}
+*#miniplugin_mymodalfunctionbtn:focus,	   
+*#miniplugin_mymodalfunctionbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/filebtn_selmsg.png);   
+}
+
+*#miniplugin_mymodalsettingbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/settingbtn_unselsetting.png);
+       font:bold;
+       font-size:1px; 
+       font-family:Arial;
+       color:#5C5C5C;      
+}
+*#miniplugin_mymodalsettingbtn:focus,	   
+*#miniplugin_mymodalsettingbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/settingbtn_unselsetting.png);   
+}
+
+*#miniplugin_mymodalhelpbtn
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/helpbtn_unselhelp.png); 
+       font:bold;
+       font-size:1px; 
+       font-family:Arial;
+       color:#5C5C5C;     
+}
+*#miniplugin_mymodalhelpbtn:focus
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/helpbtn_unselhelp.png);  
+}	   
+*#miniplugin_mymodalhelpbtn:pressed
+{
+	border-image: url(./skin/IDS_MINISKIN_FOOTBALL/helpbtn_unselhelp.png);   
+}
+
+*#miniplugin_mytoolbuttonCaption
+{
+   border:none;
+   margin:0px;
+   font:bold;
+   font-size:23px;
+   color:rgb(110,119,125);
+}
+*#miniplugin_myselectDay
+{
+   border:none;
+   margin:0px;
+   font:bold;
+   font-size:14px;
+   color:rgb(139,151,158); /*modify by cKF14969 2010-11-23*/
+}
+*#miniplugin_mycurrentfluxLabel
+{
+   border:none;
+   margin:0px;
+   font:bold;
+   font-size:14px;
+   color:rgb(139,151,158); /*modify by cKF14969 2010-11-23*/ 
+}
+*#miniplugin_mytoolbuttonLabel
+{
+   font:bold;
+   font-size:17px; /*modify by cKF14969 2010-11-23*/
+   font-family:Arial;
+   color:#5CB954;  
+}
+*#miniplugin_mydownloadIconLabel
+{
+   image: url(./skin/IDS_MINISKIN_DEFAULT/downloadiconlabel_downarrow.png);
+}
+*#miniplugin_myuploadIconLabel
+{
+   image: url(./skin/IDS_MINISKIN_DEFAULT/uploadiconlabel_uparrow.png);
+}
+*#miniplugin_myunit1Label
+{
+   font:bold;
+   font-size:14px; /*modify by peidong 2010-09-21*/
+   font-family:Arial;
+   color:rgb(139,151,158); /*modify by cKF14969 2010-11-23*/
+}
+
+/*add by peidong 2010-09-21 begin*/
+*#miniplugin_donwFluxLabel
+{
+   font:bold;
+   font-size:14px; 
+   font-family:Arial;
+   color:rgb(54,169,41);
+}
+/*add by peidong 2010-09-21 end*/
+
+*#miniplugin_myspinbox1
+{
+    border:none;
+    margin:0px;
+    background: rgba(243, 247, 249,150);
+    background: url(./skin/IDS_MINISKIN_DEFAULT/spbox_bk_image.png); /*add by peidong 2010-09-21*/
+    font:bold;
+    font-size:14px; 
+    font-family:Arial;
+    color:rgb(53,169,42); /*modify by peidong 2010-09-21*/
+    selection-background-color: white; /*add by peidong 2010-09-21*/
+    selection-color: #5C5C5C; /*add by peidong 2010-09-21*/
+}
+*#miniplugin_myspinbox1::down-button{
+    background: url(./skin/IDS_MINISKIN_DEFAULT/left_arrow.png); /*add by peidong 2010-09-21*/
+    subcontrol-position: left;
+    width:10px; /*modify by peidong 2010-09-21*/
+    height:14px; /*modify by peidong 2010-09-21*/
+}
+*#miniplugin_myspinbox1::up-button{ 
+    background: url(./skin/IDS_MINISKIN_DEFAULT/right_arrow.png); /*add by peidong 2010-09-21*/
+    subcontrol-position: right;
+    width:10px; /*modify by peidong 2010-09-21*/
+    height:14px; /*modify by peidong 2010-09-21*/
+}
+*#miniplugin_myspinbox1::down-arrow{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/left_arrow.png); /*modify by peidong 2010-09-21*/
+    width:10px; /*add by peidong 2010-09-21*/
+    height:14px; /*add by peidong 2010-09-21*/
+}
+*#miniplugin_myspinbox1::up-arrow{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/right_arrow.png); /*modify by peidong 2010-09-21*/
+    width:10px; /*add by peidong 2010-09-21*/
+    height:14px; /*add by peidong 2010-09-21*/
+}
+
+/*add by peidong 20100908 begin*/
+*#miniplugin_myspinbox2
+{
+    border:none;
+    margin:0px;
+    background: rgba(243, 247, 249,150);
+    background: url(./skin/IDS_MINISKIN_DEFAULT/spbox_bk_image2.png);
+    font:bold;
+    font-size:14px; 
+    font-family:Arial;
+    color:rgb(53,169,42);
+    selection-color: #5C5C5C;
+    selection-background-color: white;
+}
+*#miniplugin_myspinbox2::down-button{
+		background: url(./skin/IDS_MINISKIN_DEFAULT/left_arrow.png);
+    subcontrol-position: left;
+    width:10px;
+    height:14px;
+}
+*#miniplugin_myspinbox2::up-button{ 
+		background: url(./skin/IDS_MINISKIN_DEFAULT/right_arrow.png);
+    subcontrol-position: right;
+    width:10px;
+    height:14px;
+}
+
+*#miniplugin_myspinbox2::down-arrow{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/left_arrow.png);
+    width:10px;
+    height:14px;
+}
+*#miniplugin_myspinbox2::up-arrow{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/right_arrow.png);
+    width:10px;
+    height:14px;
+}
+
+*#NetInfoUIPlugin_Label_TransferTime
+{
+		font:bold;
+    font-size:22px; 
+    font-family:Arial;
+    color:rgb(104,125,133); /*modify by cKF14969 2010-11-25*/
+}
+
+*#netInfoUI_WidgetBackGround
+{
+		border-image: url("./skin/default/images/uiplugin_netinfo_bg.png"); /*modify by cKF14969 2010-11-25*/
+}
+/*add by peidong 20100908 end*/
+
+*#miniplugin_myline1
+{
+   color:rgb(208,216,216); /*modify by cKF14969 2010-11-25*/
+}
+
+*#MynewSmsButton
+{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/newSMS.png); 
+}
+*#miniplugin_mytoolbuttonTab1
+{
+   border:none;
+   margin:0px;
+   font:bold;
+   font-size:14px;
+   color:#6E777D; 
+}
+*#miniplugin_myLocalTabWidget
+{
+   image: url(./skin/IDS_MINISKIN_DEFAULT/sms_bg0.png); 
+}
+*#miniplugin_mySimTabWidget
+{
+   image: url(./skin/IDS_MINISKIN_DEFAULT/sms_bg1.png); 
+}
+*#miniplugin_myBottomWidget
+{
+   image: url(./skin/IDS_MINISKIN_DEFAULT/MySms_bg2); 
+}
+*#SMSUIPlugin_TextPreview
+{
+   border-image: url(./skin/IDS_MINISKIN_DEFAULT/transparent.png);
+   font:bold;
+   font-size:14px;
+   color:rgb(127,144,150);
+}
+*#miniplugin_mySmsCaption
+{
+   border:none;
+   margin:0px;
+   font:bold;
+   font-size:22px;
+   color:#6E777D;  
+}
+*#miniplugin_mySmsMsgLabel
+{
+   border:none;
+   margin:0px;
+   font:bold;
+   font-size:14px;
+   color:#6E777D;
+}
+*#SMSUIPlugin_LabelCharCountMsg
+{
+   border:none;
+   margin:0px;
+   font:bold;
+   font-size:12px;
+   color:#6E777D;
+}
+*#miniplugin_myLocalTabButton
+{
+    border:none;
+    font:bold;
+    font-family:Arial;
+    font-size:11px;
+    color:rgb(110,119,125); 
+}
+
+*#SMSUIPlugin_MyProgressBar
+{
+    image: url(./skin/default/images/progressbar_bg.png); 
+}
+
+*#SMSUIPlugin_MyProgressBar:!enabled
+{
+    image: url(./skin/default/images/progressbar_disabled_bg.png); 
+}
+*#SMSUIPlugin_ButtonCloseMsgButton
+{
+     min-width: 70px;
+     min-height: 20px;
+     max-width: 88px;
+     max-height: 24px;
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent; 
+     font:bold;
+}
+*#SMSUIPlugin_ButtonCloseMsgButton:hover
+{
+    border-image: url(./skin/default/images/button_hover.png);
+    font:bold;
+	color: white;
+}
+*#SMSUIPlugin_ButtonCloseMsgButton:pressed
+{
+    border-image: url(./skin/default/images/button_pressed.png);
+    font:bold;
+	color: white;
+}
+*#SMSUIPlugin_ButtonCloseMsgButton:!enabled
+{
+    border-image: url(./skin/default/images/button_disabled.png);
+    font:bold;
+	color: white;
+}
+*#miniplugin_mydivideline
+{
+    border-image: url(./skin/default/images/Mydivideline.png);
+}
+*#SelectNumber_Mylines
+{
+    color: rgb(213,218,221);
+}
+*#My_ContactsWidget
+{
+    /*add by wangjing 2010-09-17 begin*/
+	border-image: url(./skin/default/images/myListbg.png) 2 2 2 2;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	/*add by wangjing 2010-09-17 end*/
+	/*add by cKF14969 2010-10-13 begin*/
+	font:bold;
+  	font-size:11px;
+	color: rgb(110, 119, 125);
+	selection-color: rgb(110, 119, 125);
+	selection-background-color: rgb(255, 255, 225);
+	selection-outline-style:none;
+	border: none;
+	/*add by cKF14969 2010-10-13 end*/
+	background: white;
+}
+*#MySMS_Waittingtext
+{
+  	font-size:15px;
+}
+
+/*add by zhoujun 2010-09-17 end*/
+
+/*add by wangjing 2010-09-17 begin*/
+*#Core_ExtendDialogFrame {
+	border-image: url("./skin/default/images/frame_child_border.png") 41 3 5 3;
+	border-top-width: 41px;
+	border-right-width: 3px;
+	border-bottom-width: 5px;
+	border-left-width: 3px;	
+	background-image: url("./skin/default/images/uiplugin_bg.png");
+}
+
+/*modify by cKF14969 2011-01-18 begin*/
+*#Core_ExtendDialogFrame2 {
+	border-image: url("./skin/default/images/frame_child_border2.png") 41 3 5 3;
+	border-top-width: 41px;
+	border-right-width: 3px;
+	border-bottom-width: 5px;
+	border-left-width: 3px;	
+	background-image: url("./skin/default/images/uiplugin_bg.png");
+}
+*#Core_ExtendDialogFrame3 {
+	border-image: url("./skin/default/images/frame_child_border3.png") 41 3 5 3;
+	border-top-width: 41px;
+	border-right-width: 3px;
+	border-bottom-width: 5px;
+	border-left-width: 3px;	
+	background-image: url("./skin/default/images/uiplugin_bg.png");
+}
+/*add by cKF14969 2011-01-18 end*/
+
+*#DialupUIPlugin_widgetMainFrame {
+background-image: url("./skin/default/images/connect_plugin_bg.png");
+}
+
+*#DiagnosticsUIPlugin_dialogCdma,
+*#DiagnosticsUIPlugin_widgetCdmaDiagnostic, *#DiagnosticsUIPlugin_frameCdmaDiag,
+*#NetSettingUI_WidgetNetworkTab, *#NetSettingUI_WidgetRegistrationTab, *#NetSettingUI_TabWidgetCdma, *#NetSettingUI_WidgetCdmaTab,
+*#NetConnectSettingUIPlugin_DialuptabWdg
+{
+   background-image: url("./skin/default/images/tab_bg.png");
+}
+  
+ *#AddrBookUIPlugin_MainWidget,*#SMSUIPlugin_MainWidget{
+    background-image: url("./skin/default/images/uiplugin_bg.png");
+  }
+  
+/*modify by peidong 2010-09-21 begin*/
+*#SettingUIPlugin_DialogSettingPlugin,
+ *#SMSUIPlugin_WidgetcreateMsg, *#CallLogUIPlugin_callLogWidget, *#NetInfoRecordUIPlugin_ConnectionHistoryWidget,
+ *#CallSettingDlg_WidgetGeneral, *#CallSettingDlgCdma_WidgetCallForward, *#CallSettingDlg_WidgetCallForwarding,
+ *#CallSettingDlgCdma_WidgetCallWait, *#CallSettingDlgCdma_WidgetCallRest,
+ *#CallUIDlg_WidgetMain{
+   background-image: url("./skin/default/images/uiplugin_bg.png");
+  }
+/*modify by peidong 2010-09-21 end*/
+
+/*modify by peidong 2010-11-19 begin*/
+*#SMS_WaitingDialogFrame{
+	border-image: url("./skin/default/images/waitting_thinborder_bg.png") 2 2 2 2;
+	border-top-width: 2px transparent;
+	border-right-width: 2px transparent;
+	border-bottom-width: 2px transparent;
+	border-left-width: 2px transparent;
+}
+
+*#AddrBook_WaitingDialogFrame{
+	border-image: url("./skin/default/images/waitting_bg.png") 2 2 2 2;
+	border-top-width: 2px transparent;
+	border-right-width: 2px transparent;
+	border-bottom-width: 2px transparent;
+	border-left-width: 2px transparent;
+}
+/*modify by peidong 2010-11-19 end*/
+
+*#Core_LabelTitle { 
+	color: rgb(255, 255, 255);
+	font:bold; /*add by cKF14969 2010-10-20*/
+}
+
+*#Core_ButtonClose {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	border: 1px;
+	background-image: url(./skin/default/images/close_button_normal.png);
+}
+
+*#Core_ButtonClose:hover {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/close_button_hover.png);
+}
+
+*#Core_ButtonClose:pressed {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/close_button_press.png);
+}
+
+*#Core_ButtonClose:!enabled {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/close_button_disable.png);
+}
+
+*#Core_ButtonMinimize {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	border: 1px;
+	background-image: url(./skin/default/images/minimum_normal.png);
+}
+
+*#Core_ButtonMinimize:hover {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/minimum_hover.png);
+}
+
+*#Core_ButtonMinimize:pressed {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/minimum_press.png);
+}
+
+*#Core_ButtonMinimize:!enabled {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/minimum_disable.png);
+}
+
+*#Core_ButtonMaximize {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	border: 1px;
+	background-image: url(./skin/default/images/maximize_button_normal.png);
+}
+
+*#Core_ButtonMaximize:hover {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/maximize_button_hover.png);
+}
+
+*#Core_ButtonMaximize:pressed {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/maximize_button_press.png);
+}
+
+*#Core_ButtonMaximize:!enabled  {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/maximize_button_disable.png);
+}
+
+*#Core_ButtonRestore {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	border: 1px;
+	background-image: url(./skin/default/images/restore_button_normal.png);
+}
+
+*#Core_ButtonRestore:hover {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/restore_button_hover.png);
+}
+
+*#Core_ButtonRestore:pressed {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/restore_button_press.png);
+}
+
+*#Core_ButtonRestore:!enabled  {
+        min-width: 28px;  min-height: 24px;
+        max-width: 28px;  max-height: 24px;
+	background-image: url(./skin/default/images/restore_button_disable.png);
+}
+/*=======20100112  Parmod_72614 :A56D15027 : Set the size of the redial and cancel button ====*/
+*#DialupUIPlugin_buttonRedial, *#DialupUIPlugin_buttonDlgCancel{
+    min-width: 117px; min-height: 19px;
+    max-width: 117px; max-height: 19px;
+}
+*#DiagnosticsUIPlugin_pushButtonCancel, *#DiagnosticsUIPlugin_pushButtonRefresh, *#AboutUI_ButtonOK,
+*#DiagnosticsUIPlugin_pushButtonSave
+, *#AddrBookUIPlugin_New_Edit_Dlg_OK_Button
+{     
+     min-width: 89px;
+     min-height: 29px;
+     max-width: 89px;
+     max-height: 29px;
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+}
+*#USSDUIPlugin_AdvancedDialog_EditButton {     
+     min-width: 142px; min-height: 19px;
+     max-width: 390px; max-height: 19px;/*set the max width to a much higher value so that whole text is displayed*/
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+}
+*#USSDUIPlugin_AdvancedDialog_ClearHistoryButton{
+    min-width: 119px; min-height: 19px;
+    max-width: 119px; max-height: 19px;
+}
+*#USSDUIPlugin_AdvancedDialog_EditButton:!enabled 	    { border-image: url(./skin/default/images/button_disabled.png);                 }
+*#USSDUIPlugin_AdvancedDialog_EditButton:hover 	        { border-image: url(./skin/default/images/button_hover.png);   color: white;    }
+*#USSDUIPlugin_AdvancedDialog_EditButton:pressed 	    { border-image: url(./skin/default/images/button_pressed.png);                  }
+*#USSDUIPlugin_AdvancedDialog_EditButton:focus 	        { border-image: url(./skin/default/images/button_focus.png);                    }
+*#USSDUIPlugin_AdvancedDialog_EditButton:focus:hover	{ border-image: url(./skin/default/images/button_hover.png); color: white;      }
+
+*#DiagnosticsUIPlugin_pushButtonCancel:hover, *#DiagnosticsUIPlugin_pushButtonRefresh:hover, *#AboutUI_ButtonOK:hover,
+*#DiagnosticsUIPlugin_pushButtonSave:hover  { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+
+*#DiagnosticsUIPlugin_pushButtonCancel:pressed, *#DiagnosticsUIPlugin_pushButtonRefresh:pressed, *#AboutUI_ButtonOK:pressed,
+*#DiagnosticsUIPlugin_pushButtonSave:pressed  {
+	border-image: url(./skin/default/images/button_pressed.png);
+	color: white;	
+}
+
+*#DiagnosticsUIPlugin_pushButtonCancel:focus, *#DiagnosticsUIPlugin_pushButtonRefresh:focus, *#AboutUI_ButtonOK:focus,
+*#DiagnosticsUIPlugin_pushButtonSave:focus  { 
+	border-image: url(./skin/default/images/button_focus.png);
+}
+
+*#DiagnosticsUIPlugin_pushButtonCancel:focus:hover, *#DiagnosticsUIPlugin_pushButtonRefresh:focus:hover, *#AboutUI_ButtonOK:hover,
+*#DiagnosticsUIPlugin_pushButtonSave:focus:hover  { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+
+*#NetConnectSettingUIPlugin_ButtonAdvanceProfile,
+*#NetSettingUI_ButtonApply, *#NetSettingUI_ButtonRefresh, *#NetSettingUI_ButtonRegiste, *#NetSettingUI_ButtonCdmaApply {     
+     min-width: 102px;
+     min-height: 20px;
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+}
+
+/*modify by cKF14969 2010-11-30 begin*/
+QDialog QPushButton, *#SettingUIPlugin_ButtonOk, *#SettingUIPlugin_ButtonCancel
+{     
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+     font:bold;
+     font-size:11px;
+     color:#6E777D;
+}
+
+QDialog QPushButton:!enabled, *#SettingUIPlugin_ButtonOk:!enabled, *#SettingUIPlugin_ButtonCancel:!enabled, *#NetConnectSettingUIPlugin_ButtonAdvanceProfile:!enabled,
+*#NetSettingUI_ButtonApply:!enabled, *#NetSettingUI_ButtonRefresh:!enabled, *#NetSettingUI_ButtonRegiste:!enabled, *#NetSettingUI_ButtonCdmaApply:!enabled {
+ border-image: url(./skin/default/images/button_disabled.png);   
+ color: white;
+ }
+
+QDialog QPushButton:hover, *#SettingUIPlugin_ButtonOk:hover, *#SettingUIPlugin_ButtonCancel:hover, *#NetConnectSettingUIPlugin_ButtonAdvanceProfile:hover,
+*#NetSettingUI_ButtonApply:hover, *#NetSettingUI_ButtonRefresh:hover, *#NetSettingUI_ButtonRegiste:hover, *#NetSettingUI_ButtonCdmaApply:hover { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+
+QDialog QPushButton:pressed, *#SettingUIPlugin_ButtonOk:pressed, *#SettingUIPlugin_ButtonCancel:pressed, *#NetConnectSettingUIPlugin_ButtonAdvanceProfile:pressed,
+*#NetSettingUI_ButtonApply:pressed, *#NetSettingUI_ButtonRefresh:pressed, *#NetSettingUI_ButtonRegiste:pressed, *#NetSettingUI_ButtonCdmaApply:pressed {
+	border-image: url(./skin/default/images/button_pressed.png);
+	color: white;
+}
+
+QDialog QPushButton:focus, *#SettingUIPlugin_ButtonOk:focus, *#SettingUIPlugin_ButtonCancel:focus, *#NetConnectSettingUIPlugin_ButtonAdvanceProfile:focus,
+*#NetSettingUI_ButtonApply:focus, *#NetSettingUI_ButtonRefresh:focus, *#NetSettingUI_ButtonRegiste:focus, *#NetSettingUI_ButtonCdmaApply:focus { 
+	border-image: url(./skin/default/images/button_focus.png);
+     	color: white;
+}
+
+QDialog QPushButton:focus:hover, *#SettingUIPlugin_ButtonOk:focus:hover, *#SettingUIPlugin_ButtonCancel:focus:hover, *#NetConnectSettingUIPlugin_ButtonAdvanceProfile:focus:hover,
+*#NetSettingUI_ButtonApply:focus:hover, *#NetSettingUI_ButtonRefresh:focus:hover, *#NetSettingUI_ButtonRegiste:focus:hover, *#NetSettingUI_ButtonCdmaApply:focus:hover { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+/*modify by cKF14969 2010-11-30 end*/
+
+*#AddrBookUIPlugin_selectContacts_buttonOK, *#AddrBookUIPlugin_selectContacts_buttonCancel {     
+     min-width: 88px;
+     min-height: 26px;
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+}
+
+
+*#AddrBookUIPlugin_selectContacts_buttonOK:hover, *#AddrBookUIPlugin_selectContacts_buttonCancel:hover { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+
+*#AddrBookUIPlugin_selectContacts_buttonOK:pressed, *#AddrBookUIPlugin_selectContacts_buttonCancel:pressed {
+	border-image: url(./skin/default/images/button_pressed.png);
+	color: white;
+}
+
+
+*#AddrBookUIPlugin_selectContacts_buttonAdd, *#AddrBookUIPlugin_selectContacts_buttonRemove {     
+     min-width: 45px;
+     min-height: 23px;
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+}
+
+
+*#AddrBookUIPlugin_selectContacts_buttonAdd:hover, *#AddrBookUIPlugin_selectContacts_buttonRemove:hover { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+
+*#AddrBookUIPlugin_selectContacts_buttonAdd:pressed, *#AddrBookUIPlugin_selectContacts_buttonRemove:pressed {
+	border-image: url(./skin/default/images/button_pressed.png);
+	color: white;
+}
+
+*#AddrBookUIPlugin_selectContacts_buttonAdd:focus, *#AddrBookUIPlugin_selectContacts_buttonRemove:focus { 
+	border-image: url(./skin/default/images/button_focus.png);
+}
+
+*#AddrBookUIPlugin_selectContacts_buttonAdd:focus:hover, *#AddrBookUIPlugin_selectContacts_buttonRemove:focus:hover { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+
+
+*#AddrBookUIPlugin_selectContacts_tableContacts {	
+	border-image: url(./skin/default/images/edit_ctrl_border_line_box.png) 2 2 2 2;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	background: white;
+	gridline-color: rgb(240, 240, 240);	
+}
+
+/*20091229 Parmod_72614 Setting size of SmsSettingsUI Buttons Defect AJ2D15480 ============*/
+*#SmsSettingUIPlugin_btnBrowse, *#SmsSettingUIPlugin_btnTest{
+    border-image: url(./skin/default/images/button_normal.png); /*add by cKF14969 2010-10-27*/
+    min-width: 65px; min-height: 22px;
+    max-width: 65px; max-height: 22px;
+    font:bold;
+}
+/*add by cKF14969 2010-09-26 begin*/
+*#SmsSettingUIPlugin_btnBrowse:hover, *#SmsSettingUIPlugin_btnTest:hover
+{
+    border-image: url(./skin/default/images/button_hover.png);
+    color: rgb(255, 255, 255);
+}
+/*add by cKF14969 2010-09-26 end*/
+			      
+/*29-12-2009 Rakesh 72410 To fix the HQ Defect - A56D15008 begin */
+*#SMSUIPlugin_ButtonSend{
+    border-image: url(./skin/default/images/plus.png);
+    min-width: 20px; min-height: 20px;
+    max-width: 20px; max-height: 20px;
+}
+/*29-12-2009 Rakesh 72410 To fix the HQ Defect - A56D15008 End */
+
+/*=============CallSettingsUI Buttons ============*/ /* Anjali_A72842 Language Issue Fix: 3052 Start */
+*#CallSettingDlg_PushButtonBrowse, *#CallSettingDlg_PushButtonTest,
+ *#CallSettingDlg_PushButtonUpdate, *#CallSettingDlg_PushButtonActivate,
+ *#CallSettingDlg_PushButtonDeactivate, *#CallSettingDlgCdma_PushBtnSet,
+ *#CallSettingDlgCdma_PushBtnModify, *#CallSettingDlgCdma_PushButtonActivate,
+ *#CallSettingDlgCdma_PushButtonDeactivate, *#CallSettingDlgCdma_PushButtonWaitActivate,
+ *#CallSettingDlgCdma_PushButtonWaitDeactivate{
+    min-width: 105px; min-height: 20px;
+    max-width: 105px; max-height: 20px;
+}
+/* Anjali_A72842 Language Issue Fix: 3052 End */
+
+/*06-01-20101 Nilanjana_900337 To fix the HQ Defect - AJ2D15657 Begin */
+
+/*===============NetInfoUI Buttons ==================*/
+*#NetInfoUIPlugin_ButtonSetLimit, *#NetInfoUIPlugin_ButtonResetCounter
+{
+    min-width: 105px; min-height: 20px;
+    max-width: 105px; max-height: 20px;
+}
+/*06-01-20101 Nilanjana_900337 To fix the HQ Defect - AJ2D15657 End */
+
+/*=============CallUI Buttons ============*/
+*#CallUIDlg_PushBtn0, *#CallUIDlg_PushBtn1, *#CallUIDlg_PushBtn2, *#CallUIDlg_PushBtn3,
+ *#CallUIDlg_PushBtn4, *#CallUIDlg_PushBtn5, *#CallUIDlg_PushBtn6, *#CallUIDlg_PushBtn7,
+ *#CallUIDlg_PushBtn8, *#CallUIDlg_PushBtn9, *#CallUIDlg_PushBtnCall, *#CallUIDlg_PushBtnVedioCall,
+ *#CallUIDlg_PushBtnAddrBook, *#CallUIDlg_PushBtnClear, *#CallUIDlg_PushBtnPlus,
+ *#CallUIDlg_PushBtnForward, *#CallUIDlg_PushBtnStar,*#CallUIDlg_PushBtnHash
+ {
+     min-width: 48px; min-height: 21px;
+     border-image: url(./skin/default/images/call_button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+ }
+ 
+ *#CallUIDlg_PushBtnCallHang
+ {
+     min-width: 100px; min-height: 20px;
+     border-image: url(./skin/default/images/call_button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+ }
+  *#CallUIDlg_WidgetCallDlg
+  {
+   	max-width: 280px;
+  }
+ *#CallUIDlg_WidgetVolume
+ {
+ 	min-height: 29px;
+ 	min-width: 280px;
+ 	background-image: url(./skin/default/images/call_volume_bg.png);
+ }
+ 
+ *#CallUIDlg_PushBtnCallNoVedio, *#CallUIDlg_PushBtnCallHangNoVedio
+ {
+     min-width: 48px; min-height: 49px;
+     border-image: url(./skin/default/images/call_button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+ }
+ 
+ *#CallUIDlg_PushBtn0:hover, *#CallUIDlg_PushBtn1:hover, *#CallUIDlg_PushBtn2:hover, *#CallUIDlg_PushBtn3:hover,
+ *#CallUIDlg_PushBtn4:hover, *#CallUIDlg_PushBtn5:hover, *#CallUIDlg_PushBtn6:hover, *#CallUIDlg_PushBtn7:hover,
+ *#CallUIDlg_PushBtn8:hover, *#CallUIDlg_PushBtn9:hover, *#CallUIDlg_PushBtnCall:hover, *#CallUIDlg_PushBtnVedioCall:hover,
+ *#CallUIDlg_PushBtnCallHang:hover, *#CallUIDlg_PushBtnAddrBook:hover, *#CallUIDlg_PushBtnClear:hover, *#CallUIDlg_PushBtnPlus:hover,
+ *#CallUIDlg_PushBtnForward:hover, *#CallUIDlg_PushBtnStar:hover,*#CallUIDlg_PushBtnHash:hover,
+ *#CallUIDlg_PushBtnCallNoVedio:hover, *#CallUIDlg_PushBtnCallHangNoVedio:hover
+ { 
+	border-image: url(./skin/default/images/call_button_hover.png);
+	color: white;
+ }
+
+ *#CallUIDlg_PushBtn0:pressed, *#CallUIDlg_PushBtn1:pressed, *#CallUIDlg_PushBtn2:pressed, *#CallUIDlg_PushBtn3:pressed,
+ *#CallUIDlg_PushBtn4:pressed, *#CallUIDlg_PushBtn5:pressed, *#CallUIDlg_PushBtn6:pressed, *#CallUIDlg_PushBtn7:pressed,
+ *#CallUIDlg_PushBtn8:pressed, *#CallUIDlg_PushBtn9:pressed, *#CallUIDlg_PushBtnCall:pressed, *#CallUIDlg_PushBtnVedioCall:pressed,
+ *#CallUIDlg_PushBtnCallHang:pressed, *#CallUIDlg_PushBtnAddrBook:pressed, *#CallUIDlg_PushBtnClear:pressed, *#CallUIDlg_PushBtnPlus:pressed,
+ *#CallUIDlg_PushBtnForward:pressed, *#CallUIDlg_PushBtnStar:pressed,*#CallUIDlg_PushBtnHash:pressed,
+ *#CallUIDlg_PushBtnCallNoVedio:pressed, *#CallUIDlg_PushBtnCallHangNoVedio:pressed
+ {
+	border-image: url(./skin/default/images/call_button_pressed.png);
+	color: white;
+ }
+
+ *#CallUIDlg_PushBtn0:!enabled, *#CallUIDlg_PushBtn1:!enabled, *#CallUIDlg_PushBtn2:!enabled, *#CallUIDlg_PushBtn3:!enabled,
+ *#CallUIDlg_PushBtn4:!enabled, *#CallUIDlg_PushBtn5:!enabled, *#CallUIDlg_PushBtn6:!enabled, *#CallUIDlg_PushBtn7:!enabled,
+ *#CallUIDlg_PushBtn8:!enabled, *#CallUIDlg_PushBtn9:!enabled, *#CallUIDlg_PushBtnCall:!enabled, *#CallUIDlg_PushBtnVedioCall:!enabled,
+ *#CallUIDlg_PushBtnCallHang:!enabled, *#CallUIDlg_PushBtnAddrBook:!enabled, *#CallUIDlg_PushBtnClear:!enabled, *#CallUIDlg_PushBtnPlus:!enabled,
+ *#CallUIDlg_PushBtnForward:!enabled, *#CallUIDlg_PushBtnStar:!enabled,*#CallUIDlg_PushBtnHash:!enabled,
+ *#CallUIDlg_PushBtnCallNoVedio:!enabled, *#CallUIDlg_PushBtnCallHangNoVedio:!enabled
+ { 
+    border-image: url(./skin/default/images/call_button_disable.png);
+ }
+
+*#CallUIDlg_LineEditPhoneNum
+{
+	font-size: 16px;
+}
+
+*#CallUIDlg_LabelIdle
+{
+	min-width: 280px; min-height: 95px;
+	border-image: url(./skin/default/images/call_idle_screen.png);	
+}
+
+*#CallUIDlg_VolumeSlider:groove:horizontal
+{
+	border-image: url(./skin/default/images/call_slider_groove.png) 0 0 0 0;
+	height: 2px;
+	margin: 2px 0;
+}
+
+*#CallUIDlg_VolumeSlider:handle:horizontal
+{
+     border-image: url(./skin/default/images/call_slider_handle.png) 0 0 0 0;
+     margin: -7px 0;
+     width: 7px;
+}
+
+/*=============Profile Management Buttons ============*/
+ *#NetConnectSettingUIPlugin_pBtnnewProfile, *#NetConnectSettingUIPlugin_BtnDeleteProfile,
+ *#NetConnectSettingUIPlugin_BtnEditProfile, *#NetConnectSettingUIPlugin_BtnsaveProfile,
+ *#NetConnectSettingUIPlugin_BtnUndoProfile, *#NetConnectSettingUIPlugin_BtnSetDefaultProfile,
+ *#NetConnectSettingUIPlugin_ButtonImportProfile, *#NetConnectSettingUIPlugin_ButtonExportProfile
+ {
+     min-width: 114px; min-height: 19px; max-width: 114px; max-height: 19px;
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+ }
+
+
+ *#NetConnectSettingUIPlugin_pBtnnewProfile:hover, *#NetConnectSettingUIPlugin_BtnDeleteProfile:hover,
+ *#NetConnectSettingUIPlugin_BtnEditProfile:hover, *#NetConnectSettingUIPlugin_BtnsaveProfile:hover,
+ *#NetConnectSettingUIPlugin_BtnUndoProfile:hover, *#NetConnectSettingUIPlugin_BtnSetDefaultProfile:hover,
+ *#NetConnectSettingUIPlugin_ButtonImportProfile:hover, *#NetConnectSettingUIPlugin_ButtonExportProfile:hover 
+ { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+ }
+
+ *#NetConnectSettingUIPlugin_pBtnnewProfile:pressed, *#NetConnectSettingUIPlugin_BtnDeleteProfile:pressed,
+ *#NetConnectSettingUIPlugin_BtnEditProfile:pressed, *#NetConnectSettingUIPlugin_BtnsaveProfile:pressed,
+ *#NetConnectSettingUIPlugin_BtnUndoProfile:pressed, *#NetConnectSettingUIPlugin_BtnSetDefaultProfile:pressed,
+ *#NetConnectSettingUIPlugin_ButtonImportProfile:pressed, *#NetConnectSettingUIPlugin_ButtonExportProfile:pressed 
+ {
+	border-image: url(./skin/default/images/button_pressed.png);
+	color: white;
+ }
+
+ *#NetConnectSettingUIPlugin_pBtnnewProfile:!enabled, *#NetConnectSettingUIPlugin_BtnDeleteProfile:!enabled,
+ *#NetConnectSettingUIPlugin_BtnEditProfile:!enabled, *#NetConnectSettingUIPlugin_BtnsaveProfile:!enabled,
+ *#NetConnectSettingUIPlugin_BtnUndoProfile:!enabled, *#NetConnectSettingUIPlugin_BtnSetDefaultProfile:!enabled,
+ *#NetConnectSettingUIPlugin_ButtonImportProfile:!enabled, *#NetConnectSettingUIPlugin_ButtonExportProfile:!enabled
+ { 
+    border-image: url(./skin/default/images/button_disabled.png);
+ }
+
+ *#NetConnectSettingUIPlugin_pBtnnewProfile:focus, *#NetConnectSettingUIPlugin_BtnDeleteProfile:focus,
+ *#NetConnectSettingUIPlugin_BtnEditProfile:focus, *#NetConnectSettingUIPlugin_BtnsaveProfile:focus,
+ *#NetConnectSettingUIPlugin_BtnUndoProfile:focus, *#NetConnectSettingUIPlugin_BtnSetDefaultProfile:focus,
+ *#NetConnectSettingUIPlugin_ButtonImportProfile:focus, *#NetConnectSettingUIPlugin_ButtonExportProfile:focus
+ { 
+    border-image: url(./skin/default/images/button_focus.png);
+ }
+ 
+ *#NetConnectSettingUIPlugin_pBtnnewProfile:focus:hover, *#NetConnectSettingUIPlugin_BtnDeleteProfile:focus:hover,
+ *#NetConnectSettingUIPlugin_BtnEditProfile:focus:hover, *#NetConnectSettingUIPlugin_BtnsaveProfile:focus:hover,
+ *#NetConnectSettingUIPlugin_BtnUndoProfile:focus:hover, *#NetConnectSettingUIPlugin_BtnSetDefaultProfile:focus:hover,
+ *#NetConnectSettingUIPlugin_ButtonImportProfile:focus:hover, *#NetConnectSettingUIPlugin_ButtonExportProfile:focus:hover
+ { 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+ }
+/*20091229 Parmod_72614 Setting size of advance and ImportExport Dialog's Buttons  Defect AJ2D15480============*/
+*#NetConnectSettingUIPlugin_ButtonImportOK, *#NetConnectSettingUIPlugin_ButtonImportCancel,
+*#NetConnectSettingUIPlugin_ButtonImportBrowse,*#NetConnectAdvancedSettingDlg_ButtonOkAdvance,
+*#NetConnectAdvancedSettingDlg_ButtonCancelAdvance{
+    min-width: 90px; min-height: 28px; /*modify by cKF14969 2010-09-19*/
+    max-width: 90px; max-height: 28px; /*modify by cKF14969 2010-09-19*/
+}
+
+/* 
+ *#DiagnosticsUIPlugin_frameCdmaDiag { 
+       border-image: url(./skin/default/images/tree_widget_bg_line_box.png) 2 2 2 2;
+        border-top-width: 2px transparent;
+	border-right-width: 2px transparent;
+	border-bottom-width: 2px transparent;
+	border-left-width: 2px transparent;
+ }
+ */
+ 
+ *#SettingUIPlugin_Line, *#AboutUI_SeperatorLine {
+  border-image: url(./skin/default/images/border_line.png);
+ }
+
+*#StatusBarMgrPlugin_widgetParent 	{ background-image: url(./skin/default/images/status_bar_ref.png); }
+
+*#StatusBarMgrPlugin_labelSystemMode,*#StatusBarMgrPlugin_labelOperatorType,*#StatusBarMgrPlugin_labelUpSpeed,
+*#StatusBarMgrPlugin_labelDownSpeed,*#StatusBarMgrPlugin_labelMiniNetConnect {
+	color: rgb(255, 255, 255);
+}
+/*add by wangjing 2010-09-17 end*/
+/* ========== Font Size ========== */
+
+/* set for all widgets font size */
+* {
+     font-size: 12px;
+     font-family:Arial;
+}
+
+/*add by wangjing 2010-09-17 begin*/
+/* ========== Font Size ========== */
+/* BT1764 fix - set the font size */
+/* AJ2D12510: 20090918: karthik: begin setting menu bar font size...so that is fills it */
+/* Set font size of all widgets other than qmenubar */
+/*
+QAbstractScrollArea, QCheckBox, QComboBox, QDockWidget, QFrame, QGroupBox, 
+QHeaderView, QLineEdit, QListView, QMainWindow, QMenu, QProgressBar, 
+QPushButton, QRadioButton, QScrollBar, QSizeGrip, QSlider, QSpinBox, QSplitter, 
+QStatusBar, QTabWidget, QTabBar, QTableView, QToolBar, QToolBox, QToolButton, 
+QToolTip, QTreeView, QLabel
+*/
+/* set for all, rollbacking the qmenubar change for font size fix */
+* {
+font-size: 12px;
+}
+/* AJ2D12510: 20090918: karthik: end */
+
+/* ========== QDialog ========== */
+*#QDialogFrame {	
+	border-image: url("./skin/default/images/uiplugin2_bg.png");
+}
+
+QTextBrowser, QListWidget, QTextEdit {
+	border-image: url(./skin/default/images/edit_ctrl_border_line_box.png) 2 2 2 2;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	background: white;
+}
+
+QTreeWidget {	
+	border-image: url(./skin/default/images/tree_widget_bg_line_curve_box.png) 3 2 2 2;
+	border-top-width: 3px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	background: rgb(240, 245, 247);
+}
+/*add by wangjing 2010-09-17 end*/
+
+QTableWidget {	
+	/*add by wangjing 2010-09-17 begin*/
+	border-image: url(./skin/default/images/tree_widget_bg_line_top_curve_box.png) 2 2 2 2;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	/*add by wangjing 2010-09-17 end*/
+	/*add by cKF14969 2010-10-13 begin*/
+	font:bold;
+  	font-size:11px;
+	color: rgb(110, 119, 125);
+	selection-color: rgb(110, 119, 125);
+	selection-background-color: rgb(218, 238, 225);
+	border: none;
+	/*add by cKF14969 2010-10-13 end*/
+	background: white;
+}
+
+/*add by wangjing 2010-09-17 begin*/
+QLabel#AddrBookUIPlugin_labelPreview {
+	background: white;
+}
+
+QListWidget:item:selected {   
+     	color: white;
+  	background-image: url(./skin/default/images/menu_bg.png); 
+ }
+
+QTabWidget, QTabBar { /* The tab widget frame */
+   background-image: url("./skin/default/images/tab_bg.png")
+}
+
+/* ========== QMenuBar ========== */
+QMenuBar, QMenuBar::item {
+    background-image: url(./skin/default/images/menu_bg.png);
+    color: rgb(255, 255, 255);
+}
+QMenuBar::item:selected { border-image: url(./skin/default/images/menu_bar_button_hover.png); color: rgb(255, 255, 224);}
+QMenuBar::item:pressed { border-image: url(./skin/default/images/menu_bar_button_sel.png); color: rgb(255, 255, 224);}
+
+/* ========== QMenu ========== */
+
+QMenu {
+    /*background-image: url(./skin/default/images/menu_popup_bg.png);*/
+    /*border-image: url(./skin/default/images/edit_ctrl_border_line_box.png) 1 1 1 1;*/
+    border-image: url(./skin/default/images/Myedit_ctrl_border_line_box.png) 0 0 0 0;  /*Modify by zhoujun 2010-11-16*/
+    /*border-top-width: 1px transparent;
+    border-right-width: 1px transparent;
+    border-bottom-width: 1px transparent;
+    border-left-width: 1px transparent;*/
+    border: none; /*Modify by zhoujun 2010-11-16*/
+    /* background-color: white; */
+    /* margin: 2px; some spacing around the menu */
+}
+
+QMenu::item {
+    padding: 2px 25px 2px 20px;
+    /* border: 1px solid transparent; */ /* commented for ... in debian and xandros */ /* reserve space for selection border */
+color: rgb(110, 119, 125);}
+
+/* 20091224: deepa: menu seperator fix */
+ QMenu::separator {
+     border-image: url("./skin/default/images/menu_seperator.png");
+     height: 2px;
+ }
+QMenu::item:selected 	{ background-image: url(./skin/default/images/menu_bg.png); color: rgb(47, 181, 55); }
+QMenu::indicator 		{ image: url(./skin/default/images/menu_check.png); }
+QMenu::right-arrow		{ image: url(./skin/default/images/menu_expand.png); }
+
+/* Ashwin: Begin BT1725 fix - Disabled Menu Items in the Right Click Menu doesnt appear gray in Mac */
+QMenu::item:!enabled {color: rgb(172, 168, 153); }
+/* Ashwin: End BT1725 fix - Disabled Menu Items in the Right Click Menu doesnt appear gray in Mac */
+
+ /* ========== QHeaderView ==========    */ 
+ /* karthik, A56D14282, 20090819, begin: fixed by ashwin */
+ QHeaderView {    
+    border-image: url(./skin/default/images/table_header_bg.png);   
+ }
+ /* karthik, A56D14282, 20090819, end */
+
+/*modify by cKF14969 2010-09-30 begin*/
+QHeaderView::section:middle
+{
+    border-image: url(./skin/default/images/table_header_bg.png);  
+    color:#6E777D;
+    font:bold;
+    padding-left: 2px;
+}
+QHeaderView::section:middle:hover { border-image: url(./skin/default/images/table_header_hover.png); } 
+QHeaderView::section:middle:pressed { border-image: url(./skin/default/images/table_header_press.png); }
+QHeaderView::section:first
+{
+    border-image: url(./skin/default/images/table_header_l_bg.png) 2 2 2 2;
+		border-top-width: 2px;
+		border-right-width: 2px;
+		border-bottom-width: 2px;
+		border-left-width: 2px;  
+    color:#6E777D;
+    font:bold;
+    padding-left: 2px;
+}
+QHeaderView::section:first:hover { border-image: url(./skin/default/images/table_header_l_hover.png); } 
+QHeaderView::section:first:pressed { border-image: url(./skin/default/images/table_header_l_press.png); }
+QHeaderView::section:last
+{
+    border-image: url(./skin/default/images/table_header_r_bg.png);  
+    color:#6E777D;
+    font:bold;
+    padding-left: 2px;
+}
+QHeaderView::section:last:hover { border-image: url(./skin/default/images/table_header_r_hover.png); } 
+QHeaderView::section:last:pressed { border-image: url(./skin/default/images/table_header_r_press.png); }
+/*modify by cKF14969 2010-09-30 end*/
+   
+ QHeaderView::section::margin 
+ {  
+  image: url(./skin/default/images/table_header_separator.png);  
+  image-position: right;  
+ }
+ 
+ QHeaderView::down-arrow {
+   subcontrol-position: right;
+   image: url(./skin/default/images/table_header_arrow_down.png);
+   /* padding-right: 3px; */    /* bt: 0002286 fix: The header of phonebook is not proper in the arabic lanuage */
+   padding: 5px;                /* bt: 0002286 fix: The header of phonebook is not proper in the arabic lanuage */
+ }
+  
+ QHeaderView::up-arrow {   
+   subcontrol-position: right;
+   image: url(./skin/default/images/table_header_arrow_up.png);   
+   /* padding-right: 3px; */    /* bt: 0002286 fix: The header of phonebook is not proper in the arabic lanuage */
+   padding: 5px;                /* bt: 0002286 fix: The header of phonebook is not proper in the arabic lanuage */
+ }
+
+
+/* ========== QSplitter ==========  */
+QSplitter::handle:horizontal {     
+     background-image: url("./skin/default/images/uiplugin_bg.png")
+}
+
+QSplitter::handle:vertical {
+     background-image: url("./skin/default/images/uiplugin_bg.png")
+}
+
+/*=============MainToolBar============*/
+*#MainToolBarUIPlugin_CustomToolBar			{ background-image: url(./skin/default/images/tool_bar_bg.png); }
+
+/*==================QToolButton=======================*/
+QToolBar QToolButton {  color: rgb(255, 255, 255);}
+QToolBar QToolButton:hover 					{ border-image: url(./skin/default/images/unsel_button.png); padding: 7px;}
+QToolBar QToolButton:checked 					{ border-image: url(./skin/default/images/sel_button.png); padding: 3px; }
+
+/* Skin issue on toolbar extension arror: Begin */
+*#qt_toolbar_ext_button             { border-image: url(./skin/default/images/toolbar_arrow_normal.png); padding: 3px; }
+*#qt_toolbar_ext_button:hover 		{ border-image: url(./skin/default/images/toolbar_arrow_hover.png); padding: 7px;}
+*#qt_toolbar_ext_button:checked 	{ border-image: url(./skin/default/images/toolbar_arrow_press.png); padding: 3px; }
+/* Skin issue on toolbar extension arror: End */
+
+/* The mini tool bar skin customization begin */
+*#ToolBar:hover { 
+	border-image: url(./skin/default/images/tool_child_press.png); 
+	padding: 6px;
+}
+
+*#ToolBar:pressed { 
+	border-image: url(./skin/default/images/tool_child_hover.png); 
+	padding: 6px;
+}
+
+/* to remove the menu indicator in the toolbar */
+*#ToolBar::menu-indicator {
+image:none
+ }
+/* The mini tool bar skin customization end */
+
+/*=============QCheckBox============*/
+QCheckBox{color: rgb(0, 0, 0);}		/* 20091214: huliangjun: add */
+QCheckBox::indicator:!enabled:unchecked     { image: url(./skin/default/images/unsel_check_box_disabled.png);     }
+QCheckBox::indicator:!enabled:checked       { image: url(./skin/default/images/checkbox_checked_disabled.png);           }
+QCheckBox::indicator:unchecked              { image: url(./skin/default/images/unsel_check_box_unchecked.png);     }
+QCheckBox::indicator:unchecked:hover        { image: url(./skin/default/images/unsel_check_box_hover.png);     }
+QCheckBox::indicator:unchecked:selected     { image: url(./skin/default/images/unsel_check_box_hover.png);     }
+QCheckBox::indicator:checked                { image: url(./skin/default/images/checkbox_checked_normal.png);           }
+QCheckBox::indicator:checked:hover          { image: url(./skin/default/images/checkbox_checked_hover.png);           }
+QCheckBox::indicator:checked:pressed        { image: url(./skin/default/images/checkbox_checked_hover.png);           }
+QCheckBox::indicator:indeterminate:hover    { image: url(./skin/default/images/unsel_check_box_hover.png);     }
+QCheckBox::indicator:indeterminate:selected { image: url(./skin/default/images/checkbox_checked_hover.png);           }
+
+ 
+/*=============QRadioButton============*/
+QRadioButton{color: rgb(0, 0, 0);}	/* 20091214: huliangjun: add */
+QRadioButton::indicator:!enabled:unchecked  { image: url(./skin/default/images/radio_button_disabled.png);       }
+QRadioButton::indicator:!enabled:checked    { image: url(./skin/default/images/sel_radio_button_disabled.png);   }
+QRadioButton::indicator:unchecked           { image: url(./skin/default/images/radio_button_normal.png);           }
+QRadioButton::indicator:unchecked:hover     { image: url(./skin/default/images/radio_button_hover.png);       }
+QRadioButton::indicator:unchecked:pressed   { image: url(./skin/default/images/radio_button_hover.png);       }
+QRadioButton::indicator::checked            { image: url(./skin/default/images/sel_radio_button_normal.png);       }
+QRadioButton::indicator:checked:hover 	    { image: url(./skin/default/images/sel_radio_button_hover.png);   }
+QRadioButton::indicator:checked:pressed     { image: url(./skin/default/images/sel_radio_button_hover.png);   }
+ 
+ /*=============QScrollBar Horizontal ============*/
+  QScrollBar::horizontal {
+     background: rgb(235, 241, 243);      
+     /*background-image: url("./skin/default/images/uiplugin_bg.png");*/
+     height: 22px;
+     margin: 0px 15px 0px 15px;
+ }
+ 
+ 
+ QScrollBar::handle:horizontal {
+     border-image: url(./skin/default/images/scrollbar_horizontal_normal.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-width: 20px;
+     height: 22px;
+ }
+ 
+ QScrollBar::handle:horizontal:hover {
+     border-image: url(./skin/default/images/scrollbar_horizontal_hover.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-width: 20px;
+     height: 22px;
+ }
+ 
+ QScrollBar::handle:horizontal:pressed {
+     border-image: url(./skin/default/images/scrollbar_horizontal_press.png) 2 2 2 2;
+     border-top-width: 1px;
+     border-right-width: 1px;
+     border-bottom-width: 1px;
+     border-left-width: 1px;
+     min-width: 20px;
+     height: 22px;
+ }
+  
+
+ QScrollBar::add-line:horizontal {
+     background: rgb(235, 241, 243);
+     width: 15px;     
+     height: 22px;
+     subcontrol-position: right;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:horizontal {
+     background: rgb(235, 241, 243);
+     width: 15px;     
+     height: 22px;
+     subcontrol-position: left;
+     subcontrol-origin: margin;
+ }
+
+ /* QScrollBar:left-arrow:horizontal:!enabled  { border-image: url(./skin/default/images/popup_controls_button_left_gray.png);  }*/
+ QScrollBar:left-arrow:horizontal { border-image: url(./skin/default/images/popup_controls_button_left.png);  }
+ QScrollBar:left-arrow:horizontal:hover { border-image: url(./skin/default/images/popup_controls_button_left_hover.png);   }
+ /* QScrollBar:right-arrow:horizontal:!enabled { border-image: url(./skin/default/images/popup_controls_button_right_gray.png);   } */
+ QScrollBar:right-arrow:horizontal { border-image: url(./skin/default/images/popup_controls_button_right.png);   }
+ QScrollBar:right-arrow:horizontal:hover { border-image: url(./skin/default/images/popup_controls_button_right_hover.png);   }
+ 
+ /*=============QScrollBar Vertical ============*/
+/*modify by cKF14969 2010-11-27 begin*/
+QScrollBar::vertical {
+     background: rgb(235, 241, 243);
+     width: 22px;
+     margin: 15px 0px 15px 0px;
+ }
+ 
+ QScrollBar::handle:vertical {
+     border-image: url(./skin/default/images/scrollbar_vertical_normal.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-height: 20px;
+     width: 22px;
+ }
+ QScrollBar::handle:vertical:hover {
+     border-image: url(./skin/default/images/scrollbar_vertical_hover.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-height: 20px;
+     width: 22px;
+ }
+ 
+ QScrollBar::handle:vertical:pressed {
+     border-image: url(./skin/default/images/scrollbar_vertical_press.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px;
+     min-height: 20px;
+     width: 22px;
+ }
+  
+ QScrollBar::add-line:vertical {
+     background: rgb(235, 241, 243);
+     height: 15px;
+     width: 22px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     background: rgb(235, 241, 243);
+     height: 15px;
+     width: 22px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+/*modify by cKF14969 2010-11-27 end*/
+ 
+QScrollBar:up-arrow:vertical 			{ border-image: url(./skin/default/images/popup_controls_button_up.png);   }
+QScrollBar:up-arrow:vertical:hover 		{ border-image: url(./skin/default/images/popup_controls_button_up_hover.png);   }
+QScrollBar:down-arrow:vertical 			{ border-image: url(./skin/default/images/popup_controls_button_down.png);   }
+QScrollBar:down-arrow:vertical:hover 	{ border-image: url(./skin/default/images/popup_controls_button_down_hover.png);   }
+
+/*=============QPush Button ============
+QPushButton 		    { border-image: url(./skin/default/images/button_normal.png); 
+                          min-width: 79px; min-height: 19px;    max-width: 79px; max-height: 19px; 
+                          border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+                          color: rgb(0, 0, 0);}
+QPushButton:!enabled 	{ border-image: url(./skin/default/images/button_disabled.png);   color: rgb(127, 127, 127);}
+QPushButton:hover 	    { border-image: url(./skin/default/images/button_hover.png);   
+			      color: rgb(255, 255, 255);}
+QPushButton:pressed 	{ border-image: url(./skin/default/images/button_pressed.png);   color: rgb(255, 255, 255);}
+QPushButton:focus 	    { border-image: url(./skin/default/images/button_focus.png);   color: rgb(0, 0, 0);}
+QPushButton:focus:hover	    { border-image: url(./skin/default/images/button_hover.png);   
+			      color: rgb(255, 255, 255);}
+*/
+
+ /*=============QLineEdit============*/
+ QLineEdit {    
+     border-image: url(./skin/default/images/edit_ctrl_border_line_box.png);
+     border-top-width: 1px;
+     border-right-width: 1px;
+     border-bottom-width: 1px;
+     border-left-width: 1px; 
+     background: white;
+     selection-color: white;
+     selection-background-color: rgb(10, 36, 106);
+     /*add by cKF14969 2010-11-26 begin*/
+     font:bold;
+  	 font-size:12px;
+  	 color:#6E777D;
+  	 /*add by cKF14969 2010-11-26 end*/
+ }
+ 
+ /* QLineEdit[echoMode="2"] {
+     lineedit-password-character: 9679;
+ } */   /* 20091214: karthik: removing showing big Os in password field */
+ 
+ QLineEdit:read-only {
+	background: white;
+	background-color: white;
+}
+
+ QLineEdit:!editable {
+     border-width: 1px;
+     border-style: solid;
+     border-color: rgb(3, 90, 152);
+/* A56D14604 fix: In line edit, cursor position is not from the first */     
+/*     padding: 0 4px;*/
+     background: white;
+}
+/*
+ QGroupBox { border: 1px solid rgb(3, 90, 152); margin-top: 3ex; border-radius: 3px;}
+ */
+
+ QGroupBox { 
+ 	    border-image: url(./skin/default/images/group_box_bg_line_curve_box.png) 3 2 2 2;
+	    border-top-width: 3px;
+	    border-right-width: 2px;
+	    border-bottom-width: 2px;
+	    border-left-width: 2px; 
+	    margin-top: 1ex;             
+          
+             }
+             
+ QGroupBox::title {
+   subcontrol-origin: margin;
+   left: 5px;
+   top: 1px;
+ color: rgb(0, 0, 0);}
+ 
+
+/*=============QCombobox============ */
+QComboBox {
+     min-height: 18px;   
+     /*Modify by zhoujun 2010-11-16 begin*/   
+     border-image: url(./skin/default/images/edit_ctrl_border_line_box.png) 1 2 1 2;
+     border-top-width: 1px;
+     border-right-width: 1px;
+     border-bottom-width: 1px;
+     border-left-width: 2px;
+     font:bold;
+  	 font-size:11px;
+	 color: rgb(110, 119, 125);
+	 selection-color: rgb(110, 119, 125);
+     /*Modify by zhoujun 2010-11-16 end*/   
+     background-color: rgb(255, 255, 255);     
+ }
+ 
+
+QComboBox QAbstractItemView {
+     border-image: url(./skin/default/images/tree_widget_bg_line_box.png) 2 2 2 2;
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px; 
+     font:bold;
+  	 font-size:11px;
+	 color: rgb(110, 119, 125);
+     background-color: white;    
+ }
+
+  
+QComboBox:!enabled {
+     background-color: rgb(231, 231, 231);    
+}
+
+
+QComboBox::drop-down  { 	
+	image: url(./skin/default/images/combobox_down_arrow_normal.png);	
+}
+
+QComboBox::drop-down:hover	 	{ image: url(./skin/default/images/combobox_down_arrow_hover.png);}
+QComboBox::drop-down:!enabled	{ image: url(./skin/default/images/combobox_down_arrow_gray.png);}
+ 
+ 
+ /*=============QTabWidget============  */
+  QTabWidget::pane {  
+     border-image: url(./skin/default/images/tree_widget_bg_line_box.png) 2 2 2 2;
+     border-top-width: 2px transparent;
+     border-right-width: 2px transparent;
+     border-bottom-width: 2px transparent;
+     border-left-width: 2px transparent;
+ }
+
+
+/*=============QTabBar============*/
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+     
+
+ QTabBar::tab:!selected {
+     margin-top: 1px; /* make non-selected tabs look smaller */  
+ color: rgb(255, 255, 255);}
+ 
+ 
+ QTabBar::tab:first {
+     color: white;
+     border-image: url(./skin/default/images/tab_unselect.png)3 3 3 3;     	
+     border-top-width: 3px;
+     border-right-width: 3px;
+     border-bottom-width: 3px;
+     border-left-width: 3px;   
+ }
+ 
+ QTabBar::tab:last {
+     color: white;
+     border-image: url(./skin/default/images/tab_unselect.png)3 3 3 3;     	
+     border-top-width: 3px;
+     border-right-width: 3px;
+     border-bottom-width: 3px;
+     border-left-width: 3px;    
+ }
+ 
+ QTabBar::tab:middle {
+     color: white;
+     border-image: url(./skin/default/images/tab_unselect.png)3 3 3 3;     	
+     border-top-width: 3px;
+     border-right-width: 3px;
+     border-bottom-width: 3px;
+     border-left-width: 3px;    
+ }
+
+ QTabBar::tab:selected {     
+     color: rgb(0, 0, 0);
+     border-image: url(./skin/default/images/tab_select.png)3 3 3 3;     	
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;	
+ } 
+ 
+ 
+/*===============QTreeView=======================*/
+ QTreeView::item:selected, 
+ QListView::item:selected:active {
+     border: 1px solid black;
+     color: white;
+     background-image: url(./skin/default/images/menu_bg.png);
+ }
+ 
+ 
+ /*===============QProgressBar=======================*/
+
+ QProgressBar {
+     border-image: url(./skin/default/images/progressbar_unbg.png) 2 2 2 2;
+     border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;	
+	height: 15px;
+	text-align: center;
+ }
+
+ QProgressBar::chunk {
+     border-image: url(./skin/default/images/progressbar_bg.png);
+ }
+
+/* 20091214: huliangjun: add: begin */
+ /*===============QLabel=======================*/
+ QLabel {
+    /*modify by cKF14969 2010-11-15 begin*/
+    font:bold;
+  	font-size:12px;
+  	color:#6E777D;
+  	/*modify by cKF14969 2010-11-15 end*/
+ }
+/* 20091214: huliangjun: add: end */
+
+/*=============*#NetInfoSettingDlg_dateeditSetDate============ */
+*#NetInfoSettingDlg_dateedit {
+     border-image: url(./skin/default/images/tree_widget_bg_line_box.png);
+     border-top-width: 2px;
+     border-right-width: 2px;
+     border-bottom-width: 2px;
+     border-left-width: 2px; 
+     background-color: white;
+ }
+ 
+ *#NetInfoSettingDlg_dateedit:!enabled {
+      background-color: rgb(231, 231, 231);    
+ }
+ 
+ 
+ *#NetInfoSettingDlg_dateedit::drop-down  { 	
+ 	image: url(./skin/default/images/popup_controls_button_down.png);	
+ }
+ 
+*#NetInfoSettingDlg_dateedit::drop-down:hover	 	{ image: url(./skin/default/images/popup_controls_button_down_hover.png);}
+*#NetInfoSettingDlg_dateedit::drop-down:!enabled	{ image: url(./skin/default/images/popup_controls_button_down_gray.png);}
+/*add by wangjing 2010-09-17 end*/
+
+/* ========== QDialog ========== */
+
+ QGroupBox { 
+	    border-top-width: 3px;
+	    border-right-width: 2px;
+	    border-bottom-width: 2px;
+	    border-left-width: 2px; 
+	    margin-top: 1ex;             
+          
+             }
+             
+ QGroupBox::title {
+   subcontrol-origin: margin;
+   left: 5px;
+   top: 1px;
+ }
+ 
+
+
+
+QMenu::item
+{
+     padding: 4px 30px 4px 24px;
+}
+QMenu::item:selected 
+{
+    background: rgba(207, 238, 204, 250); /*modify by zhoujun 2010-09-17*/
+}
+
+QMenu::separator 
+{
+     height: 2px;
+     background-image: url(./skin/IDS_MINISKIN_FOOTBALL/menu_line.png); /*don't modify*/
+     margin-left: 20px;
+ }
+QMenu
+{
+   background-image: url(./skin/IDS_MINISKIN_FOOTBALL/menu_bg.png); /*don't modify*/
+   margin: 0px; /* some spacing around the menu */
+   font:bold; /*add by zhoujun 2010-09-17*/
+   font-size:12px; 
+   font-family:Arial;
+   color:#5C5C5C; /*add by zhoujun 2010-09-17*/  
+}
+
+QWebView
+{
+	border-top-width: 3px transparent;
+	border-right-width: 2px transparent;
+	border-bottom-width: 3px transparent;
+	border-left-width: 2px transparent;
+}
+/*add by cKF14969 2010-08-03 begin*/
+*#miniplugin_connecticonlabel
+{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/connect.png);
+    text-align: center;
+}
+*#miniplugin_lastconnectcaptionlabel
+{
+    font:bold;
+    font-size:12px; 
+    font-family:Arial;
+    color:#5C5C5C;
+}
+*#miniplugin_lastconnectdaylabel
+{
+    font:bold;
+    font-size:14px; 
+    font-family:Sylfaen;
+    color:#5CB954;
+}
+*#miniplugin_lastconnecthourlabel
+{
+    font:bold;
+    font-size:14px; 
+    font-family:Sylfaen;
+    color:#5C5C5C;
+}
+*#miniplugin_connecticonlabel:!enabled
+{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/Disconnect.png);
+}
+*#DiagnosticsUIPlugin_tabWidgetDiag::tab-bar
+{
+    height:0px;
+}
+*#DiagnosticsUIPlugin_tabWidgetDiag::pane
+{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/diagnostics2_bg.png) 0 0 0 0;
+    border-top-width: 0px transparent;
+    border-right-width: 0px transparent;
+    border-bottom-width: 0px transparent;
+    border-left-width: 0px transparent;
+    border: none;
+    top: -1.6em;
+}
+
+*#DiagnosticsUIPlugin_mytoolbuttonCaption
+, *#AboutPlugin_mytoolbuttonCaption
+, *#AddrBookUIPlugin_New_Edit_Dlg_Caption_Button
+, *#AddrBookUIPlugin_mytoolbuttonCaption
+, *#SettingUIPlugin_mytoolbuttonCaption
+{
+	border:none;
+	margin:0px;
+	font:bold;
+  font-size:22px;
+  color:#6E777D;
+}
+
+*#NetConnectAdvancedSettingDlg_myCaptionButton
+{
+	border:none;
+	margin:0px;
+	font:bold;
+  font-size:22px;
+  color: rgb(31, 167, 49);
+}
+
+*#DeviceMgrUI_myChangeCaptionButton
+, *#DeviceMgrUI_myPINCaptionButton
+, *#DeviceMgrUI_myVerifyCaptionButton
+, *#DeviceMgrUI_myPUKCaptionButton
+{
+	border:none;
+	margin:0px;
+	font:bold;
+  font-size:19px;
+  color:#6E777D;
+}
+
+*#AddrBookUIPlugin_mytoollabelLocal
+, *#AddrBookUIPlugin_mytoollabelSim
+{
+	font:bold;
+}
+
+*#AddrBookUIPlugin_mylabelCaption
+{
+	font:bold;
+  font-size:18px;
+  color:#6E777D;
+}
+
+*#AddrBookUIPlugin_mylabelMobileFirst
+, *#AddrBookUIPlugin_mylabelNoRecord
+{
+	font:bold;
+  font-size:12px;
+  color:#789dab;
+}
+
+*#AddrBookUIPlugin_mylabelMobileSecond
+{
+	font:bold;
+  font-size:12px;
+  color:#5cb954;
+}
+
+*#AddrBookUIPlugin_mylabelHomeFirst
+{
+	font:bold;
+  font-size:12px;
+  color:#789dab;
+}
+
+*#AddrBookUIPlugin_mylabelHomeSecond
+{
+	font:bold;
+  font-size:12px;
+  color:#6E777D;
+}
+
+*#AddrBookUIPlugin_mylabelWorkFirst
+{
+	font:bold;
+  font-size:12px;
+  color:#789dab;
+}
+
+*#AddrBookUIPlugin_mylabelWorkSecond
+{
+	font:bold;
+  font-size:12px;
+  color:#6E777D;
+}
+
+*#AddrBookUIPlugin_mylabelEmailFirst
+{
+	font:bold;
+  font-size:12px;
+  color:#789dab;
+}
+
+*#AddrBookUIPlugin_mylabelEmailSecond
+{
+	font:bold;
+  font-size:12px;
+  color:#179735;
+}
+
+*#AddrBookUIPlugin_mylabelRemarks
+{
+	font:bold;
+  font-size:12px;
+  color:#6E777D;
+}
+
+*#AddrBookUIPlugin_mytoolbuttonLocal
+, *#AddrBookUIPlugin_mytoolbuttonSim
+{
+	border:none;
+	font:bold;
+  font-size:16px;
+  color:#6E777D;
+  margin:0px;
+}
+
+*#AddrBookUIPlugin_mytoolbuttonSearch
+, *#AddrBookUIPlugin_mytoolbuttonNewContact
+, *#AddrBookUIPlugin_mytoolbuttonEditContact
+, *#AddrBookUIPlugin_mytoolbuttonVCardContact
+, *#AddrBookUIPlugin_mytoolbuttonDeleteContact
+, *#NetConnectPlugin_mytoolbuttonDel
+, *#NetConnectPlugin_mytoolbuttonEdit
+, *#SettingUIPlugin_mytoolbuttonNew
+, *#NetConnectPlugin_mytoolbuttonSave
+, *#NetConnectPlugin_mytoolbuttonDefault
+{
+	border:none;
+	font:bold;
+  font-size:11px;
+  color:#6E777D;
+}
+
+*#DiagnosticsUIPlugin_mytoolbuttonTab0
+, *#DiagnosticsUIPlugin_mytoolbuttonTab1
+, *#DiagnosticsUIPlugin_mytoolbuttonTab2
+, *#DiagnosticsUIPlugin_mytoolbuttonTab3
+, *#SettingUIPlugin_mytoolbuttonGeneral
+, *#SettingUIPlugin_mytoolbuttonSMS
+, *#SettingUIPlugin_mytoolbuttonProfile
+, *#SettingUIPlugin_mytoolbuttonNetwork
+{
+	border:none;
+}
+
+*#AboutUI_Version
+{
+  font-size:20px;
+  color:#789DAB;
+}
+
+*#AboutUI_Copyright
+{
+  font-size:20px;
+  color:#789DAB;
+}
+
+*#AboutUI_WarningText
+{
+	border-image: url("./skin/IDS_MINISKIN_DEFAULT/warning_bg.png");
+}
+
+*#AboutUI_WarningText2
+{
+	border-image: url("./skin/IDS_MINISKIN_DEFAULT/warning_bg2.png");
+}
+
+*#DiagnosticsUIPlugin_widgetDiagnostic
+{
+	border-image: url("./skin/IDS_MINISKIN_DEFAULT/diagnostics_bg.png");
+}
+
+*#AboutUI_WidgetDlg
+{
+	border-image: url("./skin/IDS_MINISKIN_DEFAULT/about_bg.png");
+}
+
+*#AddrBookUIPlugin_topMySubWidget0
+{
+	background-image: url("./skin/IDS_MINISKIN_DEFAULT/addrbook_bg0.png");
+}
+
+*#AddrBookUIPlugin_topMySubWidget1
+{
+	background-image: url("./skin/IDS_MINISKIN_DEFAULT/addrbook_bg1.png");
+}
+
+*#AddrBookUIPlugin_bottomMySubWidget
+{
+	background-image: url("./skin/IDS_MINISKIN_DEFAULT/addrbook_bg2.png");
+}
+
+*#ExtendDialog_CusTitle
+{
+   font:bold;
+   font-size:10px;
+   color:#6E777D;
+}
+
+*#SmsSettingUIPlugin_LabelTxtMsgHandle
+, *#SmsSettingUIPlugin_LabelSaveMode
+, *#SmsSettingUIPlugin_LabelSmsc
+, *#NetSettingUI_MyCapGB0
+, *#NetSettingUI_MyCapGB1
+, *#NetConnectPlugin_MyCapGB1
+, *#NetConnectPlugin_MyCapGB2
+, *#GeneralSettingDlg_myCap0
+, *#GeneralSettingDlg_myCap1
+, *#GeneralSettingDlg_myCap2
+, *#GeneralSettingDlg_myCap3
+, *#GeneralSettingDlg_myCap4
+, *#NetConnectAdvancedSettingDlg_myLabelCaptionIP
+, *#NetConnectAdvancedSettingDlg_myLabelCaptionProtoco
+, *#NetConnectAdvancedSettingDlg_myLabelCaptionDNS
+, *#NetConnectAdvancedSettingDlg_myLabelCaptionWINS
+{
+	font:bold;
+  font-size:20px;
+  color:#6E777D;
+}
+
+*#SmsSettingUIPlugin_CheckboxNewMsgNotify
+, *#SmsSettingUIPlugin_CheckboxNewMsgSoundAlert
+, *#SmsSettingUIPlugin_Soundfilename
+, *#SmsSettingUIPlugin_FileNameEditLine
+, *#SmsSettingUIPlugin_BtnsaveonLocal
+, *#SmsSettingUIPlugin_BtnsaveonSim
+, *#SmsSettingUIPlugin_m_pLabelSmsCenterNumber
+, *#SmsSettingUIPlugin_StoragePeriod
+, *#SmsSettingUIPlugin_CenterNumlineEdit
+, *#SmsSettingUIPlugin_StorageCombobox
+, *#SmsSettingUIPlugin_DeliveryreporgroupBox
+, *#NetSettingUI_LabelNetworkType
+, *#NetSettingUI_ComboBoxNetworkSelect
+, *#NetSettingUI_LabelBand
+, *#NetSettingUI_ComboBoxBandSelect
+, *#NetSettingUI_RadioButtonAuto
+, *#NetSettingUI_RadioButtonManual
+, *#NetSettingUI_TableWidget
+, *#NetConnectSettingUIPlugin_BtnDynamic
+, *#NetConnectSettingUIPlugin_BtnStatic
+, *#NetConnectSettingUIPlugin_Apnlabel
+, *#NetConnectSettingUIPlugin_ApnlineEdit
+, *#NetConnectSettingUIPlugin_AccessNumberlabel
+, *#NetConnectSettingUIPlugin_Usernamelabel
+, *#NetConnectSettingUIPlugin_Passwordlabel
+, *#NetConnectSettingUIPlugin_AccessNumberlineEdit
+, *#NetConnectSettingUIPlugin_UsernamelineEdit
+, *#NetConnectSettingUIPlugin_PasswordlineEdit
+, *#GeneralSettingDlg_CheckboxLaunch
+, *#GeneralSettingDlg_CheckboxMinimize
+, *#GeneralSettingDlg_myradioEnglish
+, *#GeneralSettingDlg_myradioRussion
+, *#GeneralSettingDlg_myPinCap
+, *#GeneralSettingDlg_myradioEnablePin
+, *#GeneralSettingDlg_myradioDisablePin
+, *#GeneralSettingDlg_RadioButtonRSS
+, *#GeneralSettingDlg_RadioButtonNDIS
+, *#NetConnectSettingUIPlugin_ProfileTableItem
+, *#GeneralSettingDlg_mycheckboxRedial
+, *#GeneralSettingDlg_mycheckboxAutodial
+, *#GeneralSettingDlg_myradioDevice
+, *#GeneralSettingDlg_mycheckboxMinimize
+, *#NetConnectAdvancedSettingDlg_RadioButtonIPDynamic
+, *#NetConnectAdvancedSettingDlg_RadioButtomIPStatic
+, *#NetConnectAdvancedSettingDlg_LabelIP
+, *#NetConnectAdvancedSettingDlg_LineEditIP
+, *#NetConnectAdvancedSettingDlg_CheckboxNewMsgNotify
+, *#NetConnectAdvancedSettingDlg_CheckboxNewMsgSoundAlert
+, *#NetConnectAdvancedSettingDlg_RadioButtonDNSDynamic
+, *#NetConnectAdvancedSettingDlg_RadioButtomDNSStatic
+, *#NetConnectAdvancedSettingDlg_LabelPrimaryDNS
+, *#NetConnectAdvancedSettingDlg_LineEditPrimaryDNS
+, *#NetConnectAdvancedSettingDlg_LabelSecondaryDNS
+, *#etConnectAdvancedSettingDlg_LineEditSecondaryDNS
+, *#NetConnectAdvancedSettingDlg_RadioButtonWINSDynamic
+, *#NetConnectAdvancedSettingDlg_RadioButtomWINSStatic
+, *#NetConnectAdvancedSettingDlg_LabelPrimaryWINS
+, *#NetConnectAdvancedSettingDlg_LineEditPrimaryDNS
+, *#NetConnectAdvancedSettingDlg_LabelSecondaryWINS
+, *#NetConnectAdvancedSettingDlg_LineEditSecondaryDNS
+, *#DeviceMgrUI_labelCurrPIN
+, *#DeviceMgrUI_editCurrPINText
+, *#DeviceMgrUI_labelNewPIN
+, *#DeviceMgrUI_editNewPINText
+, *#DeviceMgrUI_labelConfirmPIN
+, *#DeviceMgrUI_editConfirmNewPINText
+, *#DeviceMgrUI_labelModTimes
+, *#DeviceMgrUI_labelPin
+, *#DeviceMgrUI_editpindlg
+, *#DeviceMgrUI_m_plabelPINTimes
+, *#DeviceMgrUI_VerifyPINTimes
+, *#DeviceMgrUI_VerifyPIN
+, *#DeviceMgrUI_VerifyeditPINText
+, *#DeviceMgrUI_labelPUK
+, *#DeviceMgrUI_editPUKText
+, *#DeviceMgrUI_labelPUKTimes
+{
+	font:bold;
+  font-size:12px;
+  color:#6E777D;
+}
+
+*#DeviceMgrUI_Password
+{
+	font:bold;
+  font-size:16px;
+  color:#6E777D;
+}
+
+*#AddrBookUIPlugin_myEditDlgNameLabel
+, *#AddrBookUIPlugin_myEditDlgMobileNumLabel
+, *#AddrBookUIPlugin_myEditDlgOfficeNumLabel
+, *#AddrBookUIPlugin_myEditDlgHomeNumLabel
+, *#AddrBookUIPlugin_myEditDlgEmailAddrLabel
+, *#AddrBookUIPlugin_myEditDlgRemarksLabel
+{
+	font:bold;
+  font-size:13px;
+  color:rgb(139, 151, 158);
+}
+
+*#AddrBookUIPlugin_myEditDlgName
+, *#AddrBookUIPlugin_myEditDlgMobileNum
+, *#AddrBookUIPlugin_myEditDlgOfficeNum
+, *#AddrBookUIPlugin_myEditDlgHomeNum
+, *#AddrBookUIPlugin_myEditDlgEmailAddr
+, *#AddrBookUIPlugin_myEditDlgRemarks
+{
+	font:bold;
+  font-size:12px;
+  color:rgb(139, 151, 158);
+}
+
+*#DeviceMgrUI_myChangelabelModTimes
+, *#DeviceMgrUI_myChangeLabelAlert
+, *#DeviceMgrUI_myPINLabelAlert
+, *#DeviceMgrUI_myPINlabelPINTimes
+, *#DeviceMgrUI_myVerifyLabelAlert
+, *#DeviceMgrUI_myVerifylabelPINTimes
+, *#DeviceMgrUI_myPUKLabelAlert
+, *#DeviceMgrUI_myPUKlabelPINTimes
+{
+	font:bold;
+  font-size:12px;
+  color: rgb(255, 255, 255);
+}
+
+*#SettingUIPlugin_myShadowDialog
+, *#NetConnectAdvancedSettingDlg_myShadowDialog
+{
+	border-image: url("./skin/IDS_MINISKIN_DEFAULT/settings_bg.png");
+}
+
+*#DeviceMgrUI_myChangeShadowWidgetB
+, *#DeviceMgrUI_myPINShadowWidgetB
+, *#DeviceMgrUI_myVerifyShadowWidgetB
+, *#DeviceMgrUI_myPUKShadowWidgetB
+{
+	border-image: url("./skin/IDS_MINISKIN_DEFAULT/changepin_bg.png");
+}
+
+*#SettingUIPlugin_MyTabLine0
+, *#SettingUIPlugin_MyTabLine1
+, *#SettingUIPlugin_MyTabLine2
+{
+	color: rgb(198, 208, 213);
+}
+
+*#NetConnectPlugin_mytoolbuttonDetail
+{
+	border:none;
+	margin:0px;
+  font-size:20px;
+  color:rgb(120,157,171);
+}
+
+*#NetConnectPlugin_MyTableProfileName
+{
+	border:none;
+	font:bold;
+  font-size:11px;
+  color:#6E777D;
+}
+*#NetConnectSettingUIPlugin_ProfileTableItem::indicator:!enabled:unchecked  { image: url(./skin/default/images/radio_button3_disabled.png);       }
+*#NetConnectSettingUIPlugin_ProfileTableItem::indicator:!enabled:checked    { image: url(./skin/default/images/sel_radio_button3_disabled.png);   }
+*#NetConnectSettingUIPlugin_ProfileTableItem::indicator:unchecked           { image: url(./skin/default/images/radio_button3_normal.png);           }
+*#NetConnectSettingUIPlugin_ProfileTableItem::indicator:unchecked:hover     { image: url(./skin/default/images/radio_button3_hover.png);       }
+*#NetConnectSettingUIPlugin_ProfileTableItem::indicator:unchecked:pressed   { image: url(./skin/default/images/radio_button3_hover.png);       }
+*#NetConnectSettingUIPlugin_ProfileTableItem::indicator::checked            { image: url(./skin/default/images/sel_radio_button3_normal.png);       }
+*#NetConnectSettingUIPlugin_ProfileTableItem::indicator:checked:hover 	    { image: url(./skin/default/images/sel_radio_button3_hover.png);   }
+*#NetConnectSettingUIPlugin_ProfileTableItem::indicator:checked:pressed     { image: url(./skin/default/images/sel_radio_button3_hover.png);   }
+
+*#NetConnectSettingUIPlugin_LineEditProfileName
+{
+	font:bold;
+  font-size:11px;
+  background: white;
+}
+
+*#GeneralSettingDlg_mybtnVerify
+, *#GeneralSettingDlg_mybtnUnlock
+, *#GeneralSettingDlg_mybtnChangePin
+, *#NetConnectSettingUIPlugin_MyButtonAdvanceProfile
+, *#NetSettingUI_MyButtonRefresh
+, *#NetSettingUI_MyButtonRegiste
+, *#USSDUIPlugin_ChargeDialog_CancelButton
+, *#USSDUIPlugin_ChargeDialog_ChargeButton
+{     
+     min-width: 122px;
+     min-height: 32px;
+     max-width: 122px;
+     max-height: 32px;
+     border-image: url(./skin/default/images/button_normal.png);
+     border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+     font:bold;
+     font-size:11px;
+}
+
+*#GeneralSettingDlg_mybtnVerify:!enabled
+, *#GeneralSettingDlg_mybtnUnlock:!enabled
+, *#GeneralSettingDlg_mybtnChangePin:!enabled
+{
+ border-image: url(./skin/default/images/button_disabled.png);   
+ color:rgb(255, 255, 255);
+ }
+
+*#GeneralSettingDlg_mybtnVerify:hover
+, *#GeneralSettingDlg_mybtnUnlock:hover
+, *#GeneralSettingDlg_mybtnChangePin:hover
+, *#NetConnectSettingUIPlugin_MyButtonAdvanceProfile:hover
+, *#NetSettingUI_MyButtonRefresh:hover
+, *#NetSettingUI_MyButtonRegiste:hover
+, *#USSDUIPlugin_ChargeDialog_CancelButton:hover
+, *#USSDUIPlugin_ChargeDialog_ChargeButton:hover
+{ 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+
+*#GeneralSettingDlg_mybtnVerify:pressed
+, *#GeneralSettingDlg_mybtnUnlock:pressed
+, *#GeneralSettingDlg_mybtnChangePin:pressed
+, *#NetConnectSettingUIPlugin_MyButtonAdvanceProfile:pressed
+, *#NetSettingUI_MyButtonRefresh:pressed
+, *#NetSettingUI_MyButtonRegiste:pressed
+, *#USSDUIPlugin_ChargeDialog_CancelButton:pressed
+, *#USSDUIPlugin_ChargeDialog_ChargeButton:pressed
+{
+	border-image: url(./skin/default/images/button_pressed.png);
+	color: white;
+}
+
+*#GeneralSettingDlg_mybtnVerify:focus
+, *#GeneralSettingDlg_mybtnUnlock:focus
+, *#GeneralSettingDlg_mybtnChangePin:focus
+, *#NetConnectSettingUIPlugin_MyButtonAdvanceProfile:focus
+, *#NetSettingUI_MyButtonRefresh:focus
+, *#NetSettingUI_MyButtonRegiste:focus
+, *#USSDUIPlugin_ChargeDialog_CancelButton:focus
+, *#USSDUIPlugin_ChargeDialog_ChargeButton:focus
+{ 
+	border-image: url(./skin/default/images/button_focus.png);
+}
+
+*#GeneralSettingDlg_mybtnVerify::focus:hover
+, *#GeneralSettingDlg_mybtnUnlock::focus:hover
+, *#GeneralSettingDlg_mybtnChangePin::focus:hover
+, *#NetConnectSettingUIPlugin_MyButtonAdvanceProfile:hover
+, *#NetSettingUI_MyButtonRefresh:hover
+, *#NetSettingUI_MyButtonRegiste:hover
+, *#USSDUIPlugin_ChargeDialog_CancelButton:hover
+, *#USSDUIPlugin_ChargeDialog_ChargeButton:hover
+{ 
+	border-image: url(./skin/default/images/button_hover.png);
+	color: white;
+}
+
+*#DeviceMgrUI_buttonModOK
+, *#DeviceMgrUI_buttonModCancel
+, *#DeviceMgrUI_buttonPUKOK
+, *#DeviceMgrUI_buttonPUKCancel
+, *#DeviceMgrUI_VerifyPINO
+, *#DeviceMgrUI_VerifyPINCancel
+, *#DeviceMgrUI_pinokDlg
+, *#DeviceMgrUI_pinCancelDlg
+{
+	border-image: url(./skin/default/images/button_normal.png);
+        border-top: 2px transparent; border-bottom: 2px transparent; border-right: 2px transparent; border-left: 2px transparent;
+       	font:bold;
+  	font-size:11px;
+	color: rgb(110, 119, 125);
+}
+*#DeviceMgrUI_buttonModOK:!enabled
+, *#DeviceMgrUI_buttonModCancel:!enabled
+, *#DeviceMgrUI_buttonPUKOK:!enabled
+, *#DeviceMgrUI_buttonPUKCancel:!enabled
+, *#DeviceMgrUI_VerifyPINO:!enabled
+, *#DeviceMgrUI_VerifyPINCancel:!enabled
+, *#DeviceMgrUI_pinokDlg:!enabled
+, *#DeviceMgrUI_pinCancelDlg:!enabled
+{
+	border-image: url(./skin/default/images/button_disabled.png);   color: rgb(255, 255, 255);
+}
+*#DeviceMgrUI_buttonModOK:hover
+, *#DeviceMgrUI_buttonModCancel:hover
+, *#DeviceMgrUI_buttonPUKOK:hover
+, *#DeviceMgrUI_buttonPUKCancel:hover
+, *#DeviceMgrUI_VerifyPINO:hover
+, *#DeviceMgrUI_VerifyPINCancel:hover
+, *#DeviceMgrUI_pinokDlg:hover
+, *#DeviceMgrUI_pinCancelDlg:hover
+{
+	border-image: url(./skin/default/images/button_hover.png);
+	color: rgb(255, 255, 255);
+}
+*#DeviceMgrUI_buttonModOK:pressed
+, *#DeviceMgrUI_buttonModCancel:pressed
+, *#DeviceMgrUI_buttonPUKOK:pressed
+, *#DeviceMgrUI_buttonPUKCancel:pressed
+, *#DeviceMgrUI_VerifyPINO:pressed
+, *#DeviceMgrUI_VerifyPINCancel:pressed
+, *#DeviceMgrUI_pinokDlg:pressed
+, *#DeviceMgrUI_pinCancelDlg:pressed
+{
+	border-image: url(./skin/default/images/button_pressed.png);   color: rgb(255, 255, 255);
+}
+*#DeviceMgrUI_buttonModOK:focus
+, *#DeviceMgrUI_buttonModCancel:focus
+, *#DeviceMgrUI_buttonPUKOK:focus
+, *#DeviceMgrUI_buttonPUKCancel:focus
+, *#DeviceMgrUI_VerifyPINO:focus
+, *#DeviceMgrUI_VerifyPINCancel:focus
+, *#DeviceMgrUI_pinokDlg:focus
+, *#DeviceMgrUI_pinCancelDlg:focus
+{
+	border-image: url(./skin/default/images/button_focus.png);   color: rgb(0, 0, 0);
+}
+*#DeviceMgrUI_buttonModOK:focus:hover
+, *#DeviceMgrUI_buttonModCancel:focus:hover
+, *#DeviceMgrUI_buttonPUKOK:focus:hover
+, *#DeviceMgrUI_buttonPUKCancel:focus:hover
+, *#DeviceMgrUI_VerifyPINO:focus:hover
+, *#DeviceMgrUI_VerifyPINCancel:focus:hover
+, *#DeviceMgrUI_pinokDlg:focus:hover
+, *#DeviceMgrUI_pinCancelDlg:focus:hover
+{
+	border-image: url(./skin/default/images/button_hover.png);
+	color: rgb(255, 255, 255);
+}
+
+/*kill by lkf28055 2011-1-22
+QMessageBox
+{
+	background-image: url("./skin/default/images/messagebox_bg.png");
+}
+end kill by lkf28055 2011-1-22*/
+
+*#NetConnectPlugin_MyTableHeaderName::section
+{
+    border-image: url(./skin/default/images/table_header_lr_bg.png);
+    color:#6E777D;
+    font:bold;
+    padding-left: 2px;
+} 
+*#NetConnectPlugin_MyTableHeaderName::section:hover { border-image: url(./skin/default/images/table_header_lr_hover.png); }
+*#NetConnectPlugin_MyTableHeaderName::section:pressed { border-image: url(./skin/default/images/table_header_lr_press.png); }
+/*add by cKF14969 2010-08-03 end*/
+/* added by jinxl33241 begin*/
+*#Ussd_WidgetMain{
+   background-image: url("./skin/default/images/uiplugin_bg.png");
+  }
+/*modify by cKF14969 2010-11-25 begin*/
+*#USSDUIPlugin_AdvancedDialog_Day{ 	
+				border:none;
+   			margin:0px;
+        font:bold;
+        font-size:17px; 
+        font-family:Arial;
+        color:#6E777D;
+ }
+*#USSDUIPlugin_AdvancedDialog_Day::indicator:!enabled:unchecked  { image: url(./skin/default/images/radio_button2_disabled.png);       }
+*#USSDUIPlugin_AdvancedDialog_Day::indicator:!enabled:checked    { image: url(./skin/default/images/sel_radio_button2_disabled.png);   }
+*#USSDUIPlugin_AdvancedDialog_Day::indicator:unchecked           { image: url(./skin/default/images/radio_button2_normal.png);           }
+*#USSDUIPlugin_AdvancedDialog_Day::indicator:unchecked:hover     { image: url(./skin/default/images/radio_button2_hover.png);       }
+*#USSDUIPlugin_AdvancedDialog_Day::indicator:unchecked:pressed   { image: url(./skin/default/images/radio_button2_hover.png);       }
+*#USSDUIPlugin_AdvancedDialog_Day::indicator::checked            { image: url(./skin/default/images/sel_radio_button2_normal.png);       }
+*#USSDUIPlugin_AdvancedDialog_Day::indicator:checked:hover 	    { image: url(./skin/default/images/sel_radio_button2_hover.png);   }
+*#USSDUIPlugin_AdvancedDialog_Day::indicator:checked:pressed     { image: url(./skin/default/images/sel_radio_button2_hover.png);   }
+/*modify by cKF14969 2010-11-25 end*/
+*#USSDUIPlugin_AdvancedDialog_Balance{ 	
+				border:none;
+   			margin:0px;
+        font:bold;
+        font-size:18px; 
+        font-family:Arial;
+        color:#5C5C5C; 	
+ }
+ *#USSDUIPlugin_AdvancedDialog_WarningLable{ 
+ border-image: url(./skin/IDS_MINISKIN_DEFAULT/changepin_bg.png); 
+				border:none;
+   			margin:0px;
+        font:bold;
+        font-size:12px; 
+        font-family:Arial;
+        color:#FFFFFF; 	
+ }
+/*modify by cKF14969 2010-12-13 begin*/
+*#USSDUIPlugin_ChargeDialog_InfoLable{  
+				border:none;
+   			margin:0px;
+        font:bold;
+        font-size:13px; 
+        font-family:Arial;
+        color:rgb(139,151,158);	
+ }
+/*modify by cKF14969 2010-12-13 end*/
+*#USSDUIPlugin_ChargeDialog_InfoLable1{  
+				border:none;
+   			margin:0px;
+        font:bold;
+        font-size:12px; 
+        font-family:Arial;
+        color:#000000; 	
+ }
+/*modify by cKF14969 2010-12-13 begin*/
+ *#USSDUIPlugin_ChargeDialog_InfoLable7{  
+				border:none;
+				font:bold;
+   			margin:0px;
+        font-size:13px; 
+        color:rgb(120,128,134); 	
+ }
+/*modify by cKF14969 2010-12-13 end*/
+ 
+ *#USSDUIPlugin_ChargeDialog_ResponseLable{  
+				border-image: url(./skin/IDS_MINISKIN_DEFAULT/respon_bg.png); /*add by cKF14969 2010-12-22*/ 
+				border:none;
+   			margin:0px;
+        font:bold;
+        font-size:12px; 
+        font-family:Arial; 
+        color:#ff0000; 
+ }
+*#USSDUIPlugin_AdvancedDialog_Active:hover,
+*#USSDUIPlugin_AdvancedDialog_Active:focus:hover,
+*#USSDUIPlugin_AdvancedDialog_Active:pressed
+{
+    border-image: url(./skin/IDS_MINISKIN_DEFAULT/button_white-ok.png);
+}
+*#USSDUIPlugin_AdvancedDialog_Active{ 	
+  border-image: url(./skin/IDS_MINISKIN_DEFAULT/button_white.png);
+        font:bold;
+        font-size:12px; 
+        font-family:Arial;
+        color:#5C5C5C; 	
+ }
+ 
+ /*modify by cKF14969 2010-11-26 begin*/
+  *#USSDUIPlugin_AdvancedDialog_tableContent{ 
+      border-image: url(./skin/IDS_MINISKIN_DEFAULT/ussdtable_bg.png);
+  			border:none;	
+        font:bold;
+        font-size:13px;
+        font-family:Arial;
+    	color: rgb(139, 151, 158);
+    	selection-color: rgb(139, 151, 158);
+    	selection-background-color: rgb(218, 238, 225);
+ }
+ /*modify by cKF14969 2010-11-26 end*/
+ 
+/*modify by cKF14969 2010-12-13 begin*/
+ *#USSDUIPlugin_ChargeDialog_ChargeEdit
+{
+    margin:0px;
+    font-size:13px; 
+    font-family:Arial;
+    color:rgb(120,128,134);
+}
+/*modify by cKF14969 2010-12-13 end*/
+*#USSDplugin_myspinbox1
+{
+    border:none;
+    margin:0px;
+    background: rgba(243, 247, 249,150);
+    background: url(./skin/IDS_MINISKIN_DEFAULT/spbox_bk_image.png);
+    font:bold;
+    font-size:22px; 
+    font-family:Arial;
+    color:rgb(53,169,42);
+    selection-background-color: white;
+    selection-color: #5C5C5C;
+}
+*#USSDplugin_myspinbox1::down-button{
+		background: url(./skin/IDS_MINISKIN_DEFAULT/left_arrow.png);
+    subcontrol-position: left;
+    width:10px;
+    height:14px;
+}
+*#USSDplugin_myspinbox1::up-button{ 
+		background: url(./skin/IDS_MINISKIN_DEFAULT/right_arrow.png);
+    subcontrol-position: right;
+    width:10px;
+    height:14px;
+}
+
+*#USSDplugin_myspinbox1::down-arrow{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/left_arrow.png);
+    width:10px;
+    height:14px;
+}
+*#USSDplugin_myspinbox1::up-arrow{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/right_arrow.png);
+    width:10px;
+    height:14px;
+}
+
+*#USSDplugin_myline1
+{
+   color:#5CB954;
+}
+
+*#USSDplugin_myspinbox2
+{
+    border:none;
+    margin:0px;
+    background: rgba(243, 247, 249,150);
+    background: url(./skin/IDS_MINISKIN_DEFAULT/spbox_bk_image2.png);
+    font:bold;
+    font-size:22px; 
+    font-family:Arial;
+    color:rgb(53,169,42);
+    selection-color: #5C5C5C;
+    selection-background-color: white;
+    
+}
+*#USSDplugin_myspinbox2::down-button{
+		background: url(./skin/IDS_MINISKIN_DEFAULT/left_arrow.png);
+    subcontrol-position: left;
+    width:10px;
+    height:14px;
+}
+*#USSDplugin_myspinbox2::up-button{ 
+		background: url(./skin/IDS_MINISKIN_DEFAULT/right_arrow.png);
+    subcontrol-position: right;
+    width:10px;
+    height:14px;
+}
+
+*#USSDplugin_myspinbox2::down-arrow{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/left_arrow.png);
+    width:10px;
+    height:14px;
+}
+*#USSDplugin_myspinbox2::up-arrow{
+    image: url(./skin/IDS_MINISKIN_DEFAULT/right_arrow.png);
+    width:10px;
+    height:14px;
+}
+
+*#USSDplugin_ChargeLable { 
+		border:none;
+    margin:0px;
+     background-color: white;
+ }
+/* added by jinxl33241 end */ 
+/*27-11-2010 Rakesh 72410 To fix the HQ Defect - A56D15008 begin */
+*#SMSUIPlugin_ButtonContact{
+    border-image: url(./skin/default/images/contact.png);
+    min-width: 17px; min-height: 16px;
+    max-width: 17px; max-height: 17px;
+}
+/*27-11-2010 Rakesh 72410 To fix the HQ Defect - A56D15008 End */
+
+/*27-11-2010 Rakesh 72410 To fix the HQ Defect - A56D15008 begin */
+*#SMSUIPlugin_ButtonDelDetail{
+    border-image: url(./skin/default/images/DeleteDetail.png);
+    min-width: 5px; min-height: 5px;
+    max-width: 5px; max-height: 5px;
+}
+/*27-11-2010 Rakesh 72410 To fix the HQ Defect - A56D15008 End */ 
+
+/*add by cKF14969 2010-12-04 begin*/
+*#MyImportTableWidget {		
+	border-image: url(./skin/default/images/import_bg_line_box.png) 2 2 2 2;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	font:bold;
+  font-size:11px;
+	color: rgb(110, 119, 125);
+	selection-color: rgb(110, 119, 125);
+	selection-background-color: rgb(218, 238, 225);
+	background: white;
+}
+/*add by cKF14969 2010-12-04 end*/
+
+/* add by hanfei 2010-12-10 begin*/
+*#SMSUIPlugin_SMSLabBkGround{
+    border-image: url(./skin/default/images/sms_label_bkground.png);
+    min-width: 20px; min-height: 20px;
+    max-width: 100px; max-height: 30px;
+    font:bold;
+    font-size:12px;
+    color:#EEF2F4;
+}
+
+*#SMSUIPlugin_TextEditMsgArea
+{    
+    font:bold;
+    font-size:12px;
+    color:#6E777D;
+}
+
+*#SMSUIPlugin_LineEditNumber 
+{
+    font:bold;
+    font-size:12px;
+    color:#6E777D;
+}
+/* add by hanfei 2010-12-10 end*/
+
+/*add by cKF14969 2011-01-04 begin*/
+*#USSDMyNumber_Caption 
+{
+    font:bold;
+    font-size:18px;
+    color: rgb(110, 119, 125);
+}
+
+*#USSDMyNumber_Tip 
+{
+    font:bold;
+    font-size:12px;
+    color: rgb(110, 119, 125);
+}
+
+*#USSDMyNumber_Value 
+{
+    font:bold;
+    font-size:45px;
+    color: rgb(45, 155, 43);
+}
+/*add by cKF14969 2011-01-04 end*/
+/*2010-06-09 DTS2010060200827 P72152 Unwanted popups coming in WIn7 / Linux */
+/* 2010-05-10  cKF26894  AJ2D17482  when the message arrive don't show view and cacel button */
+/* 2010-04-26  cKF26894  AJ2D17215  move the cursor on the Connect button.click the button but don't move the cursor all along. the  state of the button don't change. */

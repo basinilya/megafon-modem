@@ -1,0 +1,102 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">Macedonian</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Ажурирање</item>
+<item name="ID_BUTTON_OK">OK</item>
+<item name="ID_BUTTON_CANCEL">Откажи</item>
+<item name="ID_MESSAGEBOX_ERROR">Грешка</item>
+<item name="ID_MESSAGEBOX_QUESTION">Потврди</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Информација</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Дали сте сигурни дека сакате да излезете?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Да се продолжи со постапката на тековното преземање следниот пат?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Да се продолжи со постапката на тековното ажурирање следниот пат?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Да се продолжи со постапката на тековното инсталирање следниот пат?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Да</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">Не</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Откажи</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Информација</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">Ќе се инсталира следната верзија на %1. Овој прозорец ќе се затвори.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">"%1" ќе се исклучи пред да се инсталираат ажурирањата.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">дали сте сигурни дека сакате да продолжите?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">"%1" не може да се прекине со програмата за ажурирање.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">Треба да го затворите рачно пред да се обидете одново да го инсталирате.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">Функцијата за ажурирање не е успешна бидејќи е овозможена функцијата за „Безмрежна работа“ на Internet Explorer. Исклучете ја за да ги вклучите ажурирањата успешно.</item>
+<item name="ID_SHEET_BUTTON_BACK">Назад</item>
+<item name="ID_SHEET_BUTTON_NEXT">Даље</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Преземи</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Инсталирати</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Обиди се пак</item>
+<item name="ID_SHEET_BUTTON_FINISH">Завршити</item>
+<item name="ID_SHEET_CAPTION">Ажурирање на интернет</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Се бараат ажурирања...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT"></item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 се ажурира сам...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 је процес преузимања ресуминг...</item>
+<item name="ID_PAGE_FEATURE_TIP">Најдени ажурирања</item>
+<item name="ID_PAGE_FEATURE_TIP1">Нови одлики</item>
+<item name="ID_PAGE_FEATURE_HEADER">Компонентен</item>
+<item name="ID_PAGE_FEATURE_HEADER1">Големина</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Преземено</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">Просторот на дискот не е доволен или дискот не постои.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">Ажурирањата се преземаат</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Статус</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Преземањето на ажурирањата е комплетирано</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Процес на инсталација:</item>
+<item name="ID_PAGE_DONE_TOPIC">Ажурирањето е комплетирано. Ви благодариме што ја користевте нашата услуга за ажурирање преку Интернет.</item>
+<item name="ID_PAGE_DONE_RUN">Вклучи ја програмата по ажурирање</item>
+<item name="ID_PAGE_DONE_REBOOT">Рестартирај го компјутерот</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">Верзијата што ја користите е последната верзија. Ви благодариме што ја користевте нашата услуга за ажурирање преку Интернет.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Ажурирањето не успеа заради грешка.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Нема комуникација со серверот за ажурирање. Потврдете дека сте поврзани на Интернет и обидете се да ги проверите ажурирањата одново.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">Оневозможи периодична проверка на ажурирања</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Провери дали има ажурирања секои</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">денови</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Не користи прокси</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">Користи поставки на IE за прокси</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Користи само одреден http-прокси</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Адреса</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Порта</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">Корисничко име</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Лозинка</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Безбедносни поставки за прокси</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Тестирај</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Обнаружьте сети.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Кликните да бисте опозвали тестирање.</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Обнаружение, пожалуйста, подождите...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">Не може да се прочитаат информациите за прокси на Internet Explorer.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Поврзувањето не успеа.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Поврзувањето е успешно.</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Поставки за ажурирање</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">Најдена е нова верзија.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Кликнете тука за ажурирање.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Се проверуваат ажурирања...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Најдени се ажурирања. Кликнете тука за да ги преземете.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">Не се најдени ажурирања. Кликнете тука за да излезете.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Се преземаат ажурирањата...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Ажурирањата се преземени. Кликнете тука за да ги инсталирате.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Се инсталираат ажурирањата...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Ажурирањето е завршено. Кликнете тука за да го видите резултатот од ажурирањето.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Ажурирањето не успеа бидејќи се појави грешка.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">Вы должны перезагрузить компьютер, чтобы проверить обновления. Нажмите кнопку "%1",
+ чтобы перезагрузиться сейчас, или "%2", чтобы вручную перезапустить позже.</item>
+<item name="ID_LIST_DOWNLOAD">Преземено</item>
+<item name="ID_LIST_INSTALLING">Инсталирање</item>
+<item name="ID_LIST_FINISHED">Завршено</item>
+<item name="ID_LIST_SUCCEED">Успешно</item>
+<item name="ID_LIST_FAILED">Неуспешно</item>
+<item name="ID_LIST_CANCELED">Откажано</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">KB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+</module>
+</utpsdoc>

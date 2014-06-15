@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="DeviceMgrUIPlugin">
+		
+		<item name="IDS_LANGUAGE_NAME">English</item>
+		<item name="IDS_PLUGIN_NAME">DeviceMgrUIPlugin</item>
+		<item name="IDS_MAINFRM_OK_PROMPT">OK</item>
+		<item name="IDS_MAINFRM_CANCEL_PROMPT">Cancel</item>
+		<item name="IDS_PROMPT_CAPTION">MegaFon</item>
+		<item name="IDS_ACTIVE_DEVICE_FALSE">Switching devices will cause all current operations to be stopped, are you sure to continue?</item>
+		<item name="IDS_DETECTE_DEVICE">Detecting device...</item>
+		<item name="IDS_DEVICE_INVALID">The device has been disconnected or is unavailable.</item>
+		<item name="IDS_DEV_MGR_PROMPT">Choose Device</item>
+		<item name="IDS_MGR_LIST_PROMPT">Device List</item>
+		<item name="IDS_DEVICE_NAME">Device</item>
+		<item name="IDS_INIT_DEV_UNDERWAY">Initializing device...</item>
+		<item name="IDS_INIT_DEV_SUCCESS">Device initialization succeeded.</item>
+		<item name="IDS_INIT_DEV_FALSE">Failed to initialize the device.</item>
+		<item name="IDS_INIT_SIM_DETECT">Detecting the %s card state...</item>
+		<item name="IDS_SIM_INVALID">The %s card has not been detected or is invalid.</item>
+		<item name="IDS_DEV_AVAILABLE">Device ready.</item>
+		<item name="IDS_DEV_UNAVAILABLE">Some functions of the device cannot be used.</item>
+
+		<item name="IDS_PIN_CHECK_FAILED">Failed to verify PIN.</item>
+		<item name="IDS_PIN_CHANGE_FAILED">Failed to modify PIN.</item>
+		<item name="IDS_PIN_ENABLE_FAILED">Failed to enable PIN verification.</item>
+		<item name="IDS_PIN_DISABLE_FAILED">Failed to disable PIN verification.</item>
+		<item name="IDS_PIN_PUK_FAILED">PUK is incorrect, please try again.</item>
+		<item name="IDS_PIN_MSG_PIN_DIFFER">The same new PIN must be entered in both fields.</item>
+		<item name="IDS_PIN_SIM_LOCKED">%s is locked permanently. Related functions cannot be used.</item>
+		<item name="IDS_PIN_SIM_BUSY">%s is busy. Related functions cannot be used.</item>
+		<item name="IDS_MAINFRM_CARDLOCKDLG_CAPTION">Unlock the data card.</item>
+<item name="IDS_MAINFRM_CARDLOCKDLG_LEFTTIMES">Remaining attempt(s):</item>
+		<item name="IDS_MAINFRM_CARDLOCKDLG_INPUTPLEASE">Please enter unlock code:</item>
+
+		<item name="IDS_MAINFRM_CARDLOCK_WRONGPWD">The password must be a numeric string of eight digits. Please re-enter the password.</item>
+		<item name="IDS_MAINFRM_PROMPT">MegaFon</item>
+		<item name="IDS_MAINFRM_CARDUNLOCK_SUCCESS">The data card has been unlocked</item>
+		<item name="IDS_MAINFRM_ERROR_PROMPT">Error</item>
+		<item name="IDS_MAINFRM_CARDLOCKDLG_CANCELPROMPT">Password authentication cancelled. Continue?</item>
+		<item name="IDS_CARDLOCKDLG_DEADLOCK">Please insert MegaFon SIM card</item>
+		<item name="IDS_CARDLOCKDLG_FORCE_EXIT">%s is invalid,software will quit!</item>
+
+		<item name="IDS_MAINFRM_PIN_VERIFY_WINDOWSTXT">MegaFon | Modem</item>
+		<item name="IDS_MAINFRM_PIN_CHANGE_WINDOWSTXT">MegaFon | Modem</item>
+		<item name="IDS_MAINFRM_PIN_UNLOCK_WINDOWSTXT">MegaFon | Modem</item>
+		<item name="IDS_MAINFRM_ENABLE_WINDOWSTXT">MegaFon | Modem</item>
+		<item name="IDS_MAINFRM_DISABLE_WINDOWSTXT">MegaFon | Modem</item>
+		<item name="IDS_MAINFRM_INPUT_PIN_PROMPT">Current PIN-code:</item>
+		<item name="IDS_MAINFRM_INPUT_OLD_PIN_PROMPT">Current PIN-code:</item>
+		<item name="IDS_MAINFRM_INPUT_NEW_PIN_PROMPT">New PIN-code:</item>
+		<item name="IDS_MAINFRM_INPUT_NEW_PIN_PROMPT2">Confirm PIN-code:</item>
+		<item name="IDS_MAINFRM_INPUT_PUK_PROMPT">Current PUK:</item>
+		<item name="IDS_MAINFRM_CHANGEPIN_SUCCESS">PIN has been changed successfully.</item>
+		<item name="IDS_MAINFRM_ENABLEPIN_SUCCESS">PIN verification has been enabled.</item>
+		<item name="IDS_MAINFRM_DISABLEPIN_SUCCESS">PIN verification has been disabled.</item>
+		<item name="IDS_MAINFRM_PIN_REMAIN_PROMPT">Remain times: %d</item>
+		<item name="IDS_MAINFRM_PUK_REMAIN_PROMPT">Remain times: %d</item>
+		<item name="IDS_MAINFRM_PIN_CANCELPROMPT">Canceling PIN or PUK verification will disable most network-related functions, continue?</item>	
+		<item name="IDS_OTKSL_TITLE">Input OTKSL Code</item>
+		<item name="IDS_OTKSL_PROMPT_PWD">OTKSL Code:</item>
+		<item name="IDS_OTKSL_MSG_CANCEL_PWD">Canceling password verification will can't use the device, continue?</item>
+		<item name="IDS_OTKSL_CHECK_FAILED">Failed to verify password.</item>
+		<item name="IDS_MSL_TITLE">Input MSL Code</item>
+		<item name="IDS_MSL_PROMPT_MSL">MSL Code:</item>
+		<item name="IDS_MSL_MSG_CANCEL_MSL">Canceling MSL verification will can't use the device, continue?</item>
+		<item name="IDS_MSL_CHECK_FAILED">Failed to verify MSL.</item>
+		<item name="IDS_ACTIVE_OTKSL_TITLE">Device Activation</item>
+		<item name="IDS_ACTIVE_OTKSL_MDN_PROMPT">MDN:</item>
+		<item name="IDS_ACTIVE_OTKSL_MIN_PROMPT">MIN:</item>
+		<item name="IDS_ACTIVE_OTKSL_SID_PROMPT">SID:</item>
+		<item name="IDS_ACTIVE_OTKSL_MSG_CANCEL">Canceling OTKSL Active will can't use the device, continue?</item>
+		<item name="IDS_ACTIVE_OTKSL_FAILED">Failed to Active OTKSL.</item>
+		<item name="IDS_OTKSL_RESTART_PROMPT">Device need to restart now.</item>
+		<item name="IDS_PROMPT_CALLING_DISABLE">Calling. Please try later.</item>
+		<item name="IDS_PROMPT_MSISDN_CHANGED">Your number was registered succeeded. The data card need to reset.</item>
+		
+		<item name="IDS_OPERATE_ACCOUNT_TITLE">Notice</item>
+		<item name="IDS_OPERATE_ACCOUNT_PROMPT_PWD">Please enter your password:</item>
+		<item name="IDS_OPERATE_ACCOUNT_CANCEL_PWD">Canceling Password verification, continue?</item>
+		<item name="IDS_OPERATE_ACCOUNT_REGISTING">The User Number is being registered now.</item>
+		<item name="IDS_OPERATE_ACCOUNT_FALSE">Registration of user number failed. Try again?</item>
+		<item name="IDS_OPERATE_ACCOUNT_PWD_INCORRECT">The Password is incorrect.</item>
+		<item name="IDS_OPERATE_ACCOUNT_NO_USED">Please register your number before you can use it.</item>
+		<item name="IDS_OPERATE_ACCOUNT_NO_SERVICE">Service is not available because of Low Received Signal Power.</item>
+		
+		<item name="IDS_ACTIVATION_TITLE">Activation</item>
+		<item name="IDS_ACTIVATION_MIN_PROMPT">MIN:</item>
+		<item name="IDS_ACTIVATION_FAILED">Activation failed, please try again or contact your service procider.</item>
+		<item name="IDS_ACTIVATION_RESTART_PROMPT">Activation was successful. Click "OK" to restart the decice.</item>
+		<item name="IDS_ACTIVATION_MSG_CANCEL">The device will not work properly if actication is cancelled, continue?</item>
+		<!--chenminjiang  begin-->
+		<item name="IDS_DEVICE_CHANGE_CAPTION">Change Devicelock</item>
+		<item name="IDS_DEVICE_OLD_PASSWORD">Old Password:</item>
+		<item name="IDS_DEVICE_NEW_PASSWORD">New Password:</item>
+		<item name="IDS_DEVICE_CHANGE_FAILED">Failed to change Devicelock.</item>
+		<item name="IDS_DEVICE_DISABLE_CAPTION">Disable Devicelock</item>
+		<item name="IDS_DEVICE_ENABLE_CAPTION">Enable Devicelock</item>
+		<item name="IDS_DEVICE_CHECK_CAPTION">Verify Devicelock</item>
+		<item name="IDS_DEVICE_PASSWORD">Password:</item>
+		<item name="IDS_DEVICE_OK">OK</item>
+		<item name="IDS_DEVICE_CANCEL">Cancel</item>
+		<item name="IDS_DEVICE_REMAIN_PROMPT">Remaining Attempt(s): %d</item>	
+		<item name="IDS_DEVICE_CANCELPROMPT">Canceling deviceLock verification will disable most network-related functions, continue?</item>	
+		<item name="IDS_DEVICE_CHECK_FAILED">Failed to verify devicelock.</item>		
+		<item name="IDS_DEVICE_ENABLE_SUCCESS">Devicelock verification has been enabled.</item>
+		<item name="IDS_DEVICE_DISABLE_SUCCESS">Devicelock verification has been disabled.</item>
+		<item name="IDS_DEVICE_ENABLE_FAILED">Failed to enable devicelock verification.</item>
+		<item name="IDS_DEVICE_DISABLE_FAILED">Failed to disable devicelock verification.</item>
+		<item name="IDS_DEVICE_DIFFER">The same new password must be entered in both fields.</item>		
+		<item name="IDS_DEVICE_CHANGE_SUCCESS">Devicelock has been changed successfully.</item>
+		
+		
+		<item name="IDS_TF_CHANGE_CAPTION">Change TFLock</item>
+		<item name="IDS_TF_OLD_PASSWORD">Old Password:</item>
+		<item name="IDS_TF_NEW_PASSWORD">New Password:</item>
+		<item name="IDS_TF_CHANGE_FAILED">Failed to change TFLock.</item>
+		<item name="IDS_TF_CLEAR_CAPTION">Clear TFLock</item>
+		<item name="IDS_TF_ENABLE_CAPTION">Enable TFLock</item>
+		<item name="IDS_TF_CHECK_CAPTION">Verify TFLock</item>
+		<item name="IDS_TF_PASSWORD">Password:</item>
+		<item name="IDS_TF_OK">OK</item>
+		<item name="IDS_TF_CANCEL">Cancel</item>
+		<item name="IDS_TF_CANCELPROMPT">Canceling TFLock verification will disable TFCard, continue?</item>	
+		<item name="IDS_TF_CHECK_FAILED">Failed to verify TFLock.</item>		
+		<item name="IDS_TF_ENABLE_SUCCESS">TFLock verification has been enabled.</item>
+		<item name="IDS_TF_SAME_DEVICE">The password is same to devicelock.</item>			
+		<item name="IDS_TF_CLEAR_SUCCESS">TFLock verification has been cleared.</item>
+		<item name="IDS_TF_ENABLE_FAILED">Failed to enable TFLock verification.</item>
+		<item name="IDS_TF_CLEAR_FAILED">Failed to clear TFLock verification.</item>
+		<item name="IDS_TF_DIFFER">The same new password must be entered in both fields.</item>		
+		<item name="IDS_TF_CHANGE_SUCCESS">TFLock has been changed successfully.</item>
+		
+		<item name="IDS_TF_LOCK_CAPTION">Lock TFLock</item>
+		<item name="IDS_TF_LOCK_FAILED">Failed to lock TFLock.</item>
+		<item name="IDS_TF_LOCK_SUCCEED">Succeed to lock TFLock.</item>
+<item name="IDS_ACTIVE_SUCCESS">Activation succeeded.\r\nClick Finish to restart your data card.</item>
+                <item name="IDS_ACTIVE_FAILED">Activation failed.</item>
+                <item name="IDS_SPC_FAILED">Activation code incorrect.</item>
+		<item name="IDS_BTN_BACK">Back</item>
+		<item name="IDS_BTN_NEXT">Next</item>
+		<item name="IDS_BTN_CANCEL">Cancel</item>
+		<item name="IDS_DLG_TITLE">Activation Wizard</item>
+		<item name="IDS_BTN_AUTO">Auto activation</item>
+		<item name="IDS_BTN_MANUAL">Manual activation</item>
+		<item name="IDS_BTN_FINISH">Finish</item>
+		<item name="IDS_AUTO_MSG">Use your modem to start automatic activation.</item>
+		<item name="IDS_MANUAL_MSG">Call the customer service center to manually activate the data card (manual input of certain items is required).</item>
+		<item name="IDS_ESN_MSG">When the service agent asks for the ESN/MEID, please provide the following number.</item>
+		<item name="IDS_SPC_MSG">When the service agent provides an activation code, please enter the code:</item>
+		<item name="IDS_MSL_MSG">When the service agent provides an activation code, please enter the code:</item>
+		<item name="IDS_MSL_FAILED">MSL verification failed.\r\nPlease connect your service agent.</item>
+		<item name="IDS_MEID_PROMPT">MEID:</item>
+		<item name="IDS_ESN_PROMPT">ESN:</item>
+		<item name="IDS_AUTOACT_BEGIN">Automatic activation begins.</item>
+		<item name="IDS_AUTOACT_OTASP_NONE">OTASP state is unknown.</item>
+		<item name="IDS_AUTOACT_STATE_IN_PROGRESS">Programming in progress.</item>
+		<item name="IDS_AUTOACT_STATE_SPL_UNLOCKED">SPL unlocked.</item>
+		<item name="IDS_AUTOACT_STATE_NAM_DOWNLOADED">Obtaining NAM succeeded.</item>
+		<item name="IDS_AUTOACT_STATE_MDN_DOWNLOADED">Obtaining MDN succeeded.</item>
+		<item name="IDS_AUTOACT_STATE_IMSI_DOWNLOADED">Obtaining IMSI succeeded.</item>
+		<item name="IDS_AUTOACT_STATE_PRL_DOWNLOADED">Obtaining PRL succeeded.</item>
+		<item name="IDS_AUTOACT_STATE_COMMIT_SUCCESS">Submitting succeeded.</item>
+		<item name="IDS_AUTOACT_STATE_PROG_SUCCESS">Programming succeeded.</item>
+		<item name="IDS_AUTOACT_STATE_PROG_FAILED">Programming failed.</item>
+		<item name="IDS_AUTOACT_ACTIVING">Automatically activating </item>
+		<item name="IDS_MAINFRM_UNKNOWN">Unknown</item>
+		<!--chenminjiang  end-->
+
+		<!--add for OTA v1r3-->
+                <!-- end-->
+                <!--add for fixing 1.0 hardcode strings-->
+                <item name="IDS_MSG_CARD_BLOCKED">The Data card is permanently blocked. Please contact your Operator</item>
+		<item name="IDS_MSG_WWAN_PRIVILIGE">This method is not allowed for calling process privileges. Please use system's WWAN UI to unblock the PIN</item>
+		<!-- end-->
+		<!--add by cKF14969 2010-08-03 begin-->
+		<item name="IDS_MY_CHANGE_CAPTION">Change PIN-code</item>
+		<item name="IDS_MY_VERIFY_CAPTION">Verify PIN-code</item>
+		<item name="IDS_MY_UNLOCK_CAPTION">Unlock PIN-code</item>
+		<item name="IDS_MY_ENABLE_CAPTION">Enable PIN-code</item>
+		<item name="IDS_MY_DISABLE_CAPTION">Disable PIN-code</item>
+		<item name="IDS_MY_ERR_PROMPT">Input incorrect PIN-code:</item>
+		<item name="IDS_MY_ERR_PUK_PROMPT">Input incorrect PUK-code:</item>
+		<!--add by cKF14969 2010-08-03 end-->
+
+		<!-- 2010-03-08 begin zhoucheng 163577 for Cricket -->
+		<item name="IDS_OPEN_PRL_FILE">Open File</item>
+		<item name="IDS_PRL_FILE_FILTER">PRL files (*.prl);;All files (*.*)</item>
+		<item name="IDS_PRL_LABEL">PRL:</item>
+		<item name="IDS_PRL_BTN_BROWSER">...</item>
+		<item name="IDS_PRL_FILE_NOT_EXIST">PRL file is not existed!</item>
+		<item name="IDS_PRL_NO_MEMORY">No enough memory to read PRL file!</item>
+		<item name="IDS_PRL_READ_ERROR">Fail to read PRL file!</item>
+		<item name="IDS_MSL_WAIT_MOMENT">Activation error, please wait for a moment!</item>
+		<!-- 2010-03-08 end zhoucheng 163577 for Cricket -->
+	</module>
+</utpsdoc>

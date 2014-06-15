@@ -1,0 +1,112 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<utpsdoc type="resource">
+<module name="UpdateDog">
+<item name="Language">English</item>
+<item name="ID_LAYOUT_STYLE">LTR</item>
+<item name="ID_SHEET_TITLE">Updater</item>
+<item name="ID_BUTTON_OK">OK</item>
+<item name="ID_BUTTON_CANCEL">Cancel</item>
+<item name="ID_MAINNAME">G3 eWalk</item>
+<item name="ID_MESSAGEBOX_ERROR">Error</item>
+<item name="ID_MESSAGEBOX_QUESTION">Confirm</item>
+<item name="ID_MESSAGEBOX_INFORMATION">Information</item>
+<item name="ID_MESSAGEBOX_CANCEL_GENERAL_QUERY_TEXT">Are you sure to exit?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOADING_QUERY_TEXT">Do you want to continue the downloading later?</item>
+<item name="ID_MESSAGEBOX_CANCEL_DOWNLOAD_FINISHED_QUERY_TEXT">Do you want to continue the update later?</item>
+<item name="ID_MESSAGEBOX_CANCEL_INSTALLING_QUERY_TEXT">Do you want to continue the installation later?</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_YES">Yes</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_NO">No</item>
+<item name="ID_MESSAGEBOX_QUERY_TEXT_ANSWER_CANCEL">Cancel</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TITLE">Information</item>
+<item name="ID_MESSAGEBOX_OUC_QUIT_TEXT">The new version of %1 will be installed. This window will be closed.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT1">"%1" must be closed before installing updates.</item>
+<item name="ID_MESSAGEBOX_STOP_PROGRAM_TEXT2">Are you sure you want to continue?</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT1">"%1" cannot be terminated by the updater.</item>
+<item name="ID_MESSAGEBOX_MANUAL_STOP_TEXT2">You need to terminate it manually and then try again.</item>
+<item name="ID_MESSAGEBOX_MANUAL_OFFLINEMODE">Unable to communicate with the update server because Internet Explorer is set to Work Offline. Change the "Work Offline" option within Internet Explorer and check for updates again.</item>
+<item name="ID_SHEET_BUTTON_BACK">Back</item>
+<item name="ID_SHEET_BUTTON_NEXT">Next</item>
+<item name="ID_SHEET_BUTTON_NEXT1">Download</item>
+<item name="ID_SHEET_BUTTON_NEXT2">Install</item>
+<item name="ID_SHEET_BUTTON_NEXT3">Retry</item>
+<item name="ID_SHEET_BUTTON_FINISH">Finish</item>
+<item name="ID_SHEET_CAPTION">Online Update</item>
+<item name="ID_PAGE_WAIT_CHECKING_TEXT">Checking for updates...</item>
+<item name="ID_PAGE_WAIT_NOTICE_TEXT">Note:Don't remove the datacard device and keep the connection please!</item>
+<item name="ID_PAGE_WAIT_UPDATE_MYSELF">%1 is updating...</item>
+<item name="ID_PAGE_WAIT_RESUME_DOWNLOADING">%1 is resuming downloading process...</item>
+<item name="ID_PAGE_FEATURE_TIP">Updates Found</item>
+<item name="ID_PAGE_FEATURE_TIP1">New Features</item>
+<item name="ID_PAGE_FEATURE_HEADER">Component</item>
+<item name="ID_PAGE_FEATURE_HEADER1">Size</item>
+<item name="ID_PAGE_DOWNLOAD_PROGRESS">Downloaded</item>
+<item name="ID_PAGE_DOWNLOAD_NO_ENOUGH_DISK">The disk space is insufficient or the disk does not exist.</item>
+<item name="ID_PAGE_REFRESH_TOPIC">Downloading updates...</item>
+<item name="ID_PAGE_REFRESH_HEADER1">Status</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH">Downloading updates is complete.</item>
+<item name="ID_PAGE_REFRESH_DOWNLOAD_FINISH_UTPSFORCE">Your application should be updated,Please install it.</item>
+<item name="ID_PAGE_REFRESH_PROGRESS">Installation Progress:</item>
+<item name="ID_PAGE_DONE_TOPIC">Update is complete. Thank you for using %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT1">Updates are available for %1.</item>
+<item name="ID_MESSAGEBOX_MANUAL_FORCEUPDATE_TEXT2">
+
+To begin the update process, click Download and Install Updates.
+
+
+Update file size:</item>
+<item name="ID_BUTTON_DI">Download and Install Updates</item>
+<item name="ID_PAGE_DONE_RUN">Run the program after update</item>
+<item name="ID_PAGE_DONE_REBOOT">Reboot the computer</item>
+<item name="ID_PAGE_DONE_NO_NEW_VERSION">The version you are using is already the latest version. Thank you for using %1.</item>
+<item name="ID_PAGE_DONE_UPDATE_ERROR">Update failed because errors occurred.</item>
+<item name="ID_PAGE_DONE_NET_ABNORMAL">Unable to communicate with the update server. Confirm you are connected to the Internet and try to check for updates again.</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_NEVER">Disable periodic checking for updates</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE">Check for updates every</item>
+<item name="ID_DIALOG_STRATEGY_RADIO_CYTLE2">days</item>
+<item name="ID_DIALOG_SETTING_RADIO_NO_PROXY">Do not use proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_IE_PROXY">Use IE settings as proxy</item>
+<item name="ID_DIALOG_SETTING_RADIO_SELF_PROXY">Use self-defined http proxy</item>
+<item name="ID_DIALOG_SETTING_STATIC_ADDRESS">Address</item>
+<item name="ID_DIALOG_SETTING_STATIC_PORT">Port</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_NAME">User Name</item>
+<item name="ID_DIALOG_SETTING_STATIC_USER_PASSWORD">Password</item>
+<item name="ID_DIALOG_SETTING_CHECKBOX_SECURITY">Proxy security settings</item>
+<item name="ID_DIALOG_SETTING_BUTTON_TEST_CONNECT">Test</item>
+<item name="ID_DIALOG_SETTING_DEFAULD">Click to test the network connection.</item>
+<item name="ID_DIALOG_SETTING_CANCEL_TEST">Click to cancel testing.</item>
+<item name="ID_DIALOG_SETTING_CONNECTING">Detecting, please wait...</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX1">Cannot read the Internet Explorer proxy information.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX2">Connecting failed.</item>
+<item name="ID_DIALOG_SETTING_MESSAGEBOX3">Connecting succeeded.</item>
+<item name="ID_DIALOG_SETTING_CAPTION">Update Settings</item>
+<item name="ID_TRAY_BALLOON_NEW_VERSION">New version found.</item>
+<item name="ID_TRAY_BALLOON_CLICK_HERE">Click here to update.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_CHECKING">Checking for updates...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NEW_VERSION">Updates found. Click here to download.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FOUND_NO_VERSION">No updates found. Click here to exit.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADING">Downloading updates...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_DOWNLOADED">Updates are downloaded. Click here to install.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_INSTALLING">Installing updates...</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_FINISH">Update finished. Click here to view update result.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_URLPROMPTFINISH">Update finished.</item>
+<item name="ID_TRAY_BALLOON_WINDOW_MINIMIZE_ERROR">Update failed because errors occurred.</item>
+<item name="ID_DONE_PAGE_REBOOT_TIP">You must restart your computer to validate the update. Click "%1" 
+to restart now or "%2" to manually restart later.</item>
+<item name="ID_LIST_DOWNLOAD">Downloaded</item>
+<item name="ID_LIST_INSTALLING">Installing</item>
+<item name="ID_LIST_FINISHED">Finished</item>
+<item name="ID_LIST_SUCCEED">Succeeded</item>
+<item name="ID_LIST_FAILED">Failed</item>
+<item name="ID_LIST_CANCELED">Canceled</item>
+<item name="ID_TCPUANDUTPS_UPDATE_PROMPT">Both Firmware and Software are needed updated. Click "%1" 
+to update Firmware or "%2" to update Software.</item>
+<item name="ID_STATIC_FIRMWAREUPDATE_PROMPT">The %1 is new firmware version，please download new version from this URL to install!</item>
+<item name="ID_MESSAGEBOX_UPDATE_SOFTWARE_FORCE">You must update G3 eWalk.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NOTE">Note: The software upgrades are free of charge and flow.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_BREAK_DIALUP">The current connection will be disconnected.</item>
+<item name="ID_PROMPT_SOFTWARE_UPGRADE_NORMAL">Updates found. Please download.</item>
+<item name="ID_TAILOR_UNIT_B">B</item>
+<item name="ID_TAILOR_UNIT_KB">KB</item>
+<item name="ID_TAILOR_UNIT_MB">MB</item>
+</module>
+</utpsdoc>

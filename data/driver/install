@@ -1,0 +1,398 @@
+#!/bin/bash
+export PATH=$PATH:/sbin
+
+CONFNAME=runhwactivator
+START_CONFNAME=S99$CONFNAME
+STOP_CONFNAME=K10$CONFNAME
+
+SYSTEM_BIT=$($(which getconf) LONG_BIT)
+SYS_KERN_VER=`uname -r`
+
+if [ "$(which udevadm)" != "" ]
+then
+	udevVer=`udevadm version`
+else
+	udevVer=`udevinfo -V | awk '{print $3}'`
+fi
+
+#added by l81005329 for DTS2012072704174  start
+if [ "$(pidof HWActivator)" != "" ]
+then
+        POINT=`ps -efw | grep HWActivator | grep $(pidof HWActivator)`
+        POINT=`echo ${POINT%/*}`
+        POINT=`echo ${POINT#*/}`
+        POINT="/"$POINT
+        echo "old path =$POINT"
+	kill -9 $(pidof HWActivator)
+	"$POINT"/Uninstall
+fi
+#added by l81005329 for DTS2012072704174  end
+
+echo "DRIVER COPY START"
+STA_PATH_FLAG=`echo $0|cut -d "/" -f1`
+echo "STA_PATH_FLAG=$STA_PATH_FLAG"
+if [ "$STA_PATH_FLAG" != "" -a "$STA_PATH_FLAG" == "." ]
+then
+    # change 0 to pwd
+    STA_PATH_FULL=${0/./`pwd`}
+    echo "STA_PATH_FULL=$STA_PATH_FULL"
+    START_PATH_DRIVER=`echo ${STA_PATH_FULL%/install}`
+    # chong xin jie qu START_PATH_DRIVER
+else
+    START_PATH_DRIVER=`echo ${0%/install}`
+fi
+echo "START_PATH_DRIVER=$START_PATH_DRIVER"
+echo "CURRENT install from $0"
+if [ -z $1 ]
+then
+   	echo "INSTALL_PATH is not set ,auto install"
+   	set /usr/local/Mobile_Partner .bin
+fi
+
+INSTALL_PATH=$1
+echo "INSTALL_PATH=$INSTALL_PATH"
+if [ "$START_PATH_DRIVER" != ""$INSTALL_PATH"/driver" ]
+then
+    echo "INSTALL_PATH is another path"
+    if [ -d "$INSTALL_PATH" ]
+    then
+        if [ -d "$INSTALL_PATH"/driver ]
+        then
+             echo "rm "$INSTALL_PATH"/driver"
+	     rm -rf "$INSTALL_PATH"/driver
+	fi
+    else
+        mkdir -p "$INSTALL_PATH"
+    fi
+cp  -rf "$START_PATH_DRIVER" "$INSTALL_PATH"
+fi
+
+chmod -R 777 "$INSTALL_PATH"/driver
+echo "DRIVER COPY END"
+
+cp "$INSTALL_PATH"/driver/usbmod /sbin/
+chmod a+x /sbin/usbmod
+cp "$INSTALL_PATH"/driver/startMobilePartner /sbin/
+chmod a+x /sbin/startMobilePartner
+echo "rm -f /sbin/usbmod" >> "$INSTALL_PATH"/driver/Uninstall
+echo "rm -f /sbin/startMobilePartner" >> "$INSTALL_PATH"/driver/Uninstall
+
+if [ "$(ls /etc/usb_modeswitch.d/ |grep 12d1*)" != "" ]
+then
+    rm -f /etc/usb_modeswitch.d/12d1*
+fi
+
+if [ $SYSTEM_BIT -gt 32 ]
+then
+	cp "$INSTALL_PATH"/driver/64bit/HWActivator "$INSTALL_PATH"/driver/
+else
+	cp "$INSTALL_PATH"/driver/32bit/HWActivator "$INSTALL_PATH"/driver/
+fi
+chmod a+x "$INSTALL_PATH"/driver/HWActivator
+
+if [ $udevVer -ge 167 ]
+then
+   sed "s#/path/HWActivator#${INSTALL_PATH}/driver/HWActivator $2#g" "$INSTALL_PATH"/driver/50-Huawei-Datacard.rules > /etc/udev/rules.d/50-Huawei-Datacard.rules
+elif [ $udevVer -ge 098 ]
+then
+   sed "s#/path/HWActivator#${INSTALL_PATH}/driver/HWActivator $2#g" "$INSTALL_PATH"/driver/10-Huawei-Datacard.rules > /etc/udev/rules.d/10-Huawei-Datacard.rules
+else
+   sed "s#/path/HWActivator#${INSTALL_PATH}/driver/HWActivator $2#g" "$INSTALL_PATH"/driver/10-Huawei-Datacard-old.rules > /etc/udev/rules.d/10-Huawei-Datacard.rules
+fi
+
+if [ $udevVer -ge 167 ]
+then
+    chmod a+x /etc/udev/rules.d/50-Huawei-Datacard.rules
+else
+    chmod a+x /etc/udev/rules.d/10-Huawei-Datacard.rules
+fi
+
+if [ "$SYS_KERN_VER" \> "2.6.37" -a "$SYS_KERN_VER" \< "3.0.0" ]
+then
+        if [ -f /lib/udev/rules.d/60-cdrom_id.rules.bak ]
+	then
+	        echo "60-cdrom_id already copy"
+	else
+        	mv -f /lib/udev/rules.d/60-cdrom_id.rules /lib/udev/rules.d/60-cdrom_id.rules.bak
+	        cp -f "$INSTALL_PATH"/driver/60-cdrom_id.rules /lib/udev/rules.d/.
+	fi
+fi
+
+
+if [ -d /lib/udev/rules.d ]
+then
+    if [ $udevVer -ge 167 ]
+    then
+        cp /etc/udev/rules.d/50-Huawei-Datacard.rules /lib/udev/rules.d/
+    else
+	cp /etc/udev/rules.d/10-Huawei-Datacard.rules /lib/udev/rules.d/
+    fi
+fi
+if [ "$(cat /etc/issue |grep Flag)" != "" ]
+then
+    start_udev
+fi
+
+
+
+#To disable modem modeswitch for 1446 usb-storage port
+if [ -f /lib/udev/rules.d/61-option-modem-modeswitch.rules ]
+then
+	sed "s#12d1#Huawei#g" /lib/udev/rules.d/61-option-modem-modeswitch.rules > /lib/udev/rules.d/tmp.rules
+	rm -f /lib/udev/rules.d/61-option-modem-modeswitch.rules
+	mv /lib/udev/rules.d/tmp.rules /lib/udev/rules.d/61-option-modem-modeswitch.rules
+	chmod 777 /lib/udev/rules.d/61-option-modem-modeswitch.rules
+fi
+
+#To disable usb_modeswitch rules for Huawei Datacard 
+COUNT=`grep 12d1 /lib/udev/rules.d/*|grep usb_modeswitch|cut -d : -f1|awk '{if(!a[$1]) {print $0;a[$1]=1;}}'|wc -l`
+echo "have usb_modeswitch rules to HUAWEI DataCard: COUNT=$COUNT"
+
+while [ $COUNT != 0 ]
+do
+        RULESFILE=`grep 12d1 /lib/udev/rules.d/*|grep usb_modeswitch|cut -d : -f1|awk '{if(!a[$1]) {print $0;a[$1]=1;}}'|sed -n $COUNT"p"`
+        echo "RULESFILE =$RULESFILE"
+        echo "COUNT_START=$COUNT"
+        sed "s#12d1#Huawei#g" $RULESFILE > /lib/udev/rules.d/tmp.rules
+        rm -f $RULESFILE
+        mv /lib/udev/rules.d/tmp.rules $RULESFILE
+        chmod 777 $RULESFILE
+        let "COUNT=COUNT-1"
+        echo "COUNT_END=$COUNT"
+done
+
+###Begin: DTS2011122101873 lKF36757 2011-12-20
+if [ "$(ls /dev/ttyUSB?|wc -l)" != 0 ]
+then
+     echo "`ls /dev/ttyUSB?|wc -l`"
+     COUNT=`ls /sys/bus/usb/drivers/option|grep :|wc -l`
+     echo "ttyUSB%n COUNT=$COUNT"
+     while [ $COUNT != 0 ]
+     do
+          TTYFILE=`ls /sys/bus/usb/drivers/option|grep :|sed -n $COUNT"p"`
+          echo "$TTYFILE unbind and bind option"
+          if [ "$(grep 12D1 /sys/bus/usb/drivers/option/$TTYFILE/modalias)" != "" ]
+          then
+               echo $TTYFILE > /sys/bus/usb/drivers/option/unbind
+               echo $TTYFILE > /sys/bus/usb/drivers/option/bind
+          fi
+          let "COUNT=COUNT-1"
+          echo "COUNT_END=$COUNT"
+      done
+else
+   echo "ttyUSB%n not exist,ok"
+fi
+###End: DTS2011122101873 lKF36757 2011-12-20
+
+###Begin: DTS2012061207019 lKF36757 2012-6-12 modified
+#install the ndis driver module
+"$INSTALL_PATH"/driver/ndis_driver/ndis_install "$INSTALL_PATH"/driver/ndis_driver
+#install the patch module
+"$INSTALL_PATH"/driver/patch/patch_install "$INSTALL_PATH"/driver/patch
+
+#install the acm_patch module
+"$INSTALL_PATH"/driver/patch/acm_patch/acm_patch_install "$INSTALL_PATH"/driver/patch/acm_patch
+
+sleep 2
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2011)" != "" ]
+then
+	./Mandriva2011_Patch $INSTALL_PATH
+fi
+###End: DTS2012061207019 lKF36757 2012-6-12 modified
+
+#To delete the Ignore 0x1003 CDROM preprobe setting in Hal fdi
+if [ -f /usr/share/hal/fdi/preprobe/10osvendor/20-broken-usb-sticks.fdi ]
+then 
+    sed "s#12d1#0000#g" /usr/share/hal/fdi/preprobe/10osvendor/20-broken-usb-sticks.fdi > /usr/share/hal/fdi/preprobe/10osvendor/huawei_tmp.fdi
+    rm -f  /usr/share/hal/fdi/preprobe/10osvendor/20-broken-usb-sticks.fdi
+    mv /usr/share/hal/fdi/preprobe/10osvendor/huawei_tmp.fdi /usr/share/hal/fdi/preprobe/10osvendor/20-broken-usb-sticks.fdi
+    chmod 777 /usr/share/hal/fdi/preprobe/10osvendor/20-broken-usb-sticks.fdi
+fi
+
+cp "$INSTALL_PATH"/driver/HuaweiAutoStart.desktop /etc/xdg/autostart/
+chmod a+x /etc/xdg/autostart/HuaweiAutoStart.desktop
+echo "rm -f /etc/xdg/autostart/HuaweiAutoStart.desktop" >> "$INSTALL_PATH"/driver/Uninstall
+
+if [ "$(cat /etc/issue |grep Mandriva)" != "" ]
+then
+	if [ ! -f /etc/xdg/autostart/HuaweiAutoStart.desktop ]
+	then
+		for AUTORUNPATH in `find /home/ -mount -name "[Aa]utostart" -type d`;
+		do
+			echo "AUTORUNPATH=$AUTORUNPATH"
+			if [ -d $ADDRUNLEVEL ] ; then
+			   cp "$INSTALL_PATH"/driver/HuaweiAutoStart.desktop $AUTORUNPATH
+				chmod a+x $AUTORUNPATH/HuaweiAutoStart.desktop
+				echo "rm -f $AUTORUNPATH/HuaweiAutoStart.desktop" >> "$INSTALL_PATH"/driver/Uninstall
+			fi
+		done
+		for AUTORUNPATH in `find /root/ -mount -name "[Aa]utostart" -type d`;
+		do
+
+			echo "AUTORUNPATH=$AUTORUNPATH"
+			if [ -d $ADDRUNLEVEL ] ; then
+			   cp "$INSTALL_PATH"/driver/HuaweiAutoStart.desktop $AUTORUNPATH
+				chmod a+x $AUTORUNPATH/HuaweiAutoStart.desktop
+				echo "rm -f $AUTORUNPATH/HuaweiAutoStart.desktop" >> "$INSTALL_PATH"/driver/Uninstall
+			fi
+		done
+	fi
+else
+	for AUTORUNPATH in `find /home/ -mount -name "[Aa]utostart" -type d`;
+	do
+		echo "AUTORUNPATH=$AUTORUNPATH"
+		if [ -d $ADDRUNLEVEL ] ; then
+		   cp "$INSTALL_PATH"/driver/HuaweiAutoStart.desktop $AUTORUNPATH
+		    chmod a+x $AUTORUNPATH/HuaweiAutoStart.desktop
+		    echo "rm -f $AUTORUNPATH/HuaweiAutoStart.desktop" >> "$INSTALL_PATH"/driver/Uninstall
+		fi
+	done
+	for AUTORUNPATH in `find /root/ -mount -name "[Aa]utostart" -type d`;
+	do
+
+		echo "AUTORUNPATH=$AUTORUNPATH"
+		if [ -d $ADDRUNLEVEL ] ; then
+		   cp "$INSTALL_PATH"/driver/HuaweiAutoStart.desktop $AUTORUNPATH
+		    chmod a+x $AUTORUNPATH/HuaweiAutoStart.desktop
+		    echo "rm -f $AUTORUNPATH/HuaweiAutoStart.desktop" >> "$INSTALL_PATH"/driver/Uninstall
+		fi
+	done
+fi
+
+
+#install the configuration file for auto run in boot
+sed "s#CURPATH#${INSTALL_PATH}#g" "$INSTALL_PATH"/driver/skeleton > "$INSTALL_PATH"/driver/skeleton.bak
+
+sed "s#parameter#$2#g" "$INSTALL_PATH"/driver/skeleton.bak > "$INSTALL_PATH"/driver/$CONFNAME
+
+rm -f "$INSTALL_PATH"/driver/skeleton.bak
+
+
+
+if [ -d /etc/init.d ]
+then
+    cp -f "$INSTALL_PATH"/driver/$CONFNAME /etc/init.d/
+    chmod a+x /etc/init.d/$CONFNAME
+    CONFPATH=/etc/init.d
+elif [ -d /etc/rc.d ]
+then
+    cp -f "$INSTALL_PATH"/driver/$CONFNAME /etc/rc.d/
+    chmod a+x /etc/rc.d/$CONFNAME
+    CONFPATH=/etc/rc.d
+fi
+
+echo "rm -f $CONFPATH/$CONFNAME" >> "$INSTALL_PATH"/driver/Uninstall
+
+#use command
+for ADDRUNLEVEL in `find /etc/ -name "rc[2345].d" -type d`;
+do
+    echo "ADDRUNLEVEL=$ADDRUNLEVEL"
+    if [ -d $ADDRUNLEVEL ] ; then
+        if [ -L "$ADDRUNLEVEL/$START_CONFNAME" ] ; then
+            rm -f $ADDRUNLEVEL/$START_CONFNAME
+            rm -f $ADDRUNLEVEL/$STOP_CONFNAME
+        fi
+        ln -sv $CONFPATH/$CONFNAME $ADDRUNLEVEL/$START_CONFNAME
+        chmod a+x $ADDRUNLEVEL/$START_CONFNAME
+        ln -sv $CONFPATH/$CONFNAME $ADDRUNLEVEL/$STOP_CONFNAME
+        chmod a+x $ADDRUNLEVEL/$STOP_CONFNAME
+    
+        echo "rm -f $ADDRUNLEVEL/$START_CONFNAME" >> "$INSTALL_PATH"/driver/Uninstall
+        echo "rm -f $ADDRUNLEVEL/$STOP_CONFNAME" >> "$INSTALL_PATH"/driver/Uninstall
+    fi
+done
+
+if [ -f /etc/init.d/.depend.start ]
+then
+    rm -f /etc/init.d/.depend.start
+    rm -f /etc/init.d/.depend.stop
+    chkconfig -a runhwactivator
+fi
+#added by l81005329 for DTS2012072704174  start
+if [ -d /sys/bus/usb/drivers/qmi_wwan ]
+then
+     COUNT=`ls /sys/bus/usb/drivers/qmi_wwan|grep :|wc -l`
+     echo "qmi-wwan interface COUNT=$COUNT"
+     while [ $COUNT != 0 ]
+     do
+          QMIWWANFILE=`ls /sys/bus/usb/drivers/qmi_wwan|grep :|sed -n $COUNT"p"`
+          echo "$QMIWWANFILE unbind and bind hw_cdc_driver"
+          if [ "$(grep 12D1 /sys/bus/usb/drivers/qmi_wwan/$QMIWWANFILE/modalias)" != "" ]
+          then
+               echo $QMIWWANFILE> /sys/bus/usb/drivers/qmi_wwan/unbind
+          fi
+          let "COUNT=COUNT-1"
+          echo "qmi_wwan interface COUNT_END=$COUNT"
+      done
+else
+   echo "qmi_wwan interface not exist,ok"
+fi
+
+
+if [ -d /sys/bus/usb/drivers/cdc_wdm ]
+then
+    if [ "$(ls /dev/cdc-wdm?|wc -l)" != 0 ]
+    then
+        COUNT=`ls /sys/bus/usb/drivers/cdc_wdm|grep :|wc -l`
+        echo "cdc-wdm%n COUNT=$COUNT"
+        while [ $COUNT != 0 ]
+        do
+            CDCWDMFILE=`ls /sys/bus/usb/drivers/cdc_wdm|grep :|sed -n $COUNT"p"`
+            echo "$CDCWDMFILE unbind and bind hw_cdc_driver"
+            if [ "$(grep 12D1 /sys/bus/usb/drivers/cdc_wdm/$CDCWDMFILE/modalias)" != "" ]
+            then
+               echo $CDCWDMFILE > /sys/bus/usb/drivers/cdc_wdm/unbind
+               echo $CDCWDMFILE > /sys/bus/usb/drivers/huawei_ether/bind
+            fi
+            let "COUNT=COUNT-1"
+            echo "/dev/cdc-wdm? COUNT_END=$COUNT"
+        done
+    else
+        echo "cdc-wdm%n not exist,ok"
+    fi
+fi
+#added by l81005329 for DTS2012072704174  end
+
+#"$INSTALL_PATH"/driver/sleep-settings.sh "$INSTALL_PATH" 
+
+
+#To solve the ports with non-Pnp device are dead after Hibernate
+if [ -d /usr/lib/pm-utils/sleep.d ]
+then
+    if [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 7)" != "" ]
+	then
+		echo "the current system is Fedora 7"
+	else
+    	cp "$INSTALL_PATH"/driver/49huawei /usr/lib/pm-utils/sleep.d/
+    	chmod 777 /usr/lib/pm-utils/sleep.d/49huawei
+    	echo "rm -f /usr/lib/pm-utils/sleep.d/49huawei" >> "$INSTALL_PATH"/driver/Uninstall
+	fi
+    if [ "$(cat /etc/issue |grep openSUSE)" != "" -a "$(cat /etc/issue |grep 11.2)" != "" ]
+	then
+		echo "the current system is openSUSE 11.2"
+       	cp "$INSTALL_PATH"/driver/sleepsettings/OpenSUSE/50-huawei-suspend /usr/lib/pm-utils/sleep.d/
+    	chmod 777 /usr/lib/pm-utils/sleep.d/50-huawei-suspend
+    	echo "rm -f /usr/lib/pm-utils/sleep.d/50-huawei-suspend" >> "$INSTALL_PATH"/driver/Uninstall
+	fi
+    if [ "$(cat /etc/issue |grep Fedora)" != "" -a "$(cat /etc/issue |grep 12)" != "" ]
+	then
+		echo "the current system is Fedora12"
+       	cp "$INSTALL_PATH"/driver/sleepsettings/Fedora/50-huawei-suspend /usr/lib/pm-utils/sleep.d/
+    	chmod 777 /usr/lib/pm-utils/sleep.d/50-huawei-suspend
+    	echo "rm -f /usr/lib/pm-utils/sleep.d/50-huawei-suspend" >> "$INSTALL_PATH"/driver/Uninstall
+	fi
+fi
+
+if [ -d /usr/lib64/pm-utils/sleep.d ]
+then
+    cp "$INSTALL_PATH"/driver/49huawei /usr/lib64/pm-utils/sleep.d/
+    chmod 777 /usr/lib64/pm-utils/sleep.d/49huawei
+    echo "rm -f /usr/lib64/pm-utils/sleep.d/49huawei" >> "$INSTALL_PATH"/driver/Uninstall
+fi
+
+if [ "$(cat /etc/issue |grep Mandriva)" != "" -a "$(cat /etc/issue |grep 2011)" != "" ]
+then
+   echo "Mandriva 2011"
+else
+exec "$INSTALL_PATH"/driver/HWActivator $2>>/dev/null 2>&1
+fi

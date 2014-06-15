@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<utpsdoc type="WiFiProfile">
+<!--profile>
+<name>dlink</name>
+<username/>
+<password/>
+<device/>
+<authtype>1</authtype>
+<ssid>dlink</ssid>
+<connectiontype>ESS</connectiontype>
+<connectionmode>manual</connectionmode>
+<authentication>open</authentication>
+<encryption>none</encryption>
+<keytype/>
+<keyprotected>false</keyprotected>
+<keymaterial/>
+<keyindex/>
+<notify>false</notify>
+<readonly>false</readonly>
+<lastconnectresult>success</lastconnectresult>
+</profile-->	
+
+</utpsdoc>

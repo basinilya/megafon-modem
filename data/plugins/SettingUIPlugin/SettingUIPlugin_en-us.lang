@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<utpsdoc type="resource">
+<module name="SettingUIPlugin">
+<item name="IDS_BUTTON_OK">OK</item>
+<item name="IDS_BUTTON_CANCEL">Cancel</item>
+<item name="IDS_DIALOG_TITLE">MegaFon | Modem</item>
+<item name="IDS_CRIT_CAPTION">Fatal Error</item>
+<item name="IDS_WARN_CAPTION">Warning</item>
+<item name="IDS_ERROR_CAPTION">Error</item>
+<item name="IDS_PROMPT_CAPTION">MegaFon</item>
+<item name="IDS_OPERATION_PROCESS">Opreation is processing, please wait.</item>
+<item name="IDS_SETTING_NAME">General</item>
+<item name="IDS_SETTING_CHECK_STARTUP_AUTO">Startup with OS</item>
+  <item name="IDS_SETTING_CHECK_DEV_AVAILABLE">Launch when device is available</item>
+<item name="IDS_SETTING_CHECK_STARTUP_MIN">Shrink window when startup</item>
+<item name="IDS_SETTING_STATIC_GROUP_STARTUP">Startup</item>
+<item name="IDS_CONNECT_TYPE_GROUP">Connection Type</item>
+<item name="IDS_CONNECT_TYPE_CHECK_RSA">RAS (modem)</item>
+<item name="IDS_CONNECT_TYPE_CHECK_NDIS">NDIS</item>
+<item name="IDS_ANTIVIRUS_RUN_GROUP">Auto Launch</item>
+<item name="IDS_CHECK_TREND">Trend Micro USB Security</item>
+<!--add by cKF14969 2010-08-03 begin-->
+<item name="IDS_MY_SETTINGS_CAPTION">Settings</item>
+<item name="IDS_MY_NEWPROFILE">New Profile</item>
+<item name="IDS_MY_SETTINGS_GENERAL">General</item>
+<item name="IDS_MY_SETTINGS_SMS">SMS-Client</item>
+<item name="IDS_MY_SETTINGS_PROFILE">Profile</item>
+<item name="IDS_MY_SETTINGS_NETWORK">Network</item>
+<!--general-->
+<item name="IDS_MYGROUP0_CAP">Startup</item>
+<item name="IDS_MYGROUP1_CAP">Language</item>
+<item name="IDS_MYGROUP2_CAP">Choose device</item>
+<item name="IDS_MYGROUP3_CAP">PIN code</item>
+<item name="IDS_MYGROUP4_CAP">Connection Type</item>
+<item name="IDS_MYMINIMIZE">Minimize window after connected</item>
+<item name="IDS_MYREDIAL">Auto redial upon disconnection</item>
+<item name="IDS_MYAUTODIAL">Dialup on startup</item>
+<item name="IDS_MYLANG_ENGLISH">English</item>
+<item name="IDS_MYLANG_RUSSION">Русский</item>
+<item name="IDS_MYPIN_VERIFY">Input PIN code</item>
+<item name="IDS_MYPIN_UNLOCK">Unblock</item>
+<item name="IDS_MYPIN_CHANGEPIN">Edit</item>
+<item name="IDS_MYPIN_CAP">Check PIN code:</item>
+<item name="IDS_MYPIN_ENABLEPIN">Activate</item>
+<item name="IDS_MYPIN_DISABLEPIN">Deactivate</item>
+<!--add by cKF14969 2010-08-03 end-->
+</module>
+</utpsdoc>
