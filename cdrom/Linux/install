@@ -572,7 +572,7 @@ InstallMobilePartner()
     # AJ2D14022 karthik exec ${INSTALLPATH}/MobilePartner.bin will now be put after the special steps for each distro.
     #echo -e "#!/bin/bash \n LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${INSTALLPATH} \n export LD_LIBRARY_PATH \n export PATH=/sbin:$PATH \n sudo LD_LIBRARY_PATH=${INSTALLPATH} \n exec ${INSTALLPATH}/MobilePartner.bin" > ${INSTALLPATH}/MobilePartner_Bat
     #DTS2010072902594 lkf26999 2010-8-9 Xserver path add to PATH
-    echo -e "#!/bin/bash \n LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${INSTALLPATH} \n export LD_LIBRARY_PATH \n export PATH=/usr/bin/X11:/usr/X11R6/bin:/sbin:$PATH \n sudo LD_LIBRARY_PATH=${INSTALLPATH} \n" > ${INSTALLPATH}/MobilePartner_Bat
+    echo -e "#!/bin/bash \n LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${INSTALLPATH} \n export LD_LIBRARY_PATH \n export PATH=/usr/bin/X11:/usr/X11R6/bin:/sbin:$PATH \n sudo LD_LIBRARY_PATH=${INSTALLPATH} \\\\" > ${INSTALLPATH}/MobilePartner_Bat
     #DTS2010072902594 modify end
     mv ${INSTALLPATH}/MobilePartner ${INSTALLPATH}/MobilePartner.bin
     mv ${INSTALLPATH}/MobilePartner_Bat ${INSTALLPATH}/MobilePartner
@@ -654,7 +654,7 @@ InstallMobilePartner()
 #DTS2010062201326 w00159557 2010-10-26 modify begin
         echo -e "export DISPLAY=\$1" >> ${INSTALLPATH}/MobilePartner
     fi
-if [ -z $(/usr/bin/sudo) ]
+if [ -z "$(/usr/bin/sudo 2>&1)" ]
 then
     echo "There is no sudo command in your system,you'd better run the software by root"
     echo "Press any key to continue..."
@@ -684,7 +684,7 @@ chmod +x ${INSTALLPATH}/ReadDisplay
     echo -e "\${APPDIR}/MobilePartner.bin &" >> ./MobilePartner.sh
 
     # AJ2D14022 karthik now put the executable 
-    echo -e "exec ${INSTALLPATH}/MobilePartner.bin" >> ${INSTALLPATH}/MobilePartner
+    echo -e "${INSTALLPATH}/MobilePartner.bin" >> ${INSTALLPATH}/MobilePartner
 
     # Shashank [s72814]: added for executing MobilePartner.bin file from MobilePartner.sh file: End
     chmod +x ./MobilePartner.sh
